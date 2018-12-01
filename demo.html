@@ -5,26 +5,52 @@
 		<title>Demo</title>
 	</head>
 	<body>
-		<h1>Day la the heading 1</h1>
-		<h2>Day la the heading 2</h2>
-		<h3>Day la the heading 3</h3>
-		<h4>Day la the heading 4</h4>
+		<h1 style="color:green">Day la the heading 1</h1>
+		<h2 id="heading_2">Day la the heading 2</h2>
+		<h3 id="heading3">Day la the heading 3</h3>
+		<h4 class="abc">Day la the heading 4</h4>
 		<h5>Day la the heading 5</h5>
 		<h6>Day la the heading 6</h6>
 		
-		<p>Lorem Ipsum <span>Span text</span> is simply dummy text of the printing and typesetting industry.</p>
+		<p id="lorem" class="lorem_a lorem_b lorem_c">Lorem Ipsum <span>Span text</span> is simply dummy text of the printing and typesetting industry.</p>
 		<p><b>Bold text</b>	
 		<i>Italic text</i>
 		<u>Underline text</u>
 		<small>Small text</small>
 		<strong>Strong text</strong></p>
-		<p><b>Text <i>a<u><small>b</small></u>c</i> xyz</b></p>
+		<p class="lorem_a"><b>Text <i>a<u><small>b</small></u>c</i> xyz</b></p>
+		<p>Hello world</p>
+		<p><i>Italic text</i>
+		<u>Underline text</u>
+		<small>Small text</small></p>
 
-		<a href="#">Link to google</a>
+		<a style="color:red" href="#">Link to google</a>
 
 		<img width="500px" height="auto" src="images/nature-3048299__340.jpg"/>
 
-		
+		<style type="text/css">
+			h2{
+				color:#34404b;
+				font-size: 50px;
+				font-family: Arial;
+				font-weight: 400;/* 100(thin) 300(light) 400(normal) 500 600(semi-bold) 700(bold) 800 900(extra-bold);*/
+				font-style: italic;
+				line-height: 1.5;
+				text-decoration: underline overline line-through;	/* none */
+				text-align:  left; /* left right center justify */
+				text-indent: 20px;
+				text-transform: capitalize; /* lowercase uppercase capitalize none ;*/
+			}
+			#heading_2{
+				color:#ff5912; 
+			}
+			.abc{
+				color:yellow;
+			}
+			.lorem_a{
+				color:pink;
+			}
+		</style>
 
 
 	</body>
