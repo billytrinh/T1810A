@@ -37,3 +37,19 @@ body{
 li {
 	list-style-type: none;
 }
+.left{
+	float: left;
+	width: 270px;
+}
+.right{
+	float: left;
+	width: 900px;
+}
+.block{
+	float:left;
+	width: 270px;
+}
+.ba_cham{
+	float:left;
+	width: 900px;
+}
