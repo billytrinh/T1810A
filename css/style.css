@@ -1,7 +1,5 @@
 
 
-<style type="text/css">
-
 		p{
 			text-align: center;
 		}
@@ -23,14 +21,18 @@
 
 		}
 		body{
+			
+		}
+		.list{
 			background-color: #EFFBFB;
 			width: 1054px;
-			height: 1267px;
+			float:left;
 		}
-		div{
+
+		.iteam{
 			width: 270px;
 			height:367px;
-			border:none;
+			border:1px;
 			background-color: #FFFFFF;
 			margin:30px;
 			padding: 0px;
