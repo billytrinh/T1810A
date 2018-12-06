@@ -1,0 +1,85 @@
+.all{
+			width: 1300px;
+			height: auto;
+			background-color: #f4f6f8;
+			
+		}
+
+
+		#anh {
+			text-align: center;
+		}
+		#name1{
+			text-align: center;
+		}
+		#name {
+			color: #34404b;
+			text-decoration: none; 	
+			font-size: 18px;
+			font-style: normal;
+			font-family: arial;
+			line-height: 2.0;
+		}
+		#gia{
+			text-align: center;
+			color: #ff5912;
+			font-size: 18px;
+		}
+		
+		#list1 {
+			width: 270px;
+			height: 367px;
+			border: 1px solid while; /* dashes */ /*dotted*/
+			background-color: #ffffff;
+			float: left;
+			margin: 15px;
+		}
+
+		#right {
+			width: 1000px;
+			float: left;
+			background-color: #f4f6f8;
+		}
+
+
+		#left {
+			width: 296px;
+			margin: 0px;
+			background: #f4f6f8;
+			float: left;
+		} 
+
+
+		.list{
+			width: 266px;
+			height: 305px;
+			margin: 15px;
+			background-color: #ffffff;
+			float: left;
+		} 
+		#namelist {
+			color: #ff5912;
+			text-align: center;
+			font-size: 18px;
+			line-height: 2.0;
+			font-weight: 700;
+			font-family: Arial;
+		} 
+
+		#nameli {
+			color: #34404b;
+			font-size: 16px;
+			list-style-type: none;
+			line-height: 2.0;
+			font-family: arial;
+			font-weight: 600;
+		}
+		
+		#footer {
+			background-color: #ffffff;
+			text-align: center;
+		}
+		.ba_cham{
+			float: left;
+			width: 900px;
+		}
