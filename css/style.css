@@ -1,0 +1,38 @@
+
+
+<style type="text/css">
+
+		p{
+			text-align: center;
+		}
+		a{
+			font-family:Arial;
+			color:#191007;
+			font-size: 18px;
+			text-decoration: none;
+			line-height:2.0;
+		}
+		span{
+			line-height: 1.5;
+			font-family: Arial;
+			color:#ff5912;
+			font-size:19px;
+		}
+		h2{
+			text-align: center;
+
+		}
+		body{
+			background-color: #EFFBFB;
+			width: 1054px;
+			height: 1267px;
+		}
+		div{
+			width: 270px;
+			height:367px;
+			border:none;
+			background-color: #FFFFFF;
+			margin:30px;
+			padding: 0px;
+			float: left;
+		}
