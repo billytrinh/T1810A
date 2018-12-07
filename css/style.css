@@ -15,18 +15,22 @@
 			font-family: Arial;
 			color:#ff5912;
 			font-size:19px;
+			
 		}
 		h2{
 			text-align: center;
 
 		}
 		body{
-			
+			background: #EFFBFB;
+
 		}
 		.list{
 			background-color: #EFFBFB;
 			width: 1054px;
 			float:left;
+
+			
 		}
 
 		.iteam{
@@ -34,7 +38,78 @@
 			height:367px;
 			border:1px;
 			background-color: #FFFFFF;
-			margin:30px;
+			margin:19px;
 			padding: 0px;
 			float: left;
 		}
+		.iteam2{
+			width: 270px;
+			height:303px;
+			border:1px;
+			background-color: #FFFFFF;
+			margin:19px;
+			padding: 0px;
+			float: left;
+		}
+		.list2{
+			background-color: #EFFBFB;
+			width: 300px;
+			float:left;
+			padding-left: 125px;
+		}
+		ol{
+			list-style: none;
+
+		}
+		.iteam3{
+			color:red;
+			width: 900px;
+			border:1px;
+			background-color: #FFFFFF;
+			margin:19px;
+			padding: 0px;
+			float: left;
+			text-align: center;
+		}
+		.list4{
+			background:#ffffff;
+			width:1540px;
+			height:122px;
+			margin-bottom:127px;
+		}
+		.list4 ol {
+			list-style: none;
+		}
+		.list4 ol li{
+			float: left;
+			text-align: center;
+			line-height: 122px;
+			padding: 0px 42px 0px 42px;
+		}
+		.list4 ol li a{
+			padding: 45px;
+
+		}
+		.list3{
+			background:#ffffff;
+			height:35px;
+			width: 1540px; 
+		}
+		.list5{
+			background: #ffffff;
+			width:1170px;
+			height:124px;
+			float: left;
+			margin-top:127px;
+			text-align: center;
+		}
+		.list5 ol{
+			list-style: none;
+
+		}
+		.list5 ol li{
+			float: left;
+			line-height: 122px;
+			padding: 0px 42px 0px 42px;
+		}
+		
