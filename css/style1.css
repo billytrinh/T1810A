@@ -1,7 +1,7 @@
 
 #all{
 	width: 900px;
-	height: 1190px;
+	height: auto;
 	background-color: #f4f6f8;
 	padding-top: 32px;
 	padding-right: 80px;
@@ -34,4 +34,8 @@
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
+}
+
+.clear{
+	clear: both;
 }
