@@ -1,0 +1,168 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f4f6f8;
+	color: #28313b;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+    font-family: 'Noto Serif TC', serif;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.section{
+			float: left;
+			width: 100%;
+		}
+.container{
+			width: 1170px;
+			margin: 0 auto;
+
+
+		}
+		.section_1{
+			border-bottom: 1px solid #f4f6f8;
+			background-color: #fff;
+			
+		}
+		.section_1_1{
+			float: left;
+			width: 50%;
+		}
+		.section_1_2{
+			float: right;
+			width: 50%;
+			text-align: right;
+		}
+        .gmail{
+	        text-decoration: none;
+        }
+        .phone{
+	        text-decoration: none;
+        }
+        .icon-fb{
+        	float: right;
+        }
+        .icon-tyetter{
+        	float: right;
+        }
+        .icon-google{
+        	float: right;
+        }
+        .icon-intagram{
+        	float: right;
+        }
+.section_2{
+	border-bottom: 1px solid #f4f6f8;
+	background-color: #fff;
+}
+.section_2_1{
+    float: left;
+    width: 15%;
+}
+.section_2_2{
+    float: left;
+    width: 40%;
+}
+.section_2_3{
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+.section_3{
+	width: 1300px;
+	height: auto;
+	background-color: #f4f6f8;
+}
+.all{
+			width: 1300px;
+			height: auto;
+			background-color: #f4f6f8;
+			
+		}
+
+
+		#anh {
+			text-align: center;
+		}
+		#name1{
+			text-align: center;
+		}
+		#name {
+			color: #34404b;
+			text-decoration: none; 	
+			font-size: 18px;
+			font-style: normal;
+			font-family: arial;
+			line-height: 2.0;
+		}
+		#gia{
+			text-align: center;
+			color: #ff5912;
+			font-size: 18px;
+		}
+		
+		#list1 {
+			width: 270px;
+			height: 367px;
+			border: 1px solid while; /* dashes */ /*dotted*/
+			background-color: #ffffff;
+			float: left;
+			margin: 15px;
+			width: calc(100% / 3 - 30px);
+		}
+
+		#right {
+			width: 1000px;
+			float: left;
+			background-color: #f4f6f8;
+		}
+
+
+		#left {
+			width: 296px;
+			margin: 0px;
+			background: #f4f6f8;
+			float: left;
+		} 
+
+
+		.list{
+			width: 266px;
+			height: 305px;
+			margin: 15px;
+			background-color: #ffffff;
+			float: left;
+		} 
+		#namelist {
+			color: #ff5912;
+			text-align: center;
+			font-size: 18px;
+			line-height: 2.0;
+			font-weight: 700;
+			font-family: Arial;
+		} 
+
+		#nameli {
+			color: #34404b;
+			font-size: 16px;
+			list-style-type: none;
+			line-height: 2.0;
+			font-family: arial;
+			font-weight: 600;
+		}
+		
+		#footer {
+			background-color: #ffffff;
+			text-align: center;
+		}
+		.ba_cham{
+			float: left;
+			width: 900px;
+		}
