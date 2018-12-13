@@ -1,3 +1,43 @@
+#toan_bai{
+	width: 1540px;
+
+}
+#phan_1{
+	width: 1540px;
+}
+#tren_1{
+
+	margin-bottom: 1px;
+	background-color: #ffffff;
+	width: 1540px;
+}
+#tren_2{
+	margin-bottom: 118px;
+	background-color: #ffffff;
+	width: 1540px;
+}
+#phan_2{
+	margin-left: 170px;
+	margin-right: 170px;
+	width: 1230px;
+	float:left;
+}
+a{
+	color: black;
+	background: white;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 50px;
+	margin-left: 50px;
+}
+li{
+	list-style: upper-roman;
+}
+h3 a{
+	font-weight: bold;
+	color: #f38118;
+}
+
 #anh{
 		text-align: center;
 	}
@@ -36,34 +76,10 @@
 		width: 900px;
 		float:left;
 	}
-	li{
-	list-style-type: none;
-	line-height: 50px;
-	margin-left: 50px;
-		font-weight: 900;
-
-}
-a{
-	text-decoration: none;
-	color: #34404b;
-
-}
-body{
-	background-color: #f4f6f8;
+	body{
+		background-color: #f4f6f8;
 	background-size: cover;
-}
-.all{
-	width: 1230px;
-	margin-top: 118px;
-}
-#cate{
-color: #ff5912;
-	margin-left: 50px;
-	font-weight: 900;
-	line-height: 70px;
-	font-size: 30px;
-
-}
+	}
 	.left{
 		width: 300px;
 		float: left;
@@ -81,14 +97,25 @@ color: #ff5912;
 	
 	.ba_cham{
 		float:left;
-		width:870px;
+		width:900px;
 		height: 50px;
 		margin-top: 28px;
-		margin-bottom: 100px;
+		margin-bottom: 120px;
 		text-align: center;
-		font-weight: 900;
+		font-weight: bold;
 		background-color: #ffffff;
-		color: #ff5912;
+		color: #f38118;
 		font-size: 40px;
 	}
-	
+	#phan_3{
+	margin-left: 170px;
+	margin-right: 170px;
+	margin-bottom: 120px;
+	width: 1200px;
+	float:left;
+}
+#phan_4{
+	width: 1540;
+	background-color: #ffffff;
+
+	}

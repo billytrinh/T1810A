@@ -1,0 +1,35 @@
+#left{
+	width: 270px;
+	float: left;
+}
+.block{
+	width: 270px;
+	height: 300px;
+	background-color: #ffffff;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 36px;
+}
+li{
+	list-style-type: none;
+	line-height: 50px;
+	margin-left: 50px;
+		font-weight: 900;
+
+}
+a{
+	text-decoration: none;
+		color: #34404b;
+}
+#ten{
+color: #ff5912;
+	margin-left: 50px;
+	font-weight: 900;
+	line-height: 70px;
+	font-size: 30px;
+
+}
+body{
+	background-color: #f4f6f8;
+	background-size: cover;
+}
