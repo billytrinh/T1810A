@@ -1,0 +1,180 @@
+.anh {
+            text-align: center;
+        }
+
+        #divtongsp {
+            width: 900px;
+         float: left;
+            margin-right: 170px;
+            background-color: #f4f6f8;
+
+        }
+
+
+        #tensp {
+            text-decoration: none;
+            color: #34404b;
+            text-align: center;
+            font-size: 18px;
+            font-family: arial;
+            font-weight: 600;
+            line-height: 3;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        #giatien {
+            color: #ff5912;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+        body {
+            width: 1540px;
+            height: 2163px;
+            background-color: #f4f6f8;
+            margin: 0px;
+            float: left;
+        }
+
+        #divsp {
+            width: 270px;
+            height: 368px;
+            margin-right: 15px;
+            margin-left: 15px;
+            margin-bottom: 29px;
+            background-color: #ffffff;
+            float: left;
+
+        }
+        li{
+   
+            list-style-type: none;
+
+        }
+        ul{
+            margin: 0px;
+         line-height: 50px;
+          font-weight: 900;
+
+           }
+        #chucam{
+            color: #ff5912;
+        }
+           
+        #bacham {
+            font-weight: 900;
+            text-align: center;
+            color: red;
+            background-color: #ffffff;
+            margin-right: 15px;
+            margin-left: 15px;
+            width: 870px;
+            height: 61px;
+            float: left;
+            font-size: 40px;
+           }
+        #tuychon{
+            width: 270px;          
+             margin-right: 15px;
+            margin-left: 15px;
+            margin-bottom: 36px;
+            background-color: #ffffff;
+            padding-bottom: 25px;
+        }
+
+        #cate{
+            color: #ff5912;
+            padding-top:10px;
+            font-weight: 900;
+            font-size: 120%;
+        }
+        #divtong{
+            width: 1540px;
+            margin-top: 118px;
+        }
+        #divtuychon{
+            margin-left: 170px;
+            width: 300px;
+            float: left;
+        }
+        #dong1{
+            width: 1540px;
+            height: 60px;
+            background-color: #ffffff;
+            margin-bottom: 2px;
+        }
+        #dong2{
+            width: 1540px;
+            height: 122px;
+            background-color: #ffffff;
+        }
+        #ao2{
+            text-align: center;
+        }
+        #anhao2{
+            height: 88px;
+            text-align: center;
+            line-height: 2;
+        }
+        #tensp2{
+          font-weight: 900;
+          color: #ff5912;
+          line-height: 1;
+        }
+        #size{
+          line-height: 3;
+        }
+       #cucmau{
+        line-height: 2;
+       }
+       #duoicucmau{
+        line-height: 6;
+       }
+       #new{
+        background-color: #ffffff;
+        width: 1170px;
+        height: 123px;
+        margin-left: 185px;
+        margin-top: 120px;
+        margin-bottom: 122px ;
+        float: left;
+       }
+       #dongcuoi{
+        background-color: #ffffff;
+        height: 250px;
+        width: 1540px;
+        float: left;
+        margin-left: 0px;
+       }
+       #dongcuoilogo{
+        width: 270px;
+        margin-left: 185px;
+       }
+       #dongcuoi2{
+       list-style-type: disc;
+       margin-left: 130px;
+       width: 170px;
+       }
+       #dongcuoi3{
+       list-style-type: disc;
+       margin-left: 30px;
+       width: 170px;
+       }
+       #dongcuoi4{
+       list-style-type: disc;
+       margin-left: 30px;
+       width: 170px;
+       }
+       #dongcuoitt{
+        margin-left: 30px;
+        margin-right: 185px;
+        color: #ff5912;
+        width: 170px;
+       }
+       
