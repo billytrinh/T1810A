@@ -13,6 +13,9 @@ body{
 a{
 	text-decoration: none;
 }
+a:hover{
+	color:red;
+}
 li{
 	list-style: none;
 }
@@ -85,9 +88,27 @@ li{
 	background-color: white;
 	height: 347px;
 }
+.item-content:hover img{
+	/*zoom:0.5;*/
+}
+.fighover{
+	display: none;
+}
+.item .item-content a{
 
-
-
-
+}
+.item-content:hover figure{
+	display: none;
+}
+.item-content:hover .fighover{
+	display: block;
+}
+.box-pink{
+	width: 15px;
+	height: 15px;
+	background-color: pink;
+	border-radius: 100%;
+	float: left;
+}
 
 
