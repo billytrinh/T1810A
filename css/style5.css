@@ -1,0 +1,106 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: #f4f6f8;
+	color: #28313b;
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.section{
+	float:left;
+	width: 100%;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+
+	min-height: 200px;
+	background-color: green;
+}
+.section_1{
+	border-bottom: 1px solid black;
+	background-color: white;
+	width: 100%;
+}
+.section_1_1{
+	border-bottom: 2px solid #f4f6f8;
+	background-color: white;
+	width: 1170px;
+	height: 60px;
+}
+.section_1_1_trai{
+	float:left;
+}
+.section_1_1_trai img{
+	margin-right: 5px;
+}
+.mai-top{
+	float: left;
+	margin-right: 30px;
+}
+.phone-top{
+float:left;
+}
+.section_1_2{
+	float:right;
+}
+.section_1_2 img{
+	margin-left: 20px;
+}
+.section_2{
+	width: 100%;
+    height: 140px;
+    background-color: white;
+}
+.section_2_1{
+	width:15%;
+	float:left;
+	height: 140px;
+}
+.section_2_2{
+	float:left;
+	margin-top: 30px;
+	width: 40%;
+	height: 140px;
+
+}
+.sectiom_2_2 ul{
+	list-style-type: none;
+}
+.section_2_2 li{
+	float: left;
+	margin-right: 25px;
+}
+.section_2_2 a{
+	font-size: 16px;
+	color:#34404b;
+}
+.section_2_2 a:hover{
+	color:#ff5912;
+}
+.section_2_3{
+	float:right;
+	line-height: 120px;
+	width: 25%;
+	height: 140px;
+}
+.gio_hang{
+	float:right;
+}
+.trai_dat{
+	float:right;
+	margin-right: 13px;
+}
+.tim_kiem{
+	float:right;
+	margin-right: 30px;
+}
