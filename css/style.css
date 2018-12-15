@@ -1,0 +1,54 @@
+
+		p{
+			text-align: center;
+		}
+		a{	
+			font-family: Arial;
+			color:#34404b;
+			font-size: 18px;
+			text-decoration: none;
+			line-height: 2.0;
+		}
+		span{
+			line-height: 1.5;
+			font-family: Arial;
+			color:#ff5912;
+			font-size: 18px;
+		}
+		body{
+			background-color: #f4f6f8;
+		}
+		section{
+			width: 900px;
+			float:left;
+		}
+		.loi{
+			width: 270px;
+			height: 367px;
+			text-align: center;
+			background-color: white;
+			margin: 23px 15px;
+			float:left;
+			margin-top: 10px;
+		}
+		
+		.list{
+			line-height: 5px;
+			width: 200px;
+			float:left;
+			background-color: white;
+			line-height: 40px;
+		}
+		ol{
+			list-style-type: none;
+			list-style-position: outside;
+		}
+		.left {
+			width: 202px;
+			float: left;
+			background-color: #f4f6f8;
+		}
+		.ba{
+			text-align: center;
+	
+		}
