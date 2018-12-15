@@ -1,0 +1,30 @@
+	#p1{
+		color:black;
+		text-align:center;
+		font-size:18px;
+
+	}
+	#p2{
+		color:#ff5912;
+		text-align:center;
+		font-size:18px;
+	}
+	a{
+	text-decoration:none;
+	}
+	div{
+		width:270px;
+		height:366px;
+		float:left;
+		boder:1px solid white;
+		background:white;
+		margin:23px 15px 19px 15px;
+		}
+		body {
+		background-color:white;
+		}
+		#box{
+		width:916px;
+		background-color:#f4f6f8;
+		float: left;
+		}
