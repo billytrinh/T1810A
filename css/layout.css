@@ -110,5 +110,33 @@ li{
 	border-radius: 100%;
 	float: left;
 }
+.block-sizes input{
+	display: none;
+}
+.block{
+	background-color: #fff;
+}
+.block-sizes li{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.block-sizes label:before{
+	content: "";
+	width: 11px;
+	height: 11px;
+	background-color: green;
+	border:4px solid green;
+	float: left;
+}
+
+.block-sizes input:checked + label{
+	color:red;
+}
+.block-sizes input:checked + label:before{
+	background-color: #fff;
+	border:4px solid red;
+}
+
 
 
