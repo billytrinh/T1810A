@@ -40,6 +40,9 @@ li{
 	height: 60px;
 	margin-left: -20px;
 }
+.container_1 li{
+	line-height: 60px;
+}
 .section1_1 ul li img{
 	padding-right: 10px;
 	padding-left: 20px;
@@ -85,6 +88,9 @@ li{
 }
 .section2_2 span a{
 	padding-right: 35px;
+}
+.section2_2-content span a : hover{
+	color: #ff5912;
 }
 .section2_2-content{
 	padding-top: 54px;
@@ -250,7 +256,7 @@ h3{
 	width: 50%;
 	text-align: right;
 }
-.section_4 .container_4 div ul li{
+.section_4 .container_4 li{
 	display: inline-block;
 }
 .section_4 .container_4 div ul li a img{
@@ -263,7 +269,7 @@ h3{
 	padding-right: 25px;
 	padding-left: 42px;
 }
-.section4_1-content ul li{
+.section4_1-content li{
 	padding-top: 55px;
 }
 .section4_2-content{
@@ -313,7 +319,7 @@ h3{
 	width: 100%;
 	height: 250px;
 }
-.sec5_2-content ul{
+.sec5_2-content div{
 	display: inline-block;
 	padding-left: 100px;
 	vertical-align: top;
