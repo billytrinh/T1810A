@@ -1,180 +1,210 @@
-.anh {
-            text-align: center;
+        *{
+            margin: 0;
+            padding: 0;
         }
 
-        #divtongsp {
-            width: 900px;
-         float: left;
-            margin-right: 170px;
+        body {
             background-color: #f4f6f8;
-
+            color: #28313b;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            font-family: 'Open Sans', sans-serif;
         }
-
-
-        #tensp {
-            text-decoration: none;
-            color: #34404b;
-            text-align: center;
-            font-size: 18px;
-            font-family: arial;
-            font-weight: 600;
-            line-height: 3;
-
-        }
-
+       
         a {
             text-decoration: none;
         }
 
-
-        #giatien {
-            color: #ff5912;
-            text-align: center;
-            font-weight: 600;
-            line-height: 1;
-        }
-
-        body {
-            width: 1540px;
-            height: 2163px;
-            background-color: #f4f6f8;
-            margin: 0px;
-            float: left;
-        }
-
-        #divsp {
-            width: 270px;
-            height: 368px;
-            margin-right: 15px;
-            margin-left: 15px;
-            margin-bottom: 29px;
-            background-color: #ffffff;
-            float: left;
-
-        }
         li{
-   
             list-style-type: none;
+        }
+
+        .sec{
+            float: left;
+            width: 100%;
+        }
+
+        .container{
+            width: 1170px;
+            margin: 0 auto;
+        }
+        
+        .sec1{
+            background-color: #ffffff;
+            border-bottom: 1px solid #f4f6f8;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .sec1_1{
+            float: left;
+            width: 50%;
+        }
+        .sec1_2{
+            float: right;
+            width: 50%;
+            text-align: right;
+        }
+
+        .fbsec1{
+          margin-left: 15px;
+          font-weight: 600;
+        }
+        .sec2{
+            background-color: #ffffff;
+            border-bottom: 120px solid #f4f6f8;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .sec2_1{
+            float: left;
+            width: 18%;
+        }
+        .sec2_2{
+            float: left;
+            width: 72%;
+        }
+        .sec2a{
+          margin-left: 40px;
+          font-weight: 600;
+          font-size: 17px;
+        }
+        .sec2_3{
+            float: right;
+            width: 25%;
+            text-align: right;
+        }
+        .sec3_1{
+            float: left;
+            width: 25%;
+            width: 270px;
+        }
+        .menu{
+            float: left;
+            padding: 15px;
+            padding-left: 0;
 
         }
-        ul{
-            margin: 0px;
-         line-height: 50px;
+        .menu1{
+          float: left;
+          background-color: #ffffff;
+          padding-top: 25px;
+          width: 270px;
+
+        }
+        h3{
+          color: #ff5912;
+          padding-bottom: 20px;
+          padding-top: 30px;
+          padding-left: 30px;
+          font-size: 20px;
           font-weight: 900;
-
-           }
-        #chucam{
-            color: #ff5912;
         }
-           
-        #bacham {
-            font-weight: 900;
-            text-align: center;
-            color: red;
-            background-color: #ffffff;
-            margin-right: 15px;
-            margin-left: 15px;
-            width: 870px;
-            height: 61px;
-            float: left;
-            font-size: 40px;
-           }
-        #tuychon{
-            width: 270px;          
-             margin-right: 15px;
-            margin-left: 15px;
-            margin-bottom: 36px;
-            background-color: #ffffff;
-            padding-bottom: 25px;
+        .sec3a{
+          font-weight: 900;
+          line-height: 3;
+          font-size: 17px;
+          padding-left: 30px;
+        }
+        .sec3_2{
+            float: right;
+            width: 75%;
         }
 
-        #cate{
-            color: #ff5912;
-            padding-top:10px;
-            font-weight: 900;
-            font-size: 120%;
+        .list{
+          margin-left: -15px;
+          margin-right: -15px;
         }
-        #divtong{
-            width: 1540px;
-            margin-top: 118px;
-        }
-        #divtuychon{
-            margin-left: 170px;
-            width: 300px;
+
+        .sp{
+            width: calc(100% / 3 - 30px);
             float: left;
+            padding: 15px;
         }
-        #dong1{
-            width: 1540px;
-            height: 60px;
-            background-color: #ffffff;
-            margin-bottom: 2px;
+
+        .sp1{
+          float: left;
+          width: calc(100% - 2px);
+          text-align: center;
+          background-color: #ffffff;
+          height: 347px;
+          padding-top: 30px;
         }
-        #dong2{
-            width: 1540px;
-            height: 122px;
-            background-color: #ffffff;
+        .tensp{
+          font-size: 18px;
+          font-weight: 900;
+          padding-top: 20px;
         }
-        #ao2{
+        .giatien{
+          color: #ff5912;
+          font-weight: 900;
+          font-size: 17px;
+          padding-top: 20px;
+        }
+        .ao2{
             text-align: center;
         }
-        #anhao2{
+        .anhao2{
             height: 88px;
             text-align: center;
-            line-height: 2;
+            line-height: 3;
         }
-        #tensp2{
+        .tensp2{
           font-weight: 900;
           color: #ff5912;
-          line-height: 1;
-        }
-        #size{
           line-height: 3;
         }
-       #cucmau{
+        .size{
+          line-height: 3;
+        }
+       .cucmau{
         line-height: 2;
        }
-       #duoicucmau{
+
+       .aobot{
+        padding-left: 10px;
+        padding-right: 10px;
+       }
+       .duoicucmau{
         line-height: 6;
        }
-       #new{
+       .bacham{
+    width: 870px;
+    height: 60px;
+    margin: 15px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    font-size: 30px;
+    color: #ff5912;
+    font-weight: 900;
+
+       }
+
+       .sec4{
         background-color: #ffffff;
-        width: 1170px;
-        height: 123px;
-        margin-left: 185px;
-        margin-top: 120px;
-        margin-bottom: 122px ;
+        padding: 30px;
+        width: 1100px;
+        margin-left: 430px;
+        border-top: 120px solid #f4f6f8
+       }
+       .sec4_1{
+        width: 50%;
         float: left;
        }
-       #dongcuoi{
-        background-color: #ffffff;
-        height: 250px;
-        width: 1540px;
+       .sec4_1_1{
+        padding-left: 20px;
+        font-style: italic;
+        font-weight: 600;
+       }
+       .sec4_2{
+        width: 25%;
         float: left;
-        margin-left: 0px;
+        font-weight: 600;
+        font-style: italic;
        }
-       #dongcuoilogo{
-        width: 270px;
-        margin-left: 185px;
+       .sec4_3{
+        width: 25%;
+        float: left;
        }
-       #dongcuoi2{
-       list-style-type: disc;
-       margin-left: 130px;
-       width: 170px;
-       }
-       #dongcuoi3{
-       list-style-type: disc;
-       margin-left: 30px;
-       width: 170px;
-       }
-       #dongcuoi4{
-       list-style-type: disc;
-       margin-left: 30px;
-       width: 170px;
-       }
-       #dongcuoitt{
-        margin-left: 30px;
-        margin-right: 185px;
-        color: #ff5912;
-        width: 170px;
-       }
-       
