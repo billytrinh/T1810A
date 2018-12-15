@@ -375,16 +375,19 @@ ul{
 	font-family: Arial;
 	font-size: 16px;
 }
-txt0{
-    color: #ff5912;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 2.0;
-}
 h3{
 	font-size: 18px;
 	font-weight: bold;
 	color: #ff5912;
-	}
+	font-family: 'Oswald', sans-serif;
+}
+.section{
+	float: left;
+	width: 100%;
+
+}
+.container{
+	width: 1170px;
+	margin:0 auto;
+	background-color: white;
+}
