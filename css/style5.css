@@ -99,7 +99,11 @@ float:left;
 .tim_kiem{
 	float:right;
 	margin-right: 30px;
-}.left{
+}
+.section_3{
+	margin-: 100px;
+}
+.left{
 	float: left;
 	width: 25%;
 }
@@ -179,6 +183,8 @@ float:left;
 }
 .block{
 	background-color: #fff;
+	margin-bottom: 15px;
+	margin-right: 30px;
 }
 .block-sizes li{
 	float: left;
