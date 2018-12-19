@@ -318,3 +318,63 @@ h3{
 
 /*-----------------------------------*/
 
+.section_4 {
+	padding-top: 120px;
+	padding-bottom: 100px;
+}
+
+.section_4-left {
+	float: left;
+	background: #ffffff;
+	width: 50%;
+}
+
+.section_4-right {
+	float: right;
+	background: #ffffff;
+	width: 50%;
+	text-align: right;
+}
+
+.section_4-right .section_4-content2 {
+	margin-bottom: 18px;
+}
+
+.section_4 .container li {
+	display: inline-block;
+}
+
+.section_4-left {
+	height: 120px;
+}
+
+.section_4 .container ul li h3 a img{
+	vertical-align: middle;
+}
+.section_4-left .section_4-content ul li h3{
+	padding-right: 25px;
+	padding-left: 42px;
+}
+
+.section_4-left .section_4-content li {
+	padding-top: 55px;
+}
+
+.section_4-right {
+	height: 120px;
+}
+
+.join-section_4 {
+	margin-right: 42px;
+	margin-left: 162px;
+	margin-top: 37px;
+}
+
+.mail-section_4 {
+	margin-left: 12px;
+}
+
+.join {
+	margin-bottom: -15px;
+}
+
