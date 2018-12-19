@@ -142,7 +142,7 @@ li{
 }
 .block_1-content{
 	width: calc(100% - 57px);
-	height: 260px;
+	
 	background: #ffffff;
 	padding-top: 42px;
 	padding-right: 15px;
@@ -151,7 +151,7 @@ li{
 }
 .block_2-content{
 	width: calc(100% - 57px);
-	height: 192px;
+	
 	background: #ffffff;
 	padding-top: 42px;
 	padding-right: 15px;
@@ -201,27 +201,7 @@ h3{
 	color: #34404b;
 	font-size: 18px;
 }
-.item_price{
-	color: #ff5912;
-	font-size: 18px;
-	font-weight: 700;
-}
-.item_color li{
-	display: inline-block;
-	padding-top: 10px;
-	padding-right: 5px;
-}
-.green{
-	margin-right: -5px;
-}
-.item_soci li{
-	display: inline-block;
-	padding-top: 25px;
-	padding-right: 28px;
-}
-.like{
-	margin-right: -28px;
-}
+
 .ba_cham{
 	float: left;
 	width: 871px;
@@ -242,7 +222,110 @@ h3{
 .clear{
 	clear: both;
 }
+.fighover{
+	display: none;
+}
+.item-content:hover figure{
+	display: none;
+}
+.item-content:hover .fighover{
+	display: block;
+}.fighover a{
+	color: #ff5912;
+}
+.item_price{
+	color: #ff5912;
+	font-size: 18px;
+	font-weight: 700;
+}
+.item_soci li{
+	display: inline-block;
+	padding-top: 30px;
+	padding-right: 28px;
+}
+.like{
+	margin-right: -28px;
+}
+/* CSS box*/
+.box-red{
+	width: 15px;
+	height: 15px;
+	background-color: #e12e3f;
+	border-radius: 100%;
+	display: inline-block;
+}
+.box-black{
+	width: 15px;
+	height: 15px;
+	background-color: #34404b;
+	border-radius: 100%;
+	display: inline-block;
+}
+.box-blue{
+	width: 15px;
+	height: 15px;
+	background-color: #3ab3ff;
+	border-radius: 100%;
+	display: inline-block;
+}
+.box-green{
+	width: 15px;
+	height: 15px;
+	background-color: #2fd967;
+	border-radius: 100%;
+	display: inline-block;
+}
+.box_color{
+	text-align: center;
+	padding-top: 20px;
+	letter-spacing: 5px;
+}
+/* CSS checkbox */
+.block-sizes input{
+	display: none; 
+}
+.block-sizes li{
 
+}
+.block-sizes label:before{
+	content: "";
+	width: 16px;
+	height: 15px;
+	background-color: #edf0f2;
+	border: 6px solid #ffffff;
+	margin-right: 10px;
+	float: left;
+}
+.block-sizes input:checked + label{
+	color: #ff5912;
+}
+.block-sizes input:checked + label:before{
+	background-color: #ffffff;
+	border: 4px solid #ff5912;
+}
+
+.block-brands input{
+	display: none; 
+}
+.block-brands li{
+
+}
+.block-brands label:before{
+	content: "";
+	width: 16px;
+	height: 15px;
+	background-color: #edf0f2;
+	border: 6px solid #ffffff;
+	margin-right: 10px;
+	float: left;
+}
+.block-brands input:checked + label{
+	color: #ff5912;
+}
+.block-brands input:checked + label:before{
+	background-color: #ffffff;
+	border: 4px solid #ff5912;
+}
 /* CSS section_4 */
 .section_4{
 	padding-top: 100px;
@@ -262,22 +345,31 @@ h3{
 .section_4 .container_4 li{
 	display: inline-block;
 }
-.section_4 .container_4 div ul li a img{
+.container_4 img{
 	vertical-align: middle;
 }
 .section4_1-content{
-	height: 120px;
+	padding-bottom: 55px;
 }
 .section4_1-content ul li a img{
 	padding-right: 25px;
 	padding-left: 42px;
 }
-.section4_1-content li{
+.section4_1-content{
 	padding-top: 55px;
 }
-.section4_2-content{
-	height: 120px;
+
+.h3newlet {
+	float: left;
+	display: inline-block;
 }
+.section4_1-content p{
+	float: right;
+	display: inline-block;
+}
+.section4_2-content{
+	padding-bottom: 42px;
+	}
 .join{
 	padding-right: 42px;
 	padding-left: 162px;
@@ -310,7 +402,6 @@ h3{
 }
 .sec5_1-content {
 	width: 100%;
-	height: 250px;
 	padding-top: 88px;
 }
 .sec5_1-content ul li img{
@@ -320,7 +411,6 @@ h3{
 .sec5_2-content{
 	padding-top: 88px;
 	width: 100%;
-	height: 250px;
 }
 .sec5_2-content div{
 	display: inline-block;
@@ -335,7 +425,6 @@ h3{
 .sec5_3-content{
 	padding-top: 98px;
 	width: 100%;
-	height: 250px;
 }
 .sec5_3-content ul li{
 	padding-bottom: 20px;
