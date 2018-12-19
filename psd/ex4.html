@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ex4</title>
-	<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="css/ex4.css">
 </head>
 <body>
-	<section class="section section_h1">
+	<section class="section section_1">
 		<div class="container">
 			<div class="section_1_1">
-				<img src="images Untitled-1.png" alt="">
+				<img src="images/Untitled-1.png" alt="">
 				<span>info@shope.com</span>
 				<img src="images/Untitled-2.png" alt="">
 				<span>453-33454</span>
 			</div>
 
-			<div class="section_h1_2">
+			<div class="section_1_2">
 				<a href="https://www.facebook.com/"><img src="images/face.png" alt=""></a>
 				<a href="https://twitter.com/?lang=vi"><img src="images/ti.png" alt=""></a>
 				<a href="https://www.google.com/"><img src="images/goog.png" alt=""></a>
@@ -27,15 +27,15 @@
 		</div>
 	</section>
 
-	<section class="section section_h2">
+	<section class="section section_2">
 		<div class="container">
-			<div class="section_h2_1">
+			<div class="section_2_1">
 				<img src="images/Untitled-4.png" alt="">
 			</div>
 
-			<div class="section_h2_2">
+			<div class="section_2_2">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href=" #">Home</a></li>
 					<li><a href="#">Products</a></li>
 					<li><a href="#">Hot Deals</a></li>
 					<li><a href="#">About</a></li>
@@ -43,14 +43,14 @@
 				</ul>
 			</div>
 
-			<div class="section_h2_3">
-				<a href="#"><img src="images/Untitled-6.png" alt=""></a>
-				<a href="#"><img src="images/Untitled-7.png" alt=""></a>
-				<a href="#"><img src="images/Untitled-8.png" alt=""></a>
+			<div class="section_2_3">
+				<a href="#"><img src="images/Untitled-6.png" alt="timkiem"></a>
+				<a href="#"><img src="images/Untitled-7.png" alt="canhan"></a>
+				<a href="#"><img src="images/Untitled-8.png" alt="giodo"></a>
 			</div>
 	</section>
 
-	<section class="section section_h3">
+	<section class="section section_3">
 		<div class="container">
 			<div class="left">
 				<div class="list"></div>
@@ -83,10 +83,22 @@
 						<div class="block-content">
 							<h3>Sizes</h3>
 								<ul>
-									<li><input type="checkbox"> Small</li>
-									<li><input type="checkbox"> Medium</li>
-									<li><input type="checkbox"> Large </li>
-									<li><input type="checkbox"> X Large</li>
+									<li>
+										<input id="small" type="checkbox">
+										<label for="small"> Small</label>
+									</li>
+									<li>
+										<input id="medium" type="checkbox">
+										<label for="medium"> Medium</label>
+									</li>
+									<li>
+										<input id="large" type="checkbox">
+										<label for="large"> Large </label>
+									</li>
+									<li>
+										<input id="xlarge" type="checkbox">
+										<label for="xlarge"> X Large </label>
+									</li>
 
 								</ul>
 						</div>
@@ -96,10 +108,23 @@
 						<div class="block-content">
 							<h3>Brands</h3>
 								<ul>
-									<li><input type="checkbox"> Reebok</li>
-									<li><input type="checkbox"> Adidas</li>
-									<li><input type="checkbox"> Nike</li>
-									<li><input type="checkbox"> Active</li>
+									<ul>
+									<li>
+										<input id="small" type="checkbox">
+										<label for="small"> Reebok</label>
+									</li>
+									<li>
+										<input id="medium" type="checkbox">
+										<label for="medium"> Addidas</label>
+									</li>
+									<li>
+										<input id="large" type="checkbox">
+										<label for="large"> Nike </label>
+									</li>
+									<li>
+										<input id="xlarge" type="checkbox">
+										<label for="xlarge"> Sactive</label>
+									</li>
 
 								</ul>
 						</div>
@@ -130,30 +155,16 @@
 					</div>
 					<div class="item">
 					<div class="item-content">
-							<p><a href="#"><img src="images/aoxam.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-					<div class="item-content">
 							<p><a href="#"><img src="images/aodo.png"/></a></p>
 							<p><a href="#">Reebok Track Jacket</a></p>
 							<p><span>100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-					<div class="item-content">
-							<p><a href="#"><img src="images/aohong.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-					<div class="item-content">
-							<p><a href="#"><img src="images/aodo.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
+							<p>size:s - m - l - xl</p>
+							<div class="choosecolor">
+								<span class="box-pink"></span>
+								<span class="box-2"></span>
+								<span class="box-3"></span>
+								<span class="box-4"></span>
+							</div>
 						</div>
 					</div>
 					<div class="item">
@@ -170,7 +181,27 @@
 							<p><span>100$</span></p>
 						</div>
 					</div>
-				
+					<div class="item">
+					<div class="item-content">
+							<p><a href="#"><img src="images/aodo.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>
+					<div class="item">
+					<div class="item-content">
+							<p><a href="#"><img src="images/aoxam.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>
+					<div class="item">
+					<div class="item-content">
+							<p><a href="#"><img src="images/aodo.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>
 					<div class="bacham">
 						<span>...</span>
 					</div>
@@ -179,22 +210,21 @@
 	</div>
 	</section>
 
-	<section class="section section_h4">
+	<section class="section section_4">
 		<div class="container">
-			
-					<div class="section_h4_1">
+					<div class="section_4_1">
 						<span><a href="#">NEWS LETTER</a></span>
 						<span>join us now to get all news and special offers</span>
 					</div>
 			
 		
-					<div class="section_h4_2">
-						<img src="images/Untitled-1.png" alt="">
+					<div class="section_4_2">
+						<img src="images/new.png" alt="">
 						<input type="textbox" placeholder="type your email here.." >
 					</div>
 			
 			
-					<div class="section_h4_3">
+					<div class="section_4_3">
 							<a href=""><img src="images/khung.png" alt=""></a>
 					</div>
 					
@@ -203,16 +233,16 @@
 		
 	</section>
 
-	<section class="section section_h5">
+	<section class="section section_5">
 		<div class="container">
 			<div class="about">
-				<div class="section_h5_1">
+				<div class="section_5_1">
 					<p><img src="images/Untitled-4.png" alt=""></p>
 					<p>Shopy c 2015. your copy right here.</p>
 				</div>
 			</div>
 			<div class="about">
-				<div class="section_h5_2">
+				<div class="section_5_2">
 					<ul>
 						<li><a href="#">About us</a></li>
 						<li><a href="#">Contact us</a></li>
@@ -221,7 +251,7 @@
 				</div>
 			</div>	
 			<div class="about">
-				<div class="section_h5_3">
+				<div class="section_5_3">
 					<ul>
 						<li><a href="#">Our feed</a></li>
 						<li><a href="#">Terms and conditions</a></li>
@@ -230,7 +260,7 @@
 				</div>
 			</div>	
 			<div class="about">
-				<div class="section_h5_4">
+				<div class="section_5_4">
 					<ul>
 						<li><a href="#">Join us</a></li>
 						<li><a href="#">Live support</a></li>
@@ -238,11 +268,12 @@
 				</div>
 			</div>	
 			<div class="about">
-				<div class="section_h5_5">
-					<img src="images/the.png" alt="">
+				<div class="section_5_5">
+					<img src="images/the.png" alt="payments">
 				</div>
 			</div>		
 		</div>
+
 	</section>
 
 </body>
