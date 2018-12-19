@@ -6,10 +6,10 @@
 body {
 	background-color: #f4f6f8;
 	color: #414850;
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.5;
-	font-family: 'Gamja Flower', cursive;
+	font-family: 'Staatliches', cursive;
 }
 
 a:hover {
@@ -125,6 +125,42 @@ span {
 	padding-bottom: 15px;
 
 }
+
+.block {
+	background-color: #fff;
+}
+.block-content input {
+	display: none;
+}
+
+.block-content li {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.block-content label:before {
+	content: "";
+	width: 11px;
+	height: 11px;
+	background-color: #edf0f2;
+	float: left;
+	border: 3px solid green;
+	
+}
+
+.block-content input:checked + label{
+	color: red;
+	float: left;
+}
+
+.block-content input:checked + label:before {
+	background-color: #fff;
+	border: 3px solid red;
+	float: left;
+}
+
+
 .block h3 {
 	padding-left: 15px;
 	color: #ff5912;
@@ -253,3 +289,50 @@ line-height: 20px;
 	width: 15%
 	float: left;
 }
+
+.item-content:hover figure {
+	display: none;
+}
+
+.box-pink {
+	width: 15px;
+	height: 15px;
+	background-color: #e12e3f;
+	border-radius: 100%;
+	float: left;
+	margin-right: 5px;
+}
+
+.box-2 {
+	width: 15px;
+	height: 15px;
+	background-color: #34404b;
+	border-radius: 100%;
+	float: left;
+	margin-right: 5px;
+}
+
+.box-3 {
+	width: 15px;
+	height: 15px;
+	background-color: #3ab3ff;
+	border-radius: 100%;
+	float: left;
+	margin-right: 5px;
+}
+
+.box-4 {
+	width: 15px;
+	height: 15px;
+	background-color: #2fd967;
+	border-radius: 100%;
+	float: left;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.choosecolor {
+	padding-left: 100px;
+	padding-top: 40px;
+}
+

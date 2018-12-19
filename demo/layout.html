@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Layout demo</title>
-	<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 	<link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
@@ -35,7 +35,7 @@
 
 			<div class="section_2_2">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href=" #">Home</a></li>
 					<li><a href="#">Products</a></li>
 					<li><a href="#">Hot Deals</a></li>
 					<li><a href="#">About</a></li>
@@ -83,10 +83,22 @@
 						<div class="block-content">
 							<h3>Sizes</h3>
 								<ul>
-									<li><input type="checkbox"> Small</li>
-									<li><input type="checkbox"> Medium</li>
-									<li><input type="checkbox"> Large </li>
-									<li><input type="checkbox"> X Large</li>
+									<li>
+										<input id="small" type="checkbox">
+										<label for="small"> Small</label>
+									</li>
+									<li>
+										<input id="medium" type="checkbox">
+										<label for="medium"> Medium</label>
+									</li>
+									<li>
+										<input id="large" type="checkbox">
+										<label for="large"> Large </label>
+									</li>
+									<li>
+										<input id="xlarge" type="checkbox">
+										<label for="xlarge"> X Large </label>
+									</li>
 
 								</ul>
 						</div>
@@ -133,6 +145,13 @@
 							<p><a href="#"><img src="images/4.png"/></a></p>
 							<p><a href="#">Reebok Track Jacket</a></p>
 							<p><span>100$</span></p>
+							<p>size:s - m - l - xl</p>
+							<div class="choosecolor">
+								<span class="box-pink"></span>
+								<span class="box-2"></span>
+								<span class="box-3"></span>
+								<span class="box-4"></span>
+							</div>
 						</div>
 					</div>
 					<div class="item">
@@ -170,7 +189,6 @@
 							<p><span>100$</span></p>
 						</div>
 					</div>
-				
 					<div class="bacham">
 						<span>...</span>
 					</div>
@@ -181,7 +199,6 @@
 
 	<section class="section section_4">
 		<div class="container">
-			
 					<div class="section_4_1">
 						<span><a href="#">NEWS LETTER</a></span>
 						<span>join us now to get all news and special offers</span>
@@ -243,7 +260,10 @@
 				</div>
 			</div>		
 		</div>
+
 	</section>
 
 </body>
 </html>
+
+
