@@ -1,0 +1,17 @@
+.section{
+	float: left;
+	width: 100%;
+
+	min-height: 200px;
+	background-color: white;
+}
+.container{
+	width: 1170px;
+	margin:0 auto;
+
+	min-height: 200px;
+	background-color: green;
+}
+.section_1{
+	border-bottom: 1px solid red;
+}

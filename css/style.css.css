@@ -1,0 +1,43 @@
+#anh{
+				text-align: center;
+			}
+			#name1{
+				text-align: center;
+			}
+			#name{
+				color: #34404b;
+				text-decoration: none;
+				font-size: 18px;
+				font-style: normal;
+				font-family: Arial;
+				line-height: 1.5;
+			}
+			#gia{
+				color: #ff5912;
+				text-align: center;
+				font-size: 18px;
+				font-family: Arial;
+				line-height: 1.5;
+			}
+		body{
+			background: white;
+		}
+		#mhc{
+			width: 900px;
+			height: 1189px;
+			padding-top: 32px;
+			padding-right: 80px;
+			padding-bottom: 48px;
+			padding-left: 76px;
+			background: #f4f6f8;
+ 		}
+		.mhn{
+			width: 270px;
+			height: 368px;
+			background :#ffffff;
+			margin-top: 15px; 
+			margin-right: 15px;
+			margin-bottom: 15px;
+			margin-left: 15px;
+			float: left;
+		}
