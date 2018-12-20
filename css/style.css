@@ -1,9 +1,4 @@
-a{
-	text-decoration: none;
-}
-
-
-.*{
+*{
 	margin:0;
 	padding: 0;
 }
@@ -41,6 +36,7 @@ li{
 p{
 	padding-top: 15px;
 	font-weight: bold;
+
 }
 span{
 	color: #ff5912;
@@ -128,7 +124,7 @@ span{
 	border: 1px  ;/* dashed dotted */
 	/*background: green;*/
 	background-color: white;
-	height: 347px;
+	height: 360px;
 	
 }
 .item-content:hover img{
@@ -183,10 +179,12 @@ block-sizes input:checkbox + label{
 .block{
 	margin: 25px;
 	line-height: 40px;
-	padding: 10px;
+	padding: 15px;
 	font-weight: bold;
 	font-size: 13px;
-	
+}
+.block li {
+	padding-left: 30px;
 }
 .ba-cham{
 	background-color: #fff;
