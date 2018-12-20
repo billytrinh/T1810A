@@ -271,7 +271,6 @@ li {
 
 .block_1-content {
 	width: calc(100% - 74px);
-	height: 250px;
 	background: #ffffff;
 	padding-top: 40px;
 	padding-right: 15px;
@@ -280,7 +279,6 @@ li {
 
 .block_2-content{
 	width: calc(100% - 74px);
-	height: 192px;
 	background: #ffffff;
 	padding-top: 40px;
 	padding-right: 15px;
@@ -378,3 +376,65 @@ h3{
 	margin-bottom: -15px;
 }
 
+
+/*-----------------------------------*/
+
+.section_5 {
+	background: #ffffff;
+}
+
+.section_5-left {
+	float: left;
+	width: 25%;
+	padding: 90px 0;
+}
+
+.section_5-center {
+	float: left;
+	width: 55%;
+	padding: 90px 0;
+}
+
+.section_5-right {
+	float: right;
+	width: 20%;
+	text-align: right;
+	padding: 90px 0;
+}
+
+.section_5 .container .section_5-left img {
+	padding-bottom: 10px;
+}
+
+.section_5-center .col_1 {
+	float: left;
+	width: calc(100% / 3 - 20px);
+	padding: 0px 10px;
+}
+
+.section_5-center .col_2 {
+	float: left;
+	width: calc(100% / 3 - 20px);
+	padding: 0px 10px;
+}
+
+.section_5-center .col_3 {
+	float: left;
+	width: calc(100% / 3 - 20px);
+	padding: 0px 10px;
+}
+
+.section_5-center li {
+	padding-bottom: 10px;
+	list-style-type: disc;
+}
+
+.section_5-right img {
+	padding-top: 20px;
+}
+
+.section_5-right .section_5-text {
+	color: #ff5912;
+	padding-right: 46px;
+	font-weight: 600;
+}
