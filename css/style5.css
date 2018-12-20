@@ -126,7 +126,7 @@ float:left;
 	float:left;
 	width: calc(100% - 2px);
 	text-align: center;
-	border: 1px solid red;/* dashed dotted */
+	/* dashed dotted */
 	/*background: green;*/
 	background-color: white;
 	height: 347px;
@@ -284,7 +284,7 @@ button{
 	padding: 80px 0;
 }
 .section_5_content{
-	line-height: 100px;
+	line-height: 40px;
 }
 .logo-footer{
 	width: 30%;
@@ -298,11 +298,15 @@ button{
 	width: 50%;
 	float: left;
 }
-.mark a:hover{
+.mark li a:hover{
 	color:#ff5912;
 }
 .mark li{
 	margin-bottom: 30px; 
+	list-style: disc;
+}
+.mark li:hover{
+	color: #ff5912;
 }
 .mark_1{
 	float:left;
