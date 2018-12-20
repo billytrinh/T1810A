@@ -178,6 +178,9 @@ main{
     display: none;
     line-height: 50px;
 }
+.item-content:hover{
+    box-shadow: 5px 5px 5px 5px grey;
+}
 .item-content:hover figcaption{
     display: none;
 }
