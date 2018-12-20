@@ -253,7 +253,7 @@
         padding-bottom: 50px;
       }
        .sec4_1 a{
-        width: 10%;
+        width: 15%;
         float: left;
         padding-top: 10px;
         padding-left: 50px;
@@ -271,7 +271,7 @@
         float: left;
        }
        .sec4_3{
-        width: 30%;
+        width: 25%;
         float: left;
         font-weight: 600;
         font-style: italic;
@@ -305,21 +305,18 @@
        }
 
        .sec5_2{
-        list-style: disc;
         width: 15%;
         padding: 100px 0px;
         float: left;
        }
 
        .sec5_3{
-        list-style-type: disc;
         width: 15%;
         padding: 100px 0px;
         float: left;
        }
       
       .sec5_4{
-        list-style-type: disc;
         width: 15%;
         padding: 100px 0px;
         float: left;
@@ -330,7 +327,10 @@
         padding: 100px 0px;
         float: right;
        }
-        
+        .sec5 li{
+          list-style-type: disc;
+          font-weight: 600;
+        }
        
 .sp1:hover img{
   zoom:0.5;
