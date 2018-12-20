@@ -22,6 +22,9 @@ h3{
 label{
 	font-size: 14px;
 }
+a:hover{
+	color: red;
+}
 .section{
 	float: left;
 	width: 100%;
