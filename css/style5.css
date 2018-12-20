@@ -121,6 +121,9 @@ li{
 	vertical-align: middle;
 }
 /* CSS section_3 */
+.container_3{
+	padding-top: 118px;
+}
 .left{
 	float: left;
 	width: 25%;
