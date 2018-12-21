@@ -32,7 +32,6 @@ li{
 .section_1_1{
 	border-bottom: 2px solid #f4f6f8;
 	background-color: white;
-	width: 1170px;
 	line-height: 60px;
 }
 .section_1_1_trai{
@@ -67,7 +66,7 @@ float:left;
 .section_2_2{
 	float:left;
 	
-	width: 40%;
+	width: 50%;
 	padding-right: 35px;
 }
 .sectiom_2_2 ul{
@@ -80,14 +79,14 @@ float:left;
 .section_2_2 a{
 	font-size: 16px;
 	color:#34404b;
-}
+}h
 .section_2_2 a:hover{
 	color:#ff5912;
 }
 .section_2_3{
 	float:right;
 	text-align: right;
-	width: 25%;
+	width: 15%;
 }
 .gio_hang{
 	float:right;
