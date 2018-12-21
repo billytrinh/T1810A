@@ -382,12 +382,13 @@ h3{
 	font-family: 'Oswald', sans-serif;
 }
 .section{
-	float: left;
 	width: 100%;
 
 }
 .container{
-	width: 1170px;
+	width: 1070px;
 	margin:0 auto;
-	background-color: white;
+	background-color: white}
+.page0{
+	background-color: #ffffff;
 }
