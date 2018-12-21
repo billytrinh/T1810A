@@ -1,0 +1,43 @@
+.signin{
+	margin-top: 66px; 
+}
+.content{
+	width: 35%;
+	margin: auto;
+}
+.user-icon{
+	width: 100%;
+	text-align: center;
+}
+.form-signin{
+	width: 100%;	
+}
+.form-signin input{
+	width: 100%;
+	padding: 12px 20px;
+	border:1px solid #7b7b7b;
+	border-radius:4px;
+	margin-bottom: 20px;
+}
+.form-signin input[type=radio]{
+	width: 10%;
+}
+.radio{
+	width: 70%;
+	text-align: center;
+	margin: auto;
+}
+.submit{
+	width: 30%;
+	margin: auto;
+	margin-top: 20px;
+}
+.form-signin input[type=submit]{
+	padding: 15px 20px;
+	background-color: #3759b0;
+	color: #fff;
+}
+.back p{
+	color: #3759b0;
+	text-align: center;
+}
