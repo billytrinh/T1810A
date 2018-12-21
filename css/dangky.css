@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+.dangky{
+	margin: 0;
+	font-size: 50px;
+	width: 100%;
+}
+
+.dangky1 {
+	width: 100%;
+	text-align: center;
+}
+
+.dangky2{
+	
+	text-align: center;
+	padding: 0px 200px;
+
+}
+
+.dangky2 p{
+	float: left;
+}
+
+.kichthuoc{
+	width: 800px;
+	height: 90px;
+	font-size: 50px;
+}
+
+.dangky3{
+	text-align: center;
+	padding: 50px 280px;
+}
+
+.dongy{
+	font-size: 40px;
+	text-align: center;
+}
+
+
+.nutdangky{
+  width: 360px;
+  height: 105px;
+  border-radius: 15px;
+ background-image: linear-gradient(to right, #4147a7 , #64aad7);
+ font-size: 42px;
+ color: #ffffff;
+ margin:50px 0px 30px 0px;
+}
+
+.trolaidangnhap{
+	 color: #334b91;
+}
+
+input[type="radio"] {
+    width:32px;
+	height:32px;
+}
