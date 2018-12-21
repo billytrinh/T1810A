@@ -26,8 +26,9 @@ li{
 	background-color: #f4f6f8;
 }
 .container_content{
-	width: 900px;
+	width: 400px;
 	margin: auto;
+	background-color: #f4f6f8;
 }
 .section_1{
 	border-bottom: 1px solid #f4f6f8;
@@ -105,9 +106,86 @@ float:left;
 	margin-right: 30px;
 }
 .section_3{
-	margin: auto;
-	width: 100%;
+	margin-top:30px;
 }
 .section_3_1 img{
-	padding-left: 50%;
+	padding-left: 30%;
+	padding-top: 30px;
+}
+.section_3_2 {
+
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+}
+.section_3_2 input{
+	width: 100%;
+	padding-top: 30px;
+}
+.section_3_2 label{
+	margin-bottom: 10px;
+}
+#dieu_khoan{
+	font-size: 10px;
+	width: 100%;
+}
+#dieu_khoan label{
+}
+
+.section_4{
+	width: 100%;
+	background-color: white;
+	margin-top: 100px;
+	padding: 80px 0;
+}
+.section_4_content{
+	line-height: 40px;
+}
+.logo-footer{
+	width: 30%;
+	float:left;
+}
+.logo-footer span{
+	float:left;
+	padding-top: -20px;
+}
+.mark{
+	width: 50%;
+	float: left;
+}
+.mark li a:hover{
+	color:#ff5912;
+}
+.mark li{
+	margin-bottom: 30px; 
+	list-style: disc;
+}
+.mark li:hover{
+	color: #ff5912;
+}
+.mark_1{
+	float:left;
+	width: 30%;
+}
+.mark_2{
+	float:left;
+	width: 40%;
+}
+.mark_3{
+	float:left;
+	width: 30%;
+}
+
+.payment{
+	width: 20%;
+    float: left;
+}
+.payment span{
+	color: #ff5912;
+	float:left;
+}
+.payment img{
+	margin-top: 40px;
+	float: left;
 }
