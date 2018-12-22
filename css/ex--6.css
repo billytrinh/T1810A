@@ -1,0 +1,203 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	background-color: #f4f6f8;
+	color:#28313b;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+p{
+	padding: 37px 0px 0px 0px;
+	font-weight: bold;
+	font-size: 23px;
+
+}
+span{
+	color: #999999;
+	font-weight: bold;
+	font-size: 18px;
+}
+.container{
+	width: 1170px;
+	margin:0 auto;
+}
+.section_1{
+	padding:0px 15px 0px 0px;
+	background-color: #fff;
+	border-bottom: 1px solid #f4f6f8 ;
+	
+}
+.section{
+	width: 100%;
+	margin: auto;
+	float: left;
+}
+.section_1_1{
+	float: left;
+	width: 50%;
+
+}
+.logo-phone{
+	padding-left: 15px;
+}
+.section_1_2{
+	float: right;
+	width: 50px;
+	text-align: right;
+}
+.section_2{
+	background-color: #fff;
+	line-height: 55px;
+}
+.section_2_1{
+	float: left;
+	width: 15%;
+}
+.section_2_2{
+	float: left;
+	width: 8%;
+}
+.section_2_3{
+	float: left;
+	color:#ff6600;
+	width:8%;
+}
+.section_2_4{
+	float: left;
+	width: 8%;
+}
+.section_2_5{
+	float: left;
+	width: 8%;
+}
+.section_2_6{
+	float: left;
+	width: 8%;
+}
+.section_2_7{
+	float: right;
+	width: 25%;
+	text-align: right;
+}
+.section_4{
+	background-color: #fff;
+	line-height: 30px; 
+	padding:101px 0px 84px 0px; 
+}
+.finish_1{
+	float: left;
+	width: 25%;
+
+}
+.finish_2{
+	float: left;
+	width: 20%;
+	padding-left: 25px;
+	list-style-type:circle;
+}
+.finish_3{
+	float: left;
+	width: 20%;
+}
+.finish_4{
+	float: left;
+	width: 20%;
+	
+}
+.finish_5{
+	float: right;
+	width: 20%;
+	
+	text-align: right;
+}
+.ul-1{
+	list-style-type:disc;
+}
+.section_3{
+	background-color: #f4f6f8;
+	float:left;
+	width: 100%;
+	text-align: center;
+	color: #999999;
+	
+
+}
+a{
+	text-align:left;
+}
+.logo-login{
+	padding: 45px 0px 0px 0px;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+.section_3_1{
+	
+	float: left;
+	width: 100%;
+}
+.section_3_2{
+
+	float: left;
+	width: 100%;
+}
+.section_3_3{
+	float: left;
+	width: 100%;
+}
+.section_3_4{
+	float: left;
+	width: 100%;
+}
+.section_3_5{
+	float: left;
+	width: 100%;
+}
+.section_3_6{
+	
+	float: left;
+	width: 100%;
+}
+.section_3_7{
+	padding: 25px 0px 0px 0px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 23px;
+}
+.section_3_8{
+	padding: 77px 0px 0px 0px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	
+}
+button{
+	width: 354px;
+	height: 99px;
+	background: #3366cc;
+	font-size: 45px;
+	color: white;
+}
+.section_3_9{
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 34px;
+	padding: 38px 0px 40px 0px;
+	}
+.space{
+	width: 810px;
+	height: 97px;
+	border:2px solid #cccccc;
+}
