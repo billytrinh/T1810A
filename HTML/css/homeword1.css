@@ -447,6 +447,9 @@ h3{
 	width: calc(100 - 50px);
 	padding: 0px 25px;
 }
+.div4{
+	padding-top: 90px;
+}
 .section_5_2 li{
 	padding-bottom: 10px;
 	list-style-type: disc;
