@@ -79,11 +79,17 @@ span {
 .section_h2_3 {
 	float: right;
 }
-.singin{
+/*.singin{
     width: 35%;
     margin: auto;
     font-size: 18px;
     color: #7b7b7b;
+}*/
+.section_dang{
+	width: 50%;
+	margin: auto;
+	font-size: 18px;
+	color: #7b7b7b;
 }
 .section_ki1{
     width: 100%;
@@ -115,31 +121,29 @@ span {
     color: #ffffff;
     font-size: 18 px;
     font-weight: 700;
-    background: #3a4eab;
-    max-width: 100px;
-   	
-   	height: 70px;
-   	margin: auto;
-    border: none;
+    /*background: #3a4eab;*/
+   	margin: 20px auto;
     border-radius: 2px;
-    width: auto;
+    width: 70%;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
 }
-.submit input:hover[type =submit] {
-    background: #494949;
-    transition: all 0,4s ease 0s;
-
+.submit input[type=submit] {
+    background: #3a4eab;
+    padding: 15px 20px;
+    /*transition: all 0,4s ease 0s;*/
+    width: 70%;
+    cursor: pointer;
 }
  
-.submit input:active[type =submit] {
+/*.submit input:active[type =submit] {
     background: #000000;
     text-align: center;
-}
-button p {
+}*/
+/*button p {
 	text-align: center;
-}
+}*/
 .section_4 {
 	padding-left: 10px;
 	padding-top: 50px;
