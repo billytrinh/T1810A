@@ -8,6 +8,16 @@
     <!-- <div class="box-box" onmouseover="thong_bao()" onmouseout="thong_bao_2()"></div>
 	<div class="box-box" onmouseenter="thong_bao()" onmouseleave="thong_bao_2"></div>
 	<div class="box-box" onclick="thong_bao()"></div> -->
+	<input type="text" placeholder="nhap gi do" onkeydown="phat_sk_keydown()"/>
+	<input type="text" placeholder="nhap gi do" onkeypress="" ="thong_bao_2()"/>
+	<input type="text" placeholder="nhap gi do" onkeyup="thong_bao()"/>
+	<textarea cols="100" rows="10" oncopy="thong_bao()" onpaste="thong_bao_2()" oncut="thong_bao()"/></textarea>
+	<select name="sl_a onchange="thong_bao()">
+		<option value="1">value 1</option>
+		<option value="2">value 2</option>
+	</select>
+
+
 	 <style type="text/css">
            .choi_game{
            	width: 300px;
@@ -25,6 +35,10 @@
 		}*/
 	</style>
 	<script type="text/javascript">
+		function phat_sk_keydown(){
+			console.log(event.keyCode);
+		}
+
 		function thong_bao(){
 			alert("start game");
 		}
@@ -33,9 +47,9 @@
 		// 	confirm("abc?");
 		// }
 
-		// function thong_bao_2(){
-		// 	alert("thong bao su kien 2");
-		// }
+		function thong_bao_2(){
+			alert("thong bao su kien 2");
+		}
 
 		//var x=10;
 		//console.log(x)
@@ -133,33 +147,33 @@
     // },2000);
 
 
-    var mang=3;
-    var it = setInterval(function(){
-    	mang--;
-    	var x= random_number();
+   //  var mang=3;
+   //  var it = setInterval(function(){
+   //  	mang--;
+   //  	var x= random_number();
     	
-    	console.log(x);
-    		var k= input_nhap_so();
-    		if(k==x){
-    		alert('chuc mung ban da trung thuong');
-    			clearInterval(it);
-    		}
-    		if(mang <=0 && k!=x){
-    			alert('het so luot du doan');
-    			clearInterval(it); //lenh dung ko chay nua
-    		}
-   },2000);
+   //  	console.log(x);
+   //  		var k= input_nhap_so();
+   //  		if(k==x){
+   //  		alert('chuc mung ban da trung thuong');
+   //  			clearInterval(it);
+   //  		}
+   //  		if(mang <=0 && k!=x){
+   //  			alert('het so luot du doan');
+   //  			clearInterval(it); //lenh dung ko chay nua
+   //  		}
+   // },2000);
 
-     function random_number(){
-      	var x= Math.random() *100;
-    	x=parseInt(x);
-    	return x;
-      }
+   //   function random_number(){
+   //    	var x= Math.random() *100;
+   //  	x=parseInt(x);
+   //  	return x;
+   //    }
 
-      function input_nhap_so(){
-      	 var k=prompt("nhap so may man:");
-      	 return k;
-      }
+   //    function input_nhap_so(){
+   //    	 var k=prompt("nhap so may man:");
+   //    	 return k;
+   //    }
 
 
    // var so_luot=3;
