@@ -133,14 +133,13 @@ li {
 }
 .sec-1{
 	width: 100%;
-	text-align: left;
 	font-size: 18px;
 	line-height: 30px;
     text-align: center;
 }
 .sec-1 p{
 	margin-bottom: 10px;
-	
+
 }
 .sec-1 input{
 	width: 30%;
