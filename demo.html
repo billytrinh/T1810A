@@ -4,7 +4,39 @@
 	<title>DEMO Javacript</title>
 </head>
 <body>
+	<div class="choi_game" onclick="thong_bao()"></div>
+    <!-- <div class="box-box" onmouseover="thong_bao()" onmouseout="thong_bao_2()"></div>
+	<div class="box-box" onmouseenter="thong_bao()" onmouseleave="thong_bao_2"></div>
+	<div class="box-box" onclick="thong_bao()"></div> -->
+	 <style type="text/css">
+           .choi_game{
+           	width: 300px;
+           	height: 100px;
+           	background-color: green;
+           	margin: 50px;
+           }
+
+		/*.box-box{
+			width: 200px;
+			height: 100px;
+			float: left;
+			background-color: green;
+			margin: 50px;
+		}*/
+	</style>
 	<script type="text/javascript">
+		function thong_bao(){
+			alert("start game");
+		}
+		// function thong_bao(){
+		// 	alert("thong bao su kien");
+		// 	confirm("abc?");
+		// }
+
+		// function thong_bao_2(){
+		// 	alert("thong bao su kien 2");
+		// }
+
 		//var x=10;
 		//console.log(x)
 		//var y='hello world!';
@@ -52,7 +84,7 @@
        //console.log(k);
 
       
-      //{
+      //do{
       	// var z=confirm('Are you sure ?'); //tra ve true - false
      // }while( z==false); //!z
 
@@ -99,58 +131,81 @@
      		//console.log(x);
      	//}
     // },2000);
-    //var mang=10;
-    //var it = setInterval(function(){
-    	//mang--;
-    	//var x= Math.random() *100;
-    	//x=parseInt(x);
-    	//console.log(x);
-    		//var k=prompt('nhap ma so');
-    		//if(k==x){
-    			//alert('chuc mung ban da trung thuong');
-    			//clearInterval(it);
-    		//}
-    		//if(mang <=0 && k!=x){
-    			//alert('het so luot du doan');
-    			//clearInterval(it);
-    		//}
-    //},2000);
 
-    var so_luot=3;
-    var k=confirm('ban co muon nhan thuong');
-    if( k<3){
-    	var phan_thuong[
-    	"1 iphone XS max",
-    	"1 xe SH",
-    	"1 o to BWW",
-    	"1 biet thu Vinpear Land",
-    	"1 the cao viettel 10.000"
-    	];
 
-    	for(var i=5; i<1000; i++){
-    		phan_thuong[i] = phan_thuong[4]
-    	}
-    	var vqmm= setInterval(function(){
-    		so_luot--;
-    		var x = Math.random() *1000;
-    		x = parseInt(x);
-    		if(<=3){
-    			x+=3;
+    var mang=3;
+    var it = setInterval(function(){
+    	mang--;
+    	var x= random_number();
+    	
+    	console.log(x);
+    		var k= input_nhap_so();
+    		if(k==x){
+    		alert('chuc mung ban da trung thuong');
+    			clearInterval(it);
     		}
-    		var k=confirm("ban co muon nhan phan thuong?");
-    		if(k){
-    			alert("ban da trung thuong" +phan_thuong[x]);
-
-    		}if(so_luot <=0){
-    			alert("het luot");
-    			clearInterval(vqmm);
+    		if(mang <=0 && k!=x){
+    			alert('het so luot du doan');
+    			clearInterval(it); //lenh dung ko chay nua
     		}
-    	} 
+   },2000);
+
+     function random_number(){
+      	var x= Math.random() *100;
+    	x=parseInt(x);
+    	return x;
+      }
+
+      function input_nhap_so(){
+      	 var k=prompt("nhap so may man:");
+      	 return k;
+      }
 
 
+   // var so_luot=3;
+   // var k=confirm('ban co muon nhan thuong');
+   // if( k<3){
+    	//var phan_thuong[
+    	//"1 iphone XS max",
+    	//"1 xe SH",
+    	//"1 o to BWW",
+    	//"1 biet thu Vinpear Land",
+    	//"1 the cao viettel 10.000"
+    	//];
+
+    	//for(var i=5; i<1000; i++){
+    		//phan_thuong[i] = phan_thuong[4]
+    	//}
+    	//var vqmm= setInterval(function(){
+    		//so_luot--;
+    		//var x = Math.random() *1000;
+    		//x = parseInt(x);
+    		//if(<=3){
+    		//	x+=3;
+    		//}
+    	//	var k=confirm("ban co muon nhan phan thuong?");
+    	//	if(k){
+    	//		alert("ban da trung thuong" +phan_thuong[x]);
+
+    	//	}if(so_luot <=0){
+    		//	alert("het luot");
+    		//	clearInterval(vqmm);
+    		//}
+    	//} 
+
+    	//dua_ra_1_thong_bao();
+
+     //  function tinh_tong(a,b){
+     //  	return a+b;
+
+     //  }
+
+    //   function dua_ra_1_thong_bao(){
+      // 	alert("thong bao gi do");
+     //  }
 
 
-
+     
 
         
        
