@@ -81,9 +81,31 @@ section{
 .main_body .sau_thongtin{
 	width: 100%;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-bottom: 100px;
+
 }
+.main_body .sau_thongtin #radio_dk{
+	display: none;
+}
+.main_body .sau_thongtin label:before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 1px solid lightgrey;
+	background-color: white;
+	border-radius: 100%;
+	margin: 25px 5px 0 0;
+	float: left;
+}
+.main_body .sau_thongtin #radio_dk:checked + label:before{
+	width: 15px;
+	height: 15px;
+	background-color: #1860ad;
+	border: 3px solid white;
+	box-shadow: 0 0 1px #8b8b8b;
+}
+
 .main_body .dieukhoan{
 	width: 60%;
 	margin: 0 auto;
@@ -103,11 +125,12 @@ section{
 .main_body #radio_dk{
 	float: left;
 	width: auto;
+
 }
 .main_body button{
 	font-size: 45px;
 	color: white;
-	background-color: blue;
+	background-color: #1860ad;
 	padding: 20px;
 	border: none;
 	border-radius: 15px;
