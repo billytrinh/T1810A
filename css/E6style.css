@@ -140,10 +140,10 @@ li{
 }
 .sec3_dik label:before{
 	content: "";
-	width: 28px;
-	height: 28px;
+	width: 30px;
+	height: 30px;
 	border-radius: 100%;
-	border:2px solid #929292;
+	border:3px solid #929292;
 	background-color: #ffffff;
 	margin-right: 15px;
 	float: left;
@@ -151,18 +151,17 @@ li{
 .sec3_dik input:checked + label:before{
 	background-color: #185fad;
 }
+
 .sec3_button button{
-	display: none;
-}
-.sec3_button label:before{
-	content: "Đăng ký";
 	background-color: rgba(24,95,173,0.8);
 	font-size: 45px;
 	color: #ffffff;
-	padding: 35px 60px;
-	border-radius: 10px;
-	float: left;
-	margin-left: 270px;
+	width: 300px;
+	height: 80px;
+	line-height: 80px;
+	background-attachment: fixed;
+	background-position: center;
+	border-radius: 15px;
 }
 .sec3_bot p a{
 	color: #334b91;
