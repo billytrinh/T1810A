@@ -141,8 +141,9 @@ li {
 	margin-bottom: 10px;
 }
 .sec-1 input{
-	width: 30%;
+	width: 50%;
 	padding-top: 30px;
+	font-size: 30px;
 }
 button{
 	background-color: #2d82c5; 
