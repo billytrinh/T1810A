@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<select name="sl1" onchange="doiluachon">
+		<option value="1" >Quay thuong</option>
+		<option value="2" >Trung thuong</option>
+	</select>
+	
+
+	<div class="box3" onclick="playgame()"></div>
+	<style type="text/css">
+		.box3{
+			width: 200px;
+			height: 200px;
+			float: left;
+			background-color: black;
+		}
+	</style>
+	<script type="text/javascript">
+
+
+var luachon =1;
+function doiluachon(){
+	if (luachon ==1) {
+		luachon =2;
+	}else{
+		luachon=1;
+	}
+}
+
+	function trungthuong(){
+		var so_luot = 3;
+		var phan_thuong = [
+			"1 Iphone XS max",
+			"1 xe SH",
+			"1 o to BMW",
+			"1 biet thu Vinpear Land",
+			"1 theo cao viettel 10.000",
+		];
+		for (var i = 5; i < 1000; i++) {
+			phan_thuong[i] = phan_thuong[4];
+		}
+		var vqmm = setInterval(function(){
+			so_luot--;
+			var x = Math.random() * 1000;
+			x = parseInt(x);
+			var k = confirm("ban co muon nhan giai thuong?");
+			if(k){
+				alert("ban da trung thuong "+phan_thuong[x]);
+			}
+			if(so_luot <= 0){
+				alert("het luot");
+				clearInterval(vqmm);
+			}
+		},300);}
+
+
+
+		function nhapso (){
+					var k = prompt("Nhap so");
+					return k;
+				}
+
+		function random() {
+			var x = Math.random() * 100;
+			x= parseInt(x)
+			console.log(x);
+			x = parseInt(x);
+			}
+	function quay(){		
+			var luot = 3;
+				var it = setInterval(function(){
+				luot--;
+				var x = random();
+				var k = nhapso();
+				if (k == x) {
+					alert("Trung");
+					clearInterval(it);
+				}
+				if (luot <= 0 && k!= x) {
+					alert("Het luot");
+					clearInterval(it);
+				}
+				},300);		
+}
+
+function playgame(){
+	if (luachon ==1) {
+		trungthuong();
+	}else{
+		quay();
+	}
+}
+	
+	</script>
+
+</body>
+</html>
