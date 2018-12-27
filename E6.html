@@ -53,48 +53,48 @@
 	<section class="section section_3">
 		<div class="container container_3">
 			<div class="container3_content">
-				<div class="sec3_top">
+				<div class="sec3_top" id="box_1">
 					<p><img src="images/user.png"></p>
 				</div>
 						<!--    -->
 				<div class="sec3_mid">
 					<p>Email</p>
-					<input type="email" name="user_mail">
+					<input type="email" name="user_mail" id="input_text">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Họ và tên</p>
-					<input type="text" name="user_name">
+					<input type="text" name="user_name" id="input_text2">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Số điện thoại</p>
-					<input type="number" name="user_phone">
+					<input type="number" name="user_phone" id="input_text3">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Mật khẩu</p>
-					<input type="password" name="user_pass">
+					<input type="password" name="user_pass" id="input_text4">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Nhập lại mật khẩu</p>
-					<input type="password" name="user_pass2">
+					<input type="password" name="user_pass2" id="input_text5">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Mã giới thiệu</p>
-					<input type="text" name="user_mail">
+					<input type="text" name="user_mail" id="input_text6">
 					<label></label>
 
 					<div class="clear"></div>
@@ -107,7 +107,7 @@
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_bot sec3_button">
-					<div><button>Đăng ký</button></div>
+					<div><button type="button" onclick="changecolor()">Đăng ký</button></div>
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_bot">
@@ -157,6 +157,39 @@
 			</div>
 		</div>
 	</section> <!--end section_1-->
-
+	<script type="text/javascript">
+		function changecolor(){
+			var input_text = document.getElementById("input_text");
+			var color = input_text.value;
+			if(color.length < 1){
+				input_text.style.border = '1px solid red';
+			}
+			var input_text2 = document.getElementById("input_text2");
+			var color2 = input_text2.value;
+			if(color2.length < 1){
+				input_text2.style.border = '1px solid red';
+			}
+			var input_text3 = document.getElementById("input_text3");
+			var color3 = input_text3.value;
+			if(color3.length < 1){
+				input_text3.style.border = '1px solid red';
+			}
+			var input_text4 = document.getElementById("input_text4");
+			var color4 = input_text4.value;
+			if(color4.length < 1){
+				input_text4.style.border = '1px solid red';
+			}
+			var input_text5 = document.getElementById("input_text5");
+			var color5 = input_text5.value;
+			if(color5.length < 1){
+				input_text5.style.border = '1px solid red';
+			}
+			var input_text6 = document.getElementById("input_text6");
+			var color6 = input_text6.value;
+			if(color6.length < 1){
+				input_text6.style.border = '1px solid red';
+			}
+			}
+	</script>
 </body>
 </html>

@@ -114,19 +114,12 @@ li{
 	clear: both;
 }
 .sec3_mid input{
-	display: none;
-}
-.sec3_mid label{
 	width: 100%;
-}
-.sec3_mid label:after{
-	content: "";
-	width: calc(100% - 4px);
-	height: 95px;
 	border: 2px solid #929292;
 	border-radius: 10px;
-	background-color: #ffffff;
-	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 35px; 
 }
 
 .sec3_dik input{
