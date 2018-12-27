@@ -16,10 +16,41 @@ Cụ thể, phạt từ 500.000 đồng đến 1.000.000 đồng với vi phạm
 Ngoài ra, tại khoản 3 Điều 14 cũng quy định phạt tiền từ 20.000.000 đồng đến 25.000.000 đồng đối với người sử dụng lao động có một trong các hành vi: Thực hiện thời giờ làm việc bình thường quá số giờ làm việc theo quy định tại Điều 104 của Bộ luật lao động; Huy động người lao động làm thêm giờ mà không được sự đồng ý của người lao động, trừ trường hợp theo quy định tại Điều 107 của Bộ luật lao động.
 	</div>
 	<button type="button" onclick="changeHtml()">Change HTML</button>
+	<button type="button" onclick="xanh()">Xanh</button>
+	<button type="button" onclick="maudo()">do</button>
+	<button type="button" onclick="tim()">Tim</button>
+	<button type="button" onclick="tangfontsize()">Tang font size</button>
+
+	<input type="text" name="text_field" id="input_text" required="required">
+	<button type="button" onclick="changeColor()">Change Color</button>
 	<style type="text/css">
 		.box-box{width:500px;border:1px solid #000;}
 	</style>
 	<script type="text/javascript">
+		function changeColor(){
+			var input_text= document.getElementById("input_text");
+			var color = input_text.value;
+			if(color.length < 1){
+				input_text.style.border = '1px solid red';
+				var outer = input_text.outerHTML;
+				outer += '<p>VUi long nhap thong tin</p>';
+				input_text.outerHTML = outer;
+			}else{
+				input_text.style.border = '1px solid green';
+				var box = document.getElementById("box_1");	
+				box.style.color = color;
+			}
+			
+		}
+
+		function xanh(){
+			var box = document.getElementById("box_1");
+			box.style.backgroundColor = 'green';
+		}
+		function maudo(){
+			var box = document.getElementById("box_1");
+			box.style.backgroundColor = 'red';
+		}
 		function changeHtml() {
 			var box = document.getElementById("box_1");
 			//var xyz = box.innerHTML;
@@ -35,7 +66,20 @@ Ngoài ra, tại khoản 3 Điều 14 cũng quy định phạt tiền từ 20.00
 				box.style.display = 'none';
 			}
 		}
-		
+	
+		function tangfontsize(){
+			var box = document.getElementById("box_1");	
+			var x = box.style.fontSize;
+			x = parseInt(x);
+			//console.log(x);
+			if(isNaN(x)){
+				x = 14;
+			}
+			x += 5;
+			x = x+ 'px';
+			box.style.fontSize = x;
+		}
+
 
 	</script>
 </body>
