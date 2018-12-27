@@ -4,18 +4,18 @@
 	<title>DEMO Javascript</title>
 </head>
 <body>
-	<div class="box-box" onmouseover="thong_bao()" onmouseout="thong_bao_2()"></div>
+	<div class="box-box box_no1" id="div_box1"  onmouseover="thong_bao()" onmouseout="thong_bao_2()"></div>
 	<div class="box-box" onmouseenter="thong_bao()" onmouseleave="thong_bao_2()"></div>
 	<div class="box-box" onclick="thong_bao()"></div>
 	<input type="text" placeholder="check event onkeydown" onkeydown="phat_sk_keydown()"  />
 	<input type="text" placeholder="check event onkeypress" onkeypress="thong_bao_2()"  />
 	<input type="text" placeholder="check event onkeyup" onkeyup="thong_bao()"  />
 	<textarea cols="100" rows="10" oncopy="thong_bao()" onpaste="thong_bao_2()" oncut="thong_bao()"></textarea>
-	<select name="sl_a" onchange="thong_bao()">
+	<select name="sl_a" onchange="thay_doi_lua_chon()">
 		<option value="1">value 1</option>
 		<option value="2">value 2</option>
 	</select>
-	
+	<button onclick="play_game()">Start game</button>
 	<style type="text/css">
 		.box-box{
 			width: 200px;
@@ -26,6 +26,27 @@
 		}
 	</style>
 	<script type="text/javascript">
+		//var obj = document.getElementById("")
+
+
+		var lua_chon = 1;
+		function thay_doi_lua_chon(){
+			if(lua_chon == 1){
+				lua_chon =2;
+			}else{
+				lua_chon = 1;
+			}
+		}
+
+		function play_game(){
+			if(lua_chon == 1){
+				//chay game  1 ....
+			}else{
+				// chay game 2...
+			}
+		}
+
+
 		function phat_sk_keydown(){
 			console.log(event.keyCode);
 		}
