@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: white;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: 'Arial';
+}
+
+.section {
+	float: left;
+	width: 100%;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+.section_3{
+	float: left;
+	background-color: #edecec;
+}
+.sec3_1{
+	padding: 136px 437px 140px 30px;
+	float: left;
+}
+.shopnow{
+	width: 214px;
+	height: 52px;
+	background-color: white;
+	border: 0px;
+	font-size: 18px;
+	text-align: center;	
+	margin:39px 0px 30px 0px;
+	color: #65889b;
+	font-weight: 600;
+}
