@@ -17,6 +17,9 @@ body{
 li{
 	list-style: none;
 }
+a{
+	text-decoration: none;
+}
 .section-1{
 	padding-top: 34px;
 	padding-bottom: 54px;
@@ -169,25 +172,31 @@ li{
 		padding-bottom: 106px;
 	}
 		.sec-5-2 button{
-			font-size: 12px;
+			font-size: 16px;
 			width: 178px;
 			height: 57px;
 			background-color: #10c9c3;
+		}
+		.sec-5-2 a{
 			color: #ffffff;
-
+			font-weight: bold;
 		}
 .section-6{
 	width: 100%;
 	background-color: #141414;
 	color: #ffffff;
-	font-size: 18px;
+	font-size: 15px;
 	float: left;
 	padding-top: 97px;
 	padding-bottom: 97px;
 }
+.section-6 a{
+	color: #9b9b9b;
+}
 	.sec-6-1{
 		float: left;
-		width: 40%;
+		width: 35%;
+		padding-left: 85px;
 	}
 	.sec-6-1 h4{
 		padding-bottom: 29px;
@@ -195,23 +204,21 @@ li{
 	.sec-6-2{
 		float: left;
 		color: #9b9b9b;
-		width: 25%;
+		width: 20%;
 	}
 	.sec-6-3{
 		float: left;
-		color: #9b9b9b;
 		width: 10%;
 	}
 		
 	.sec-6-4{
 		float: left;
-		color: #9b9b9b;
 		width: 10%;
 	}
 	.sec-6-5{
 		float: left;
-		color: #9b9b9b;
-		width:15% ;
+		width:10% ;
+		padding-right: 50px;
 	}
 		.sec-6-5 li{
 			float: right;
