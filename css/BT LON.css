@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+body {
+	width: 100%;
+	background-color: white;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: 'Arial';
+}
+
+.section {
+	float: left;
+	width: 100%;	
+	text-align: center;
+}
+.container_4 {
+	width: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+.h1 {
+	margin: 0;
+	padding: 0;
+  font-size: 16px;
+  color: #656363; 
+}
+a {
+  text-decoration: none;
+  color: #656363; 
+}
+.title-section {
+  color: #656363;
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center; 
+}
+.container_4_1 {
+  margin-top: 0px;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 3;
+  font-family: arial;
+  text-transform: uppercase; 
+}
+.container_4_2 {
+  margin-top: 0px;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 3;
+  font-family: arial;
+  text-transform: uppercase; 
+}
+.container_4_3 {
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 5;
+  font-family: arial;
+  text-transform: uppercase;
+}
+.brand {
+	flex: 1;
+	color: #e4e4e4;
+	width: 148px;
+	height: 87px;
+	position: relative;
+	margin: 25px;
+	border: 3px solid #e4e4e4;
+	font-weight: 700;
+	font-style: italic;
+}
+.brand1 {
+	font-size: 18px;
+	padding-top: 22px;
+}
+.brand2 {
+	font-size: 5px;
+	letter-spacing: 3px;
+}
+.items {
+  flex: 1;
+  color: #656363;
+  position: relative; 
+  margin: 20px;
+  border: 3px solid #f7f6f6;
+  width: 300px;
+  height: 366px;
+}
+ .items img {
+  max-width: 180px;
+  max-height: 240px;
+  cursor: pointer; 
+}
+.image_item {
+  width: 171px;
+  height: 247px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; 
+}
+.name_item {
+  padding-top: 23px; 
+}
+.price {
+  font-weight: bold; 
+  color: #717171;
+}
+.sale {
+  position: absolute;
+  font-weight: bolder;
+  left: 0px;
+  top: 30px;
+  background-color: #f54d56;
+  padding: 7px 22px;
+  color: #fff;
+  z-index: 1000;
+}
