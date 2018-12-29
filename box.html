@@ -32,56 +32,75 @@
 		</div>
 	</div>
 	<div class="right">
-		<div class="list">
-			<div class="item">
-				<p><a href="#"><img src="images/ao-do.png"/></a></p>
-				<p><a href="#">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-			</div>
-			<div class="item">
-				<p><a href="#"><img src="images/ao-do.png"/></a></p>
-				<p><a href="#">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-			</div>
-			<div class="item">
-				<p><a href="#"><img src="images/ao-do.png"/></a></p>
-				<p><a href="#">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-			</div>
-			<div class="item">
-				<p><a href="#"><img src="images/ao-do.png"/></a></p>
-				<p><a href="#">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-			</div>
-			<div class="item">
-				<p><a href="#"><img src="images/ao-do.png"/></a></p>
-				<p><a href="#">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-			</div>
-			<div class="item">
-				<p><a href="#"><img src="images/ao-do.png"/></a></p>
-				<p><a href="#">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-			</div>
-			<div class="item">
-				<p><a href="#"><img src="images/ao-do.png"/></a></p>
-				<p><a href="#">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-			</div>
-			<div class="item">
-				<p><a href="#"><img src="images/ao-do.png"/></a></p>
-				<p><a href="#">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-			</div>
-			<div class="item">
-				<p><a href="#"><img src="images/ao-do.png"/></a></p>
-				<p><a href="#">Reebok Track Jacket</a></p>
-				<p><span>100$</span></p>
-			</div>
+		<div class="list" id="list_product">
+			
 		</div>
 		<div class="ba_cham">
 			<span>...</span>
 		</div>
 	</div>
+	<script type="text/javascript">
+		var products = [
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket 22222',
+				price: '1000$'
+			},
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket',
+				price: '100$'
+			},
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket',
+				price: '100$'
+			},
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket',
+				price: '100$'
+			},
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket',
+				price: '100$'
+			},
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket',
+				price: '100$'
+			},
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket',
+				price: '100$'
+			},
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket',
+				price: '100$'
+			},
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket',
+				price: '100$'
+			},
+			{
+				image: 'images/ao-do.png',
+				name: 'Reebok Track Jacket',
+				price: '100$'
+			},
+		];
+		var content_html = ''
+		for (var i = 0; i < products.length; i++) {
+			content_html += '<div class="item">';
+			content_html += '	<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+			content_html += '	<p><a href="#">'+products[i].name+'</a></p>';
+			content_html += '	<p><span>'+products[i].price+'</span></p>';
+			content_html += '</div>';
+			document.getElementById("list_product").innerHTML =  content_html
+		}
+	</script>
 </body>
 </html>

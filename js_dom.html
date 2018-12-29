@@ -21,20 +21,54 @@ Ngoài ra, tại khoản 3 Điều 14 cũng quy định phạt tiền từ 20.00
 	<button type="button" onclick="tim()">Tim</button>
 	<button type="button" onclick="tangfontsize()">Tang font size</button>
 
-	<input type="text" name="text_field" id="input_text" required="required">
-	<button type="button" onclick="changeColor()">Change Color</button>
+	<input type="text" name="text_field" class="aaa" id="input_text" required="required">
+	<input type="text" name="text_field" class="aaa" id="input_text2" required="required">
+	<button type="button" onclick="changeColor2()">Change Color</button>
 	<style type="text/css">
 		.box-box{width:500px;border:1px solid #000;}
+		.abcxyz{border: 1px solid red;}
 	</style>
 	<script type="text/javascript">
+		function changeColor2(){
+			//var input_text_array = document.getElementsByClassName("aaa");
+			var input_text_array = document.getElementsByTagName("input");
+			for (var i = 0; i < input_text_array.length; i++) {
+				var input_text= input_text_array[i];
+				var color = input_text.value;
+				if(color.length < 1){
+					//input_text.style.border = '1px solid red';
+					// them class
+					input_text.classList.add('abcxyz');
+					// bo class
+					//input_text.classList.remove("aaa");
+
+					var outer = input_text.outerHTML;
+					outer += '<p>VUi long nhap thong tin</p>';
+					input_text.outerHTML = outer;
+					
+
+				}else{
+					input_text.style.border = '1px solid green';
+					var box = document.getElementById("box_1");	
+					box.style.color = color;
+				}
+			}
+		}
 		function changeColor(){
 			var input_text= document.getElementById("input_text");
 			var color = input_text.value;
 			if(color.length < 1){
-				input_text.style.border = '1px solid red';
+				//input_text.style.border = '1px solid red';
+				// them class
+				input_text.classList.add('abcxyz');
+				// bo class
+				input_text.classList.remove("aaa");
+
 				var outer = input_text.outerHTML;
 				outer += '<p>VUi long nhap thong tin</p>';
 				input_text.outerHTML = outer;
+				
+
 			}else{
 				input_text.style.border = '1px solid green';
 				var box = document.getElementById("box_1");	
@@ -80,6 +114,20 @@ Ngoài ra, tại khoản 3 Điều 14 cũng quy định phạt tiền từ 20.00
 			box.style.fontSize = x;
 		}
 
+		var xyz = {
+			name:"nguyen van A",
+			ngay_sinh:'12/12/1999'
+		};
+		var arr = [
+			{
+				name:"nguyen van A",
+				ngay_sinh:'12/12/1999'
+			},
+			{
+				name:"nguyen van B",
+				ngay_sinh:'12/12/2000'
+			}
+		];
 
 	</script>
 </body>
