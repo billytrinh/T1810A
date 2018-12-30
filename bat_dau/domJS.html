@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM JS</title>
+</head>
+
+<body>
+    <!--innerHTML : nội dung trong thẻ HTML -->
+    <!--innerText : chỉ nội dung text trong thẻ html đó-->
+    <!--<div class="box-box" id="box-no1"><p>hello</p></div>-->
+    <!--<button type="button" onclick="changeHtml()">Change HTML</button>-->
+    <!--<script>-->
+        <!--function changeHtml() {-->
+            <!--var box = document.getElementById(box-no1);-->
+            <!--var xyz = box.innerHTML;-->
+            <!--xyz += '<p>hello</p>';-->
+            <!---->
+        <!--}-->
+    <!--</script>-->
+
+    <div id="box" style="font-size: 14px"><p>Theo quy định của Bộ luật Lao động năm 2012, người lao động
+        được nghỉ làm
+        việc, hưởng
+        nguyên
+        lương trong những ngày lễ, Tết sau đây:
+
+        Tết Dương lịch 1 ngày (ngày 1/1 dương lịch); Tết Âm lịch 5 ngày; Ngày Chiến thắng 1 ngày (ngày 30/4 dương lịch); Ngày Quốc tế lao động 1 ngày (ngày 1/5 dương lịch); Ngày Quốc khánh 1 ngày (ngày 2/9 dương lịch); Ngày Giỗ Tổ Hùng Vương 1 ngày (ngày 10/3 âm lịch).
+
+        Nếu ngườlaskdfjslkajflkasdjdflkasjflksajfklasjflkaslkfjaslkjflksajflsakjflkasji sử dụng lao động buộc người lao
+        động đi làm vào các ngày lễ trên mà không có sự đồng ý của người lao động thì sẽ bị xử phạt về xử phạt vi phạm hành chính quy định khoản 2, Điều 14 Nghị định 95/2013/NĐ-CP.
+
+        Cụ thể, phạt từ 500.000 đồng đến 1.000.000 đồng với vi phạm từ 1 người đến 10 người lao động; Từ 1.000.000 đồng đến 3.000.000 đồng với vi phạm từ 11 người đến 50 người lao động; Từ 3.000.000 đồng đến 7.000.000 đồng với vi phạm từ 51 người đến 100 người lao động; Từ 7.000.000 đồng đến 10.000.000 đồng với vi phạm từ 101 người đến 300 người lao động; Từ 10.000.000 đồng đến 15.000.000 đồng với vi phạm từ 301 người lao động trở lên.
+
+        Ngoài ra, tại khoản 3 Điều 14 cũng quy định phạt tiền từ 20.000.000 đồng đến 25.000.000 đồng đối với người sử dụng lao động có một trong các hành vi: Thực hiện thời giờ làm việc bình thường quá số giờ làm việc theo quy định tại Điều 104 của Bộ luật lao động; Huy động người lao động làm thêm giờ mà không được sự đồng ý của người lao động, trừ trường hợp theo quy định tại Điều 107 của Bộ luật lao động.
+
+        Khoản 4 của điều luật này quy định, phạt tiền từ 25.000.000 đồng đến 50.000.000 đồng đối với người sử dụng lao động huy động người lao động làm thêm giờ vượt quá số giờ quy định tại Điểm b Khoản 2 Điều 106 của Bộ luật lao động hoặc quá 12 giờ trong 1 ngày khi làm thêm vào ngày nghỉ lễ, Tết v
+    </p>
+    </div>
+    <div id="background">
+        <button type="button" onclick="changeBackground(1)">Red</button>
+        <button type="button" onclick="changeBackground(2)">Gray</button>
+    </div>
+    <div id="font-family">
+        <button type="button" onclick="changeFontFamily(1)">Arial</button>
+        <button type="button" onclick="changeFontFamily(2)">Times New Roman</button>
+    </div>
+    <div id="font-size">
+        <button type="button" onclick="changeFontSize(1)">-</button>
+        <button type="button" onclick="changeFontSize(2)">+</button>
+    </div>
+
+    <input type="text" name="" id="input_text">
+    <button type="button" onclick="ChangeColor()">ChangeColor</button>
+    <script>
+        function changeBackground(x) {
+            var box = document.getElementById('box');
+            if(x==1){
+                box.style.backgroundColor = 'red';
+            }else{
+                box.style.backgroundColor = 'blue';
+            }
+        }
+        function changeFontFamily(y) {
+            var box = document.getElementById('box');
+            if(y==1){
+                box.style.fontFamily = 'Arial';
+            }else{
+                box.style.fontFamily = 'Times New Roman';
+            }
+        }
+        function changeFontSize(z) {
+            var box = document.getElementById('box');
+            var size = parseInt(box.style.fontSize)
+            if(z==1){
+                box.style.fontSize = (size - 2) + 'px';
+            }else{
+                box.style.fontSize = (size + 2) + 'px';
+            }
+        }
+
+        function ChangeColor() {
+            var input_text = document.getElementById('input_text');
+            var color = input_text.value;
+            if(color.length < 1){
+                input_text.style.border = '1px solid red';
+                var outer = input_text.outerText
+            }else{
+                input_text.style.border = '1px solid green';
+                var box = document.getElementById('box');
+                box.style.color = color;
+            }
+        }
+        // atr.value : chỉ những thẻ có thuộc tính value(thường là những thẻ input) thì mới dùng đc
+        // validate form phải viết ở cả Client và Server: -Client: để tránh ng dùng nhập nhiều lần làm thay
+        // đổi gì đó.
+        //                                                -Server: để tránh dữ liệu lưu vào DB bị sai.
+        // |     outer      |
+        // <tag>content</tag>
+        //     | inner |
+    </script>
+</body>
+</html>

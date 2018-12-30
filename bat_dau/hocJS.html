@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoc Js</title>
+</head>
+
+<body>
+    <script>
+        // do{
+        //     var x = confirm("Ban tren 18 tuoi?");
+        // }while(!x);
+        // do{
+        //     var y = prompt("Ban bao nhieu tuoi?");
+        //     var z = parseInt(y);
+            // parseFloat()
+            // console.log(isNaN(y));
+        // }while(z < 19);
+
+        // var x = confirm("Ban tren 18 tuoi?");
+        // if(x){
+        //     alert("Welcome");
+        // }
+        // while(!x){
+        //     alert("Back");
+        // };
+        // setTimeout(function () {        //ham callback
+        //     alert("...");
+        //     confirm("asdasd");
+        // },3000);
+        // var x = prompt("What your name?");
+        // setTimeout(function() {
+        //     alert("Hello "+" "+x);
+        // },2000);
+        // // Math.random() lay so nguyen tu 0-->1
+        // setInterval(function() {
+        //     //ham cu sau 1 khoang time se chay lai 1 lan(ham tuan hoan)
+        //     var a = Math.random() * 100;
+        //     x = parseInt(x);
+        //     if(x == 50){
+        //         clearInterval(it);      //ket thuc ham tuan hoan.
+        //     }
+        // },3000);
+        // var i = 1;
+        // var it = setInterval(function() {
+        //     var x = Math.random() * 10;
+        //     x = parseInt(x);
+        //     var b = prompt("Nhap so du doan.");
+        //     b = parseInt(b);
+        //     if(x == b){
+        //         alert("Chuc mung ban da trung thuong");
+        //         clearInterval(it);
+        //     }else {
+        //         alert("Hay thu lai");
+        //     }
+        //     if(i==9 && b!=x){
+        //         alert("Ra de roi anh.");
+        //         clearInterval(it);
+        //     }
+        //     i++;
+        // },3000);
+
+        var i = 1;
+        var arr = new Array();
+        arr[0] = "1 Iphone";
+        arr[1] = "1 xe SH";
+        arr[2] = "1 o to Mec";
+        arr[3] = "1 Biet thu";
+        arr[4] = "1 The cao 10k";
+        var it = setInterval(function() {
+            var a = Math.random() * 4;
+            a = parseInt(a);
+            var b = confirm("Ban co muon nhan thuong khong?");
+            if(b && i!=4){
+                switch (a){
+                    case 0: alert("Ban da trung thuong "+arr[0]);
+                        break;
+                    case 1: alert("Ban da trung thuong "+arr[1]);
+                        break;
+                    case 2: alert("Ban da trung thuong "+arr[2]);
+                        break;
+                    case 3: alert("Ban da trung thuong "+arr[3]);
+                        break;
+                    case 4: alert("Ban da trung thuong "+arr[4]);
+                        break;
+                }
+            }
+            if(i==4){
+                alert("Ban da het luot nhan thuong");
+                clearInterval(it);
+            }
+            i++;
+        },3000);
+    </script>
+
+</body>
+</html>
