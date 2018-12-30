@@ -49,11 +49,13 @@ li{
 .sec1_text2{
 	padding-right: 15px;
 	font-weight: 700;
+	color: #000a52;
 }
 .sec1_text{
 	display: inline-block;
 	padding-right: 15px;
 	text-decoration: underline;
+	color: #666666;
 }
 .sec1_3{
 	width: 30%;
@@ -244,6 +246,7 @@ input{
 .list1_content ul li a{
 	margin-left: 10px;
 	font-weight: 600;
+	color: #325f70;
 }
 .list2{
 	width: 100%;

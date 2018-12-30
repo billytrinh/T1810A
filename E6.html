@@ -59,42 +59,42 @@
 						<!--    -->
 				<div class="sec3_mid">
 					<p>Email</p>
-					<input type="email" name="user_mail" id="input_text">
+					<input type="email" name="user_mail" class="aa" id="input_text">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Họ và tên</p>
-					<input type="text" name="user_name" id="input_text2">
+					<input type="text" name="user_name" class="aa" id="input_text">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Số điện thoại</p>
-					<input type="number" name="user_phone" id="input_text3">
+					<input type="number" name="user_phone" class="aa" id="input_text">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Mật khẩu</p>
-					<input type="password" name="user_pass" id="input_text4">
+					<input type="password" name="user_pass" class="aa" id="input_text">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Nhập lại mật khẩu</p>
-					<input type="password" name="user_pass2" id="input_text5">
+					<input type="password" name="user_pass2" class="aa" id="input_text">
 					<label></label>
 
 					<div class="clear"></div>
 				</div>
 				<div class="sec3_mid">
 					<p>Mã giới thiệu</p>
-					<input type="text" name="user_mail" id="input_text6">
+					<input type="text" name="user_mail" class="aa" id="input_text">
 					<label></label>
 
 					<div class="clear"></div>
@@ -159,37 +159,16 @@
 	</section> <!--end section_1-->
 	<script type="text/javascript">
 		function changecolor(){
-			var input_text = document.getElementById("input_text");
-			var color = input_text.value;
-			if(color.length < 1){
+			var input_text_array = document.getElementsByClassName("aa");
+			for (var i = 0; i < input_text_array.length; i++) {
+				var input_text = input_text_array[i];
+				var color = input_text.value;
+				if(color.length < 1){
 				input_text.style.border = '1px solid red';
+					}
+				}
 			}
-			var input_text2 = document.getElementById("input_text2");
-			var color2 = input_text2.value;
-			if(color2.length < 1){
-				input_text2.style.border = '1px solid red';
-			}
-			var input_text3 = document.getElementById("input_text3");
-			var color3 = input_text3.value;
-			if(color3.length < 1){
-				input_text3.style.border = '1px solid red';
-			}
-			var input_text4 = document.getElementById("input_text4");
-			var color4 = input_text4.value;
-			if(color4.length < 1){
-				input_text4.style.border = '1px solid red';
-			}
-			var input_text5 = document.getElementById("input_text5");
-			var color5 = input_text5.value;
-			if(color5.length < 1){
-				input_text5.style.border = '1px solid red';
-			}
-			var input_text6 = document.getElementById("input_text6");
-			var color6 = input_text6.value;
-			if(color6.length < 1){
-				input_text6.style.border = '1px solid red';
-			}
-			}
+			
 	</script>
 </body>
 </html>
