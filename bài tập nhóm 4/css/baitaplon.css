@@ -23,6 +23,9 @@ a{
 li{
 	list-style: none;
 }
+.right_mid3_1 span:hover{
+	background-color: #26d2fc;
+	}
 .cate{
 	background-color: #26d2fc;
 	margin-bottom: 15px;
@@ -176,8 +179,27 @@ li{
 	width: 30%;
 	color: #aaaaaa;
 }
-
-.section_3{
+.right_mid3{
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+}
+.right_mid3_1{
+	font-size: 14px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.right_mid3_1 span{
+	margin-left:  10px;
+}
+.right_mid3_2{
+	border:1px solid #d6d4d4;
+	padding: 10px;
+	font-size: 13px;
+	color: #808080;
+	margin-top: 5px;
+}
+.section3{
 	width: 100%;
 	float: left;
 }
