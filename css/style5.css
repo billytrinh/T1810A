@@ -65,21 +65,20 @@ float:left;
 }
 .section_2_2{
 	float:left;
-	
 	width: 50%;
-	padding-right: 35px;
+	
 }
-.sectiom_2_2 ul{
+.section_2_2 ul{
 	list-style-type: none;
 }
 .section_2_2 li{
 	float: left;
-	margin-right: 25px;
+	padding-right: 25px; 
 }
 .section_2_2 a{
 	font-size: 16px;
 	color:#34404b;
-}h
+}
 .section_2_2 a:hover{
 	color:#ff5912;
 }
@@ -132,6 +131,7 @@ float:left;
 	padding-top: 30px;
 	font-size: 18px;
 	line-height: 40px;
+	display: block;
 }
 .item-content span{
 	color: #ff5912;

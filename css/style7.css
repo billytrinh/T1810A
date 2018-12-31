@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #28313b;
+	font-size: 14px;
+	line-height: 1.5;
+	font-size: 15px;
+}
+a{
+	text-decoration: none;
+	color: #28313b;
+}
+li{
+	list-style: none;
+}
+.section{
+	float: left;
+	width: 100%;
+}
+.container{
+	width: 955px;
+	margin: 0 auto;
+    
+}
+.section_1{
+	background-color: #f1f1f1;
+	
+}
+.phan{
+	width: calc(100% / 4 );
+	float: left ; 
+	margin-top: 100px;
+	margin-bottom: 30px;
+	 
+}
+h3{
+	color: #8aac47;
+}
+.submenu li{
+	padding-left: 20px;
+	background-image: url('../images/Shape 65.png') ;
+	background-repeat: no-repeat ;
+    background-position: left;
+}
+.section_2{
+	background-color: #e0e0e0;
+	width: 100%;
+}
+.trai{
+	width: 50%;
+	float: left;
+	
+}
+.trai_1{
+	width: 30%;
+	float: left;
+	line-height: 40px;
+}
+button{
+    background-color: #709b1d;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.trai_2{
+	float: left;
+	
+}
+.trai_2 img{
+	padding-right: 10px;
+	padding-top: 5px;
+}
+.phai{
+	float: right;
+	width: 50%;
+
+}
+.phai_1{
+	float: left;
+	width: 30%;
+	line-height: 40px;
+}
+.phai_2{
+	float: left;
+	padding-top: 5px;
+
+}
+.phai_2 img{
+	padding-right: 10px;
+	line-height: 40px;
+}
+.section_3{
+	background-color: #709b1d;
+	width: 100%;
+}
+.cuoi{
+	width: 100%;
+	height: 
+	
+	line-height: 40px;
+}
+.cuoi span{
+	line-height: 51px;
+	color: white;
+	padding-left: 40%;
+}
+.left_1{
+	padding-left: 10px;
+}
+.left_2{
+	padding-left: 30px;
+}
+
+
+
+
+
+
+
+
