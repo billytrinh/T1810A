@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>thiet ke 5</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+	<section class="section section_1">
+		<div class="container"> 
+			<div class="section_1_1">
+				<div class="section_1_1_trai">
+				<div class="mai-top">
+				    <img src="images/MailIco.png"/>
+				    <span><a href="#">info@gmail.com</a></span>
+				</div>
+				<div class="phone-top">
+					<img src="images/PhoneIco.png"/>
+				    <span><a href="#">453-33454</a></span>
+				</div>
+			</div>  
+
+				<div class="section_1_2">
+					<img src="images/facebook.png"/>
+					<img src="images/twitter.png"/>
+					<img src="images/google +.png"/>
+					<img src="images/instegram.png"/>
+				</div>
+		</div>
+	</section> 
+	<section class="section section_2">
+		<div class="container">
+			<div class="section_2_1">
+				<img src="images/sopy.png">
+				
+			</div>
+
+			<div class="section_2_2">
+				<ul>
+					<li><span><a href ="#">Home</a></span></li>
+					<li><span><a href ="#">Products</a></span></li>
+					<li><span><a href ="#">Hot Deals</a></span></li>
+					<li><span><a href ="#">About</a></span></li>
+					<li><span><a href ="#">Contact</a></span></li>
+
+				</ul>
+			</div>
+			<div class="section_2_3">
+				<div class="gio_hang">
+				    <a href="#"><img src="images/sonam.png"></a>
+				</div>
+				<div class="trai_dat">
+					<a href="#"><img src="images/User Ico.png"></a>
+				</div>
+				<div class="tim_kiem">
+					<a href="#"><img src="images/Search Ico.png"></a>
+				</div>
+			</div>
+
+			
+		</div>
+	</section>
+	<section class="section section_3">
+		<div class="container">
+			<div class="left">
+				<div class="block">
+					<h3>Categories</h3>
+					<ul>
+						
+						<li><span>Man</span></li>
+						<li><span>Woman</span></li>
+						<li><span>Children</span></li>
+						<li><span>Hot Deals</span></li>
+					</ul>
+				</div>
+				<div class="block block-sizes">
+					<h3>Sizes</h3>
+					<ul>
+						<li>
+							<input id="small" type="checkbox"/>
+							<label for="small"><span>Small</span></label> 
+						</li>
+						<li>
+							<input id="medium" type="checkbox"/>
+							<label for="medium"><span>Medium</span></label>
+						</li>
+						<li>
+							<input id="large" type="checkbox"/>
+							<label for="large"><span>Large</span></label>
+						</li>
+					</ul>
+				</div>
+				<div class="block block-sizes">
+					<h3>Brands</h3>
+					<ul>
+						<li>
+							<input id="reebok" type="checkbox"/>
+							<label for="reebok"><span>Reebok</span></label> 
+						</li>
+						<li>
+							<input id="addidas" type="checkbox"/>
+							<label for="addidas"><span>Addidas</span></label>
+						</li>
+						<li>
+							<input id="nike" type="checkbox"/>
+							<label for="nike"><span>Nike</span></label>
+						</li>
+						<li>
+							<input id="active" type="checkbox"/>
+							<label for="active"><span>Active</span></label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<div class="list">
+					<div class="item" id="list_product">
+					</div>
+				</div>
+				<div class="ba_cham">
+				<span>...</span>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<section class="section section_4">
+	<div class="container">
+		<div class="section_4_content">
+			<div class="section_4_1">
+				<img src="images/Title.png">
+				<span>join us to get all news and special offers</span>
+			</div>
+			<div class="section_4_2">
+				<img src="images/MailIco.png">
+				<span>type your email here</span>
+			</div>
+			<div class="section_4_3">
+				<button type="button">join us</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+ 
+<script type="text/javascript">
+	var data ={
+		status:1,
+		message:  
+
+	}
+	//var products=[
+       {
+       	image: 'images/ao.png',
+       	name: 'Reebok Track Jacket 22222',
+       	price:"100$"
+       },
+       {
+       	image: 'images/ao.png',
+       	name: 'Reebok Track Jacket 22222',
+       	price:"100$",
+       },
+       {
+       	image: 'images/ao.png',
+       	name: 'Reebok Track Jacket 22222',
+       	price:"100$",
+       },
+       {
+       	image: 'images/ao.png',
+       	name: 'Reebok Track Jacket 22222',
+       	price:"100$",
+       },
+       {
+       	image: 'images/ao.png',
+       	name: 'Reebok Track Jacket 22222',
+       	price:"100$",
+       },
+	]
+	
+	var content_html = ''
+		for (var i = 0; i < products.length; i++){
+			
+			content_html +=  '<div class="item-content">';
+			content_html +=      '<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+			content_html +=      '<p><a href="#">'+products[i].name+'</a></p>';
+			content_html +=      '<p><span>'+products[i].price+'</span></p>';
+			content_html +=      '</div>';
+
+		}
+
+		document.getElementById("list_product").innerHTML =  content_html;	
+		
+		
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
