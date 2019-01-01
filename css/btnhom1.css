@@ -210,6 +210,9 @@ input{
 .section_3{
 	color: #1e2934;
 }
+.container_3{
+	padding-top: 30px;
+}
 .left{
 	width: 22%;
 	float: left;
@@ -223,7 +226,6 @@ input{
 	clear: both;
 }
 .list1{
-	width: 100%;
 	margin-left: -10px;
 }
 .list1_content{
@@ -249,12 +251,11 @@ input{
 	color: #325f70;
 }
 .list2{
-	width: 100%;
 	margin-right: -15.5px;
 }
 .item{
 	width: calc(100% / 3 - 31px);
-	padding: 15.5px 14px;
+	padding: 14px 15.5px;
 	float: left;
 	text-align: center;
 	position: relative;
@@ -345,18 +346,19 @@ h2 {
 	padding-bottom: 20px;
 	font-family: Regular;
 	color: #333333;
+	padding-right: 14px;
+	padding-left: 15.5px;
 }
 
-.container {
-	margin: 0 auto;
-	width: 1020px;
+.container_4 {
 	padding-top: 30px;
 }
 
 .column {
-	width: 25%;
+	width: calc(100% / 4 - 31px);
 	float: left;
 	position: relative;
+	padding:14px 15.5px;
 }
 
 .text_left {
@@ -370,8 +372,8 @@ h2 {
 	float: right;
 	color: #627b92;
 	font-size: 14px;
-	padding-right: 22px;
 	display: inline-block;
+	text-align: right;
 }
 
 .new img{
@@ -403,10 +405,23 @@ h2 {
 	float: right;
 	width: 50%;
 }
+.all_colum{
+	margin: 0 -15.5px;
+}
+.sec4_images{
+	width: calc(100% / 2 - 31px);
+	padding: 14px 15.5px;
 
+}
+.colum_2{
+	margin: 0 -15.5px;
+}
 /*CSS Section_5*/
 .section_5{
 	background: #f7fcff;
+}
+.container_5{
+	padding-top: 30px;
 }
 .sec5_top{
 	width: 100%;
