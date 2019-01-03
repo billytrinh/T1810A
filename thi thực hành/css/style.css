@@ -34,7 +34,7 @@ input{
 }
 .form{
 	float: left;
-	margin-left: 300px;
+	margin:100px 0 50px 300px;
 }
 .footer{
 	float: left;
