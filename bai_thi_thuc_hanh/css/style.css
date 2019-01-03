@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f4f6f8;
+	color: #34404b;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: 'Aleo', serif;
+}
+a{
+	text-decoration: none;
+}
+.section{
+	width: 100%;
+	float: left;
+}
+.container{
+	width: 1015px;
+	margin: 0 auto;
+	background: #eefaff;
+}
+.clear{
+	clear: both;
+}
+/*CSS Section_1*/
+
+.logo{
+	width: 30%;
+	float: left;
+}
+.slogan{
+	width: 70%;
+	float: right;
+	text-align: center;
+	
+}
+.slogan h1{
+	font-weight: 700;
+	font-size: 50px;
+	padding: 90px 0;
+}
+.logo img{
+	vertical-align: middle;
+}
+.container_1{
+	padding-bottom: 30px;
+}
+/*CSS Section_2*/
+.container_2{
+	padding: 40px 0;
+}
+.container_2 h2{
+	text-align: center;
+	padding: 15px 0;
+}
+.container_2 .label_1{
+	width: 100%;
+	float: left;
+	font-size: 25px;
+	padding: 15px 0;
+}
+.container_2 .nhap_input{
+	width: 100%;
+	float: left;
+	font-size: 35px;
+	border-radius: 5px;
+	border:2px solid #f4f6f8;
+}
+.container_2 div{
+	padding: 15px 0;
+}
+.gioitinh input{
+	padding-right: 10px;
+}
+.gioitinh label{
+	padding-right: 20px;
+}
+.sothich input{
+	padding-right: 10px;
+}
+.sothich label{
+	padding-right: 20px;
+}
+button{
+	padding: 20px 50px;
+	font-size: 25px;
+	border-radius: 15px;
+	background-position: center;
+	background-color: rgba(24,95,173,0.8);
+	color: #ffffff;
+	background-attachment: fixed;
+}
+.button{
+	text-align: center;
+}
+/*CSS section_3*/
+.container_3{
+	padding-top: 100px;
+}
+.container_3 p{
+	padding: 5px 0;
+}

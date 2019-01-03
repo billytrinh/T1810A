@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai thi BNGW Ung Sy Cuong</title>
+	<link href="https://fonts.googleapis.com/css?family=Aleo:300,400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="section section_1">
+		<div class="container container_1">
+			<div class="logo">
+				<img src="images/logo-ex-7.png">
+			</div>
+			<div class="slogan">
+				<h1>Just do it<br> Think different</h1>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+	<section class="section section_2">
+		<div class="container container_2">
+			<h2>Đăng ký thông tin người dùng</h2>
+			<form>
+				<div>
+					<label class="label_1">Họ và tên</label>
+					<input class="nhap_input" type="text" name="user_name" placeholder="Họ và tên">
+				</div>
+				<div>
+					<label class="label_1">Email</label>
+					<input class="nhap_input" type="mail" name="user_mail" placeholder="Email">
+				</div>
+				<div>
+					<label class="label_1">Phone</label>
+					<input class="nhap_input" type="number" name="user_phone" placeholder="Phone number">
+				</div>
+				<div class="gioitinh">
+					<label class="label_1">Giới tính</label>
+					<input id="nu" type="radio" name="user_gioitinh">
+					<label for="nu">Nữ</label>
+					<input id="nam" type="radio" name="user_gioitinh">
+					<label for="nam">Nam</label>
+				</div>
+				<div class="sothich">
+					<label class="label_1">Sở thích</label>
+
+					<input id="tt" type="checkbox" name="user_sothich">
+					<label for="tt">Thể thao</label>
+
+					<input id="phim" type="checkbox" name="user_sothich">
+					<label for="phim">Phim ảnh</label>
+
+					<input id="sach" type="checkbox" name="user_sothich">
+					<label for="sach">Đọc sách</label>
+
+					<input id="nhac" type="checkbox" name="user_sothich">
+					<label for="nhac">Âm nhạc</label>
+
+					<input id="khac" type="checkbox" name="user_sothich">
+					<label for="khac">Khác</label>
+				</div>
+				<div>
+					<label class="label_1">Giới thiệu bản thân</label>
+					<textarea rows="4" cols="50" placeholder="Giới thiệu bản thân">
+						
+					</textarea>
+				</div>
+				<div class="button"><button onclick="changecolor()">Submit</button></div>
+			</form>
+		</div>
+	</section>
+	<section class="section section_3">
+		<div class="container container_3">
+			<div>
+				<p>Sinh viên: Ưng Sỹ Cường</p>
+			
+				<p>Lớp: T1810A</p>
+		
+				<p>Email: cuongusth1809027@fpt.edu.vn</p>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function changecolor(){
+			var input_text_array = document.getElementsByClassName("aaa");
+			//var input_text_array = document.getElementsByTagName("input");
+			for (var i = 0; i < input_text_array.length; i++) {
+				var input_text = input_text_array[i];
+				var color = input_text.value;
+				if(color.length < 1){
+				input_text.style.border = '1px solid red';
+				}
+			}
+		}
+	</script>
+</body>
+</html>
