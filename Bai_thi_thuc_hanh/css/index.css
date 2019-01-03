@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f4f6f8;
+	color: #414850;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: 'Arial';
+}
+.section{
+	float: left;
+	width: 100%;
+
+
+	
+}
+.container{
+	width: 1170px;
+	margin:0 auto;
+}
+
+.submit input[type="submit"] {
+	color: #ffffff;
+    font-size: 18 px;
+    font-weight: 700;
+    background: #3a4eab;
+    padding: 15px 25px 15px 25px;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+img {
+	width: 1000px;
+	height: auto;
+}
