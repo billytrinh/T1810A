@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exam</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+	<link rel="stylesheet"  href="css/ex.css">
+</head>
+<body>
+	<section class="section section_1">
+		<div class="container">
+		</div>
+
+		<div class="section section_2">
+			<div class="container">
+				<a href="#" class="logo"><img src="img/logo.png"></a>
+			</div>
+		</div>
+
+		<div class="section section_3">
+		<div class="container">
+			<div class="login">
+				<div class="section_login">
+					<form action="#">
+						<label for="name">Họ và tên</label>
+                    	<input type="text" name="name" id="input1">
+
+						<label for="email">Email</label>
+						<input type="email" name="email" id="input2">
+                    	
+                    	<label for="name">Phone</label>
+                    	<input type="text" name="name" id="input3">
+                   		
+                   		<div class="radio">
+                   			<label class="radio_1">Giới tính</label>
+                   			<input type="radio" name="rule">
+                    		<label for="rule">Nam</label>
+
+                    		<input type="radio" name="rule">
+                    		<label for="rule">Nữ</label>
+                   		</div>
+                    	
+                   		<div class="like">
+                   			<label class="like_1">Sở Thích</label>
+
+                   			<input id="sports" type="checkbox">
+                   			<label for="sports">Thể Thao</label>
+
+                   			<input id="films" type="checkbox">
+                   			<label for="films">Phim Ảnh</label>
+
+                   			<input id="readbook" type="checkbox">
+                   			<label for="readbook">Đọc Sách</label>
+
+                   			<input id="music" type="checkbox">
+                   			<label for="music">Âm Nhạc</label>
+
+                   			<input id="more" type="checkbox">
+                   			<label for="more">Khác</label>
+                   		</div>
+
+                    	<div>
+                    		<label for="introduc">Giới Thiệu Bản Thân</label>
+                    		<textarea rows="4" cols="50"></textarea>
+                    	</div>
+                    	
+                    
+                    	<div class="submit">
+                        	<input type="submit" value="Đăng Ký" onclick="changeColor()">
+                    	</div>
+					</form>
+				</div>
+				<div class="back">
+					<a href="#" class="section_back"><span>Trở lại đăng nhập</span></a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="section section_4">
+			<div class="container">
+				<div class="namestudent">
+					<p>Sinh Viên: Trần Hoàng Long</p>
+				</div>
+				<div class="emailstudent">
+					<p>Email: thl050620@gmail.com</p>
+				</div>
+				<div class="classstudent">
+					<p>Lớp: T1810A</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<script type="text/javascript">
+			function changeColor() {
+			var input = document.getElementById('input1');
+			var color = input.value;
+			if (color.length < 1 ) {
+				input.style.border = '1px solid red';
+			}
+			var input = document.getElementById('input2');
+			var color = input.value;
+			if (color.length < 1 ) {
+				input.style.border = '1px solid red';
+			}
+			var input = document.getElementById('input3');
+			var color = input.value;
+			if (color.length < 1 ) {
+				input.style.border = '1px solid red';
+			}
+			var input = document.getElementById('input4');
+			var color = input.value;
+			if (color.length < 1 ) {
+				input.style.border = '1px solid red';
+			}
+			var input = document.getElementById('input5');
+			var color = input.value;
+			if (color.length < 1 ) {
+				input.style.border = '1px solid red';
+			}
+			var input = document.getElementById('input6');
+			var color = input.value;
+			if (color.length < 1 ) {
+				input.style.border = '1px solid red';
+			}
+		}
+	</script>
+</body>
+</html>
