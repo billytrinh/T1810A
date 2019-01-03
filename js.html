@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEMO Javascript</title>
+</head>
+<body>
+	<div class="box-box" onmouseover="thong_bao()" onmouseout="thong_bao_2()"></div>
+	<div class="box-box" onmouseenter="thong_bao()" onmouseleave="thong_bao_2()"></div>
+	<div class="box-box" onclick="thong_bao()"></div>
+	<input type="text" placeholder="check event onkeydown" onkeydown="phat_sk_keydown()"  />
+	<input type="text" placeholder="check event onkeypress" onkeypress="thong_bao_2()"  />
+	<input type="text" placeholder="check event onkeyup" onkeyup="thong_bao()"  />
+	<textarea cols="100" rows="10" oncopy="thong_bao()" onpaste="thong_bao_2()" oncut="thong_bao()"></textarea>
+	<select name="sl_a" onchange="thong_bao()">
+		<option value="1">value 1</option>
+		<option value="2">value 2</option>
+	</select>
+	
+	<style type="text/css">
+		.box-box{
+			width: 200px;
+			height: 100px;
+			float: left;
+			background-color: red;
+			margin: 50px;
+		}
+	</style>
+	<script type="text/javascript">
+		function phat_sk_keydown(){
+			console.log(event.keyCode);
+		}
+		function thong_bao(){
+			alert("thong bao su kien");
+			//confirm("abc?");
+		}
+		function thong_bao_2(){
+			alert("thong bao su kien so 2");
+		}
+		// var x = 10;
+		// console.log(x);
+		// var y = '20afafafa';
+		// y = parseInt(y); // parseFloat
+		// console.log(isNaN(y));
+		// var z = x+ y;
+		// console.log(z);
+		// var arr = [];
+		// arr[0] = 12;
+		// arr[1] = 'welcome!';
+		// arr[2] = ["hi","yes"];
+		//console.log(arr);
+		//document.write(x);
+		//alert('xin chao!');
+		// do{
+		// 	var z =confirm('Are u sure?');// tra ve true - false
+		// }while(!z);
+		
+		// if(z){
+		// 	alert('Welcome.');
+		// }else{
+		// 	alert("Rollback");
+		// }
+		// do{
+		// 	var k = prompt("Nhap tuoi cua ban");
+		// }while(k != 'toi 18 tuoi');
+		
+		//console.log(k);
+		// setTimeout(function(){
+		// 	var x = Math.random() * 100;
+		// 	alert(parseInt(x));
+		// },3000);
+		// var mang = 3;
+		// var it = setInterval(function(){
+		// 	mang--;
+		// 	var x = random_number();
+		// 	//console.log(x);
+		// 	var k = input_nhap_so();
+		// 	if(k == x){
+		// 		alert("chuc mung, ban da trung thuong");
+		// 		clearInterval(it);
+		// 	} 
+		// 	if(mang <= 0 && k != x){
+		// 		alert("het so luot du doan");
+		// 		clearInterval(it);
+		// 	}
+		// },2000);
+		function random_number(){
+			var x = Math.random() * 100;
+			x = parseInt(x);
+			return x;
+		}
+		function input_nhap_so(){
+			var k = prompt("nhap so may man:");
+			return k;
+		}
+		//alert("abc xyz");
+		var so_luot = 3;
+		var phan_thuong = [
+			"1 Iphone XS max",
+			"1 xe SH",
+			"1 o to BMW",
+			"1 biet thu Vinpear Land",
+			"1 theo cao viettel 10.000",
+		];
+		for (var i = 5; i < 1000; i++) {
+			phan_thuong[i] = phan_thuong[4];
+		}
+		// var vqmm = setInterval(function(){
+		// 	so_luot--;
+		// 	var x = Math.random() * 1000;
+		// 	x = parseInt(x);
+		// 	// if(x <=3){
+		// 	// 	x+=4;
+		// 	// }
+		// 	var k = confirm("ban co muon nhan giai thuong?");
+		// 	if(k){
+		// 		alert("ban da trung thuong "+phan_thuong[x]);
+		// 	}
+		// 	if(so_luot <= 0){
+		// 		alert("het luot");
+		// 		clearInterval(vqmm);
+		// 	}
+		// },3000);
+		//dua_ra_1_thong_bao();
+		function tinh_tong(a,b){
+			return a+b;
+		}
+		function dua_ra_1_thong_bao(){
+			alert("thong bao gi do");
+		}
+	</script>
+</body>
+</html>
