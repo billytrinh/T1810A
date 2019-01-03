@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+
+<body>
+<header class="section">
+    <div class="container">
+        <div class="logo-slogan">
+            <div class="logo">
+                <img src="image/img_garena_logo.png" alt="">
+            </div>
+            <div class="slogan">
+                <a href="#" style="border-right: 1px solid grey">Tải ứng dụng</a>
+                Kết nối :
+                <a href="#"><img src="image/fb.png" alt=""></a>
+                <a href="#"><img src="image/twitter.png" alt=""></a>
+                <a href="#"><img src="image/g+.png" alt=""></a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Menu_1</a></li>
+                <li><a href="#">Menu_2</a></li>
+                <li><a href="#">Menu_3</a></li>
+                <li><a href="#">Menu_4</a></li>
+                <li><a href="#">Menu_5</a></li>
+                <li><a href="#">Menu_6</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="section">
+    <div class="container">
+        <div class="singin">
+            <div class="face">
+                <p><img src="image/Layer%201.png" alt=""></p>
+            </div>
+            <div class="form-singin">
+                <form method="" action="#">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" name="name" id="name"><br>
+
+                    <label for="mail">Email</label>
+                    <input type="email" name="mail" id="mail"><br>
+
+                    <label for="phones">Số điẹn thoại</label>
+                    <input type="text" name="phones" id="phones"><br>
+
+                    Giới tính :
+                    <input type="radio" name="gioi_tinh" id="gioi_tinh" value="1">
+                    <label for="gioi_tinh">Nam</label>
+
+                    <input type="radio" name="gioi_tinh" id="gioi_tinh" value="2">
+                    <label for="gioi_tinh">Nu</label><br>
+                    <br>
+                    So thich :
+                    <input type="checkbox" name="so_thich" id="so_thich" value="1">the thao
+                    <input type="checkbox" name="so_thich" id="so_thich" value="2">phim anh
+                    <input type="checkbox" name="so_thich" id="so_thich" value="3">doc sach
+                    <input type="checkbox" name="so_thich" id="so_thich" value="4">am nhac
+                    <input type="checkbox" name="so_thich" id="so_thich" value="5">khac
+
+                    Gioi thieu ban than :
+                    <textarea name="gioi_thieu" id="gioi_thieu" cols="30" rows="10"></textarea>
+                    <div class="submit">
+                        <input type="submit" value="Đăng Ký" onclick="validate()">
+                    </div>
+                    <script>
+                        function validate() {
+                            var name = document.getElementById('name');
+                            var email = document.getElementById('mail');
+                            var phone = document.getElementById('phones');
+                            var gioi_tinh = document.getElementById('gioi_tinh');
+                            var so_thich = document.getElementById('so_thich');
+                            var gioi_thieu = document.getElementById('gioi_thieu');
+
+                            if (name.value == null || name.value == "") {
+                                name.style.border = '1px solid red';
+                            }
+                            else if (email.value == null || email.value == "") {
+                                email.style.border = '1px solid red';
+                            }
+                            else if (phone.value == null || phone.value == "") {
+                                phone.style.border = '1px solid red';
+                            }
+                            else if (gioi_tinh.value == null || gioi_tinh.value == "") {
+                                gioi_tinh.style.border = '1px solid red';
+                            }
+                            else if (so_thich.value == null || so_thich.value == "") {
+                                so_thich.style.border = '1px solid red';
+                            }
+                            else if(gioi_thieu.value == null || gioi_thieu.value == ""){
+                                gioi_thieu.style.border = '1px solid red';
+                            }
+                            else{
+                                alert(name.value + email.value + phone.value + gioi_tinh.value + so_thich.value +gioi_thieu.value);
+                            }
+                        }
+                    </script>
+                </form>
+                <script>
+
+                </script>
+            </div>
+            <div class="back">
+                <a href="#"><span>Trở lại đăng nhập</span></a>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</main>
+</body>
+</html>
