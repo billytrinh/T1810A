@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thuc Hanh</title>
+	<link rel="stylesheet" type="text/css" href="css/thuchanh.css">
+
+</head>
+<body>
+	<section class="section section_1">
+		<div class="container">
+			<div class="section_1_1">
+				<a href=#"><p class="logo"><img src="image/couponsaccept-logo120-1.png"></p></a>
+				<a href=#"><p class="logo slogan"> Coupons Accept</p></a>
+			</div>
+			<div class="section_1_2">
+				<a href=#"><img src="image/banner.png" style="width: 80%"></a>
+			</div>
+		</div>
+	</section>
+	<section class="section section_2">
+		<div class="container_2">
+			<p class="header">Dang ky thong tin nguoi dung</p>
+			<p class="info">Ho va ten</p>
+				<input type="text" class="fill_info" id="name">
+			<p class="info"> Email</p>
+				<input type="email"  class="fill_info" id="email">
+			<p class="info">Phone</p>
+				<input type="text"  class="fill_info" id="phone">
+			<p class="info">Gioi tinh</p>
+				<label><input type="radio" name="user_radio">  Nam</label><br>
+				<label><input type="radio" name="user_radio">  Nu</label><br>
+				<label><input type="radio" name="user_radio">  Khac</label><br>
+			<p class="info">So thich</p>
+				<label><input type="checkbox" name="user_checkbox">  The thao</label><br>
+				<label><input type="checkbox" name="user_checkbox">  Phim anh</label><br>
+				<label><input type="checkbox" name="user_checkbox">  Doc sach</label><br>
+				<label><input type="checkbox" name="user_checkbox">  Am nhac</label><br>
+				<label><input type="checkbox" name="user_checkbox">  Khac</label><br>
+			<p class="info">Gioi thieu ban than</p>
+				<textarea type="text" cols="55" rows="2"></textarea><br>
+			<center><button onclick="check()">Submit</button></center>
+		</div>
+	</section>
+	<section class="section section_3">
+		<div class="container">
+			<p class="footer">Ho va ten: Nguyen Duc Manh</p>
+			<p class="footer">Email: manhndth1810003@fpt.edu.vn</p>
+			<p class="footer">Lop: T1810A</p>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function check () {
+			var name = document.getElementById("name");
+			var x = name.innerHTML;
+			if(x.length>10){
+				alert ('Nhap lai ten');
+			}
+			else{
+				x.style.border='1px solid blue';
+			}
+			var phone = document.getElementById("phone");
+			if(phone.length<1){
+				alert('Nhap lai so dien thoai');
+			}
+			else{
+				phone.style.border='1px solid blue';
+			}
+		}
+	</script>
+</body>
+</html>
