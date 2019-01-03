@@ -70,7 +70,7 @@
 			function text_validation(){
 				var x=document.getElementsByClassName('abc');
 				for(var i=0; i< x.length; i++){
-					if(x[i] == ""){
+					if(x[i] == 0){
 						alert("Khong co du lieu.")
 					}else{
 						hien_thi();
@@ -78,8 +78,8 @@
 				}
 
 			function hien_thi(){
-				var i=document.getElementById('name_input')
-				document.Write("Tên" + i);
+				var Y=document.getElementById('name_input')
+				document.Write("Tên" + Y);
 				var j=document.getElementById('email_input')
 				document.write("Email" + j);
 			}
