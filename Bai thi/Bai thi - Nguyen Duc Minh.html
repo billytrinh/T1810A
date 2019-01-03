@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Bai thi - Nguyen Duc Minh </title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<section class="section_1">
+			<div class="container_all">
+				<div class="logo">
+					<a href="#"><img width="60px" height="auto" src="images/logo.png"></a>
+				</div>
+				<div class="menu">
+					<div><a href="#">DIỄN ĐÀN</a></div>
+					<div><a href="#">CAMERA</a></div>
+					<div><a href="#">XE</a></div>
+					<div><a href="#">NHẬT TẢO</a></div>
+				</div>
+				<div class="search">
+					<input type="submit" name="" value="Search">
+					<input type="text" name="">
+				</div>
+			</div>
+		</section>
+		<section class="section_2">
+			<div class="container_all">
+				<div class="slogan">
+					<p>"Trao đổi về khoa học, công nghệ, thủ thuật điện thoại, máy tính, camera, đồ gia dụng và âm thanh."</p>
+				</div>
+			</div>
+		</section>
+		<section class="section_3">
+			<div class="container_all">
+				<div class="container_form">
+					<form class="thong_tin">
+						<label>Họ và tên
+							<input type="text" name="name_input" class="abc" id="name_input"><br>
+						</label>
+						<label>Email
+							<input type="email" name="email_input" class="abc" id="email_input"><br>
+						</label>	
+						<label>Số điện thoại
+							<input type="text" name="phone_input" class="abc" id="phone_input"><br>
+						</label>
+						<label>Giới tính
+							<label><input type="radio" name="sex_input" class="abc" id="male_input">Nam</label>
+							<label><input type="radio" name="sex_input" class="abc" id="female_input">Nữ</label><br>
+						</label>	
+						<label>Sở thích
+							<label><input type="checkbox" name="hobby_input" class="abc" id="hobby_input_1">Thể thao</label><br>
+							<label><input type="checkbox" name="hobby_input" class="abc" id="hobby_input_2">Phim ảnh</label><br>
+							<label><input type="checkbox" name="hobby_input" class="abc" id="hobby_input_3">Đọc sách</label><br>
+							<label><input type="checkbox" name="hobby_input" class="abc" id="hobby_input_4">Âm nhạc</label><br>
+							<label><input type="checkbox" name="hobby_input" class="abc" id="hobby_input_5">Khác . . . </label><br>
+						</label>	
+						<label>Giới thiệu bản thân
+							<textarea cols="20" rows="5" name="textarea_input" placeholder="Write text here"></textarea><br>
+						</label>
+					</form>
+					<div class="submit">
+						<button type="submit" name="submit" onclick="text_validation()">Đăng ký</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script type="text/javascript">
+			function text_validation(){
+				var x=document.getElementsByClassName('abc');
+				for(var i=0; i< x.length; i++){
+					if(x == ""){
+						alert("Khong co du lieu.")
+					}else{
+						hien_thi();
+					}
+				}
+
+			function hien_thi(){
+				var i=document.getElementById('name_input')
+				document.Write("Tên" + i);
+				var j=document.getElementById('name_input')
+			}
+		</script>
+	</body>
+</html>
