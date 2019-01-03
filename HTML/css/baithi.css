@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color:#f4f6f8;
+	color: #28313b;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+a {
+	text-decoration: none;
+	color: #34404b;
+}
+a:hover{
+	color: red;
+
+}
+
+li {
+	list-style-type: none;
+}
+.section_1 .container{
+	text-align: center;
+	height: auto;
+	margin: 0 auto;
+
+}
+.thong_tin{
+	text-align: center;
+}
+.sec1{
+	width: 100%;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+}
+.sec1 p{
+	margin-bottom: 10px;
+}
+.sec1 input{
+	width: 30%;
+	padding-top: 10px;
+
+}
+.check_box label{
+	padding-right: 10px;
+}
+.section_3 .container{
+	text-align: center;
+	height: auto;
+	margin: 0 auto;
+
+}
