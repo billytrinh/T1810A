@@ -47,6 +47,21 @@ li {
 	padding-top: 10px;
 
 }
+button{
+	background-color: #2d82c5; 
+	border: none;
+	color: white;
+	padding: 20px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 8px 10px;
+	cursor: pointer;
+}
+.sec-3{
+	text-align: center;
+}
 .check_box label{
 	padding-right: 10px;
 }
