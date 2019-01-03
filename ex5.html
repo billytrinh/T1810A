@@ -113,46 +113,17 @@
 				</div>
 			</div>
 			<div class="right">
-				<div class="list">
-					<div class="item" id="list_product">
-					</div>
+				<div class="list" v id="list_product">
+					
 				</div>
-				<div class="ba_cham">
-				<span>...</span>
+				
 			</div>
-			</div>
-			
-		</div>
-	</div>
-</section>
-<section class="section section_4">
-	<div class="container">
-		<div class="section_4_content">
-			<div class="section_4_1">
-				<img src="images/Title.png">
-				<span>join us to get all news and special offers</span>
-			</div>
-			<div class="section_4_2">
-				<img src="images/MailIco.png">
-				<span>type your email here</span>
-			</div>
-			<div class="section_4_3">
-				<button type="button">join us</button>
-			</div>
-		</div>
-	</div>
-</section>
-
-
- 
-<script type="text/javascript">
+			<script type="text/javascript">
 	var data ={
 		status:1,
-		message:  
-
-	}
-	//var products=[
-       {
+		message: "success",
+		data: [
+		{
        	image: 'images/ao.png',
        	name: 'Reebok Track Jacket 22222',
        	price:"100$"
@@ -177,29 +148,84 @@
        	name: 'Reebok Track Jacket 22222',
        	price:"100$",
        },
-	]
+       ],
+       };
+       consolo.log(Product);  
+	//var products=[
+       
 	
-	var content_html = ''
-		for (var i = 0; i < products.length; i++){
+	var content_html = '';
+	var k=0;
+		for (var i = k; i < 3; i++){
 			
+			content_html +=   '<div class="item">';
 			content_html +=  '<div class="item-content">';
-			content_html +=      '<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
-			content_html +=      '<p><a href="#">'+products[i].name+'</a></p>';
-			content_html +=      '<p><span>'+products[i].price+'</span></p>';
+			//content_html +=      '<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+			content_html +=      '<p><a href="#"><img src="'+data.data[i].image+'"/></a></p>';
+			content_html +=      '<p><a href="#">'+data.data[i].name+'</a></p>';
+			content_html +=      '<p><span>'+data.data[i].price+'</span></p>';
+			//content_html +=      '<p><a href="#">'+products[i].name+'</a></p>';
+			//content_html +=      '<p><span>'+products[i].price+'</span></p>';
+			content_html +=      '</div>';
 			content_html +=      '</div>';
 
 		}
+		k+=3;
+		document.getElementById("product").innerHTML =  content_html;	
+		function more(product){
+			consolo.log(k);
+			var content_html_2='';
+			for (var i = k; i < k+3; i++){
+			//for (var i = k; i < products.length; i++){
+			
+			content_html +=   '<div class="item">';
+			content_html +=  '<div class="item-content">';
+			content_html +=      '<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+			
+			content_html +=      '<p><a href="#">'+products[i].name+'</a></p>';
+			content_html +=      '<p><span>'+products[i].price+'</span></p>';
+			content_html +=      '</div>';
+			content_html +=      '</div>';
 
-		document.getElementById("list_product").innerHTML =  content_html;	
-		
+		}
+		k+=3;
+		document.getElementById("product").innerHTML =  content_html_2;	
+		}
 		
 </script>
+			
+		</div>
+	</div>
+</section>
+<section class="section section_4">
+	<div class="container">
+		<div class="section_4_content">
+			<div class="section_4_1">
+				<img src="images/Title.png">
+				<span>join us to get all news and special offers</span>
+			</div>
+			<div class="section_4_2">
+				<img src="images/MailIco.png">
+				<span>type your email here</span>
+			</div>
+			<div class="section_4_3">
+				<button type="button">join us</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+ 
+
 
 </body>
 </html>
 
 
-
+<!-- <div class="ba_cham">
+				<span>...</span>
+			</div> -->
 
 
 

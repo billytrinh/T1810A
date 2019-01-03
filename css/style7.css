@@ -125,5 +125,18 @@ button{
 
 
 
+/*.left{
+	float:left;
+	width: 25%;
+	padding: 45px 0 40px 0;
+}
+.right{
+	float:right;
+	width: 75%;
+}
+.right_1{
+	padding: 35px 0 20px 0;
+
+}
 
 
