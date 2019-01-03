@@ -4,24 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Exam</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="css/exam.css">
+	<link rel="stylesheet" href="exam/css/exam.css">
 </head>
 <body>
 	<section class="section section_1">
 		<div class="container">
 			<div class="section_1_1">
 				<img src="images/logo.png" alt="">
-				<img src="images/logan.png" alt="">
+				<br><img src="images/logan.png" alt=""></br>
 			</div>
 			<div class="section_1_2">
-				<img src="images/banner.png" alt="">
+				<img src="images/banner.jpg" alt="">
 			</div>
+		</div>
 	</section>
 
 
 	<section class="section section_2">
 		<div class="container">
 			<div class="thong_tin">
+				<form method="GET -- POST" action="#" enctype="multipart/form-data" name="form-data">
 				<p>Đăng kí thông tin</p>
 
 				<label > <p>Họ và tên</p>
@@ -49,11 +51,58 @@
 
 				<label><p>Giới thiệu bản thân</p>
 					<input type="texrarea" name="user_introduce" style="width: 500px;height: 300px;">
-				</label>	
+				</label>
 
+				<div class="submit">
+							<p><input type="submit" name="dang_ki" value="Đăng kí"></p>
+						</div>
+						
+						<div class="tro_ve">
+							 <a href="#"><p>Trở lại đăng nhập</p></a>
+						</div>
+
+				</div>
 			</div>
-		</div>
+		</form>
 	</section>
+	<script type="text/javascript">
+		function checking() {
+			var input_check = document.getElementsByClassName('abc');
+			for (var i = 0; i < input_check.length; i++) {
+				var input_checking = input_check[i];
+				var color = input_checking.value;
+				if(color.length < 1) {
+				input_checking.style.border = '1px solid red';
+
+				var outer = input_checking.outerHTML;
+				outer += '<span>Vui lòng nhập thông tin </span>';
+				input_checking.outerHTML = outer;
+			} else {
+				input_checking.style.border = '1px solid red';
+			}
+
+			}
+
+			var box = document.getElementById('input_check_1');
+
+			if(box.style.display == 'none'){
+				box.style.display = 'block';
+			}else{
+				box.style.display = 'none';
+			}
+
+			var name_check = document.getElementById('input_check_1');
+			var color = name_check.value;
+			if(color.length > 50) {
+				input_checking.style.border = '1px solid green';
+
+				var outer = input_checking.outerHTML;
+				outer += '<span>ten khong qua 50 ki tu </span>';
+				input_checking.outerHTML = outer;
+			}
+		}
+
+	</script>
 
 
 
