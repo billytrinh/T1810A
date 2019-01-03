@@ -25,7 +25,6 @@ li{
 	margin: 0 auto;
 }
 
-/* ---CSS section 1--- */
 .section_1{
 	background: #ffffff;
 	border-bottom: 1px solid #f4f6f8;
@@ -54,7 +53,6 @@ li{
 	padding-left: 20px;
 }
 
-/* CSS section 2 */
 .section_2{
 	background: #ffffff;
 }
@@ -88,7 +86,6 @@ li{
 }
 
 
-/* CSS Section 3 */
 .container_3-content{
 	width: calc(100% - 362px);
 	padding-top: 60px;
@@ -167,7 +164,6 @@ li{
 	background-color: #175fac;
 }
 
-/* CSS section 4 */
 .section_4{
 	background: #ffffff;
 }
