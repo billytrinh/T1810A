@@ -34,8 +34,8 @@
           <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/product.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="165" column="22" lean-forward="true" selection-start-line="165" selection-start-column="22" selection-end-line="165" selection-end-column="22" />
+                <state relative-caret-position="-735">
+                  <caret line="165" column="6" lean-forward="true" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="6" />
                   <folding>
                     <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -201,12 +201,12 @@
       <updated>1545746666536</updated>
       <workItem from="1545746677839" duration="61051000" />
       <workItem from="1546155553480" duration="13522000" />
-      <workItem from="1546502289200" duration="1886000" />
+      <workItem from="1546502289200" duration="2051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76459000" />
+    <option name="totallyTimeSpent" value="76624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -353,10 +353,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/product.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="198" column="1" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="198" selection-end-column="1" />
+          <folding>
+            <element signature="e#1056#1141#0" expanded="false" />
+            <element signature="e#1165#1221#0" expanded="false" />
+            <element signature="e#1240#1274#0" expanded="false" />
+            <element signature="e#1346#1505#0" expanded="false" />
+            <element signature="e#1717#1808#0" expanded="false" />
+            <element signature="e#2033#2055#0" expanded="false" />
+            <element signature="e#2100#2145#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="165" column="22" lean-forward="true" selection-start-line="165" selection-start-column="22" selection-end-line="165" selection-end-column="22" />
+        <state relative-caret-position="-735">
+          <caret line="165" column="6" lean-forward="true" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -376,22 +392,6 @@
             <element signature="e#15943#15949#0" expanded="true" />
             <element signature="n#style#0;n#span#1;n#p#0;n#div#4;n#div#1;n#article#0;n#div#0;n#div#0;n#section#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#4;n#div#1;n#article#0;n#div#0;n#div#0;n#section#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/product.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="198" column="1" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="198" selection-end-column="1" />
-          <folding>
-            <element signature="e#1056#1141#0" expanded="false" />
-            <element signature="e#1165#1221#0" expanded="false" />
-            <element signature="e#1240#1274#0" expanded="false" />
-            <element signature="e#1346#1505#0" expanded="false" />
-            <element signature="e#1717#1808#0" expanded="false" />
-            <element signature="e#2033#2055#0" expanded="false" />
-            <element signature="e#2100#2145#0" expanded="false" />
           </folding>
         </state>
       </provider>

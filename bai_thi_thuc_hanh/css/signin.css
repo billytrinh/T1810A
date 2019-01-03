@@ -47,7 +47,7 @@ header{
     position: relative;
     top: 5px;
 }
-..menu{
+.menu{
     width: 75%;
     text-transform: uppercase;
 }
