@@ -31,6 +31,8 @@ body{
 input{
 	width: 30px;
 	height: 15px;
+	padding: 10px;
+	margin:10px;
 }
 .form{
 	float: left;
