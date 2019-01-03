@@ -71,22 +71,22 @@
                     </div>
                     <div class="form-signin">
                         <label for="mail">Email</label><br>
-                        <input type="email" name="mail" class="mail"/><br>
+                        <input type="email" name="mail" class="mail" id="text_1"/><br>
 
                         <label for="name">Họ và tên</label><br>
-                        <input type="text" name="name" class="name"/><br>
+                        <input type="text" name="name" class="name" id="text_2" /><br>
 
                         <label for="number">Số điện thoại</label><br>
-                        <input type="number" name="number" class="number"/><br>
+                        <input type="number" name="number" class="number" id="text_3"/><br>
 
                         <label for="password">Mật khẩu</label><br>
-                        <input type="password" name="password" class="password"/><br>
+                        <input type="password" name="password" class="password" id="text_4"/><br>
 
                         <label for="re-password">Nhập lại mật khẩu</label><br>
-                        <input type="password" name="re-password" class="re-password"/><br>
+                        <input type="password" name="re-password" class="re-password" id="text_5"/><br>
 
                         <label for="code">Mã giới thiệu</label><br>
-                        <input type="text" name="code" class="code"/><br>
+                        <input type="text" name="code" class="code"/ id="text_6"><br>
 
                         <p class="radio">
                             <input type="radio" name="rule" class="rule">
@@ -94,7 +94,7 @@
                         </p>
 
                         <div class="submit">
-                            <input type="submit" name="" value="Đăng ký">
+                            <button type="button" onclick="changeColor()" style="background-color:blue;border-radius: 2px">Đăng ký</button>
                         </div>
                     </div>
                     <div class="back">
@@ -102,6 +102,52 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">
+                function changeColor(){
+                    var text_1=document.getElementById("text_1");
+                    var color=text_1.value;
+                    if (color.length<1) {
+                        text_1.style.border='1px solid red';
+                    }else{
+                        text_1.style.border='1px solid blue';
+                    }
+                    var text_2=document.getElementById("text_2");
+                    var color=text_2.value;
+                    if (color.length<1) {
+                        text_2.style.border='1px solid red';
+                    }else{
+                        text_2.style.border='1px solid blue';
+                    }
+                    var text_3=document.getElementById("text_3");
+                    var color=text_3.value;
+                    if (color.length<1) {
+                        text_3.style.border='1px solid red';
+                    }else{
+                        text_3.style.border='1px solid blue';
+                    }
+                    var text_4=document.getElementById("text_4");
+                    var color=text_4.value;
+                    if (color.length<1) {
+                        text_4.style.border='1px solid red';
+                    }else{
+                        text_4.style.border='1px solid blue';
+                    }
+                    var text_5=document.getElementById("text_5");
+                    var color=text_5.value;
+                    if (color.length<1) {
+                        text_5.style.border='1px solid red';
+                    }else{
+                        text_5.style.border='1px solid blue';
+                    }
+                    var text_6=document.getElementById("text_6");
+                    var color=text_6.value;
+                    if (color.length<1) {
+                        text_6.style.border='1px solid red';
+                    }else{
+                        text_6.style.border='1px solid blue';
+                    }
+                }
+            </script>
         </section>
         <section class="section section_4">
             <div class="container">
