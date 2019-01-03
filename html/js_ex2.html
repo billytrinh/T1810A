@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<select name="s1_a" onchange="thay_doi_lua_chon()">
+		<option value="1">Game 1</option>
+		<option value="2">Game 2</option>
+	</select>
+	<button onclick="lua_chon"></button>
+	<style type="text/css">
+		.box-box{
+			width: 200px;
+			height:100px;
+			float:left;
+			background-color: red;
+			margin: 50px;
+	</style>
+	<button onclick="lua_chon"></button>
+	<script type="text/javascript">
+		var lua_chon = 1;
+		function thay_doi_lua_chon(){
+			if(lua_chon == 1){
+				lua_chon=2;
+			}else{
+				lua_chon=1;
+			}
+		}
+		function play_game(){
+			if(lua_chon == 1){
+				var x = Math.random() * 100;
+				x = parseInt(x);
+				return x;
+			}else{
+				
+}
+	</script>
+</body>
+</html>
