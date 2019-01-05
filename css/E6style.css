@@ -221,3 +221,14 @@ li{
 .sec4_center li:hover{
 	color: #ff5912;
 }
+@media screen and (max-width: 1200px){
+	/*Big tablet*/
+}
+@media screen and (max-width: 992px){
+	/*small tablet*/
+}
+
+@media screen and (max-width: 768px){
+	/*mobile*/
+	
+}

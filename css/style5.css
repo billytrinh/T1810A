@@ -32,13 +32,7 @@ li{
 	font-size: 12px;
 	border-bottom: 1px solid #f4f6f8;
 }
-.section1_1{
-	width: 50%;
-	float: left;
-}
 .section1_2{
-	width: 50%;
-	float: right;
 	text-align: right;
 }
 .section1_1 li{
@@ -70,34 +64,14 @@ li{
 	font-size: 16px;
 	color: #34404b;
 }
-.section2_1{
-	float: left;
-	width: 15%;
-}
-.section2_2{
-	float: left;
-	width: 55%
-}
-.section2_3{
-	float: right;
-	width: 25%;
-	text-align: right;
-}
-.section2_2 li{
+.section_2 li{
 	display: inline-block;
-}
-.section2_3 li{
-	display: inline-block;
-}
-.section2_1 p{
-	height: 120px;
 }
 .section2_2 ul{
-	height: 120px;
 	margin: 0px -21px;
 }
-.section2_3 ul{
-	height: 120px;
+.section_2 img{
+	vertical-align: middle;
 }
 .section2_1 a{
 	padding-right: 56px;
@@ -111,28 +85,26 @@ li{
 .section2_3 a{
 	padding-left: 30px;
 }
-.section_2 li{
-	line-height: 120px;
-}
-.section_2 p{
-	line-height: 120px;
-}
 .section2_1 img{
 	vertical-align: middle;
+}
+.section2_1{
+	height: 120px;
+	line-height: 120px;
+}
+.section2_2{
+	height: 120px;
+	line-height: 120px;
+}
+.section2_3{
+	height: 120px;
+	line-height: 120px;
 }
 /* CSS section_3 */
 .container_3{
 	padding-top: 118px;
 }
-.left{
-	float: left;
-	width: 25%;
-}
-.right{
-	float: right;
-	width: 75%;
-	text-align: right;
-}
+
 /* CSS column Left */
 .list1{
 	margin-left: -15px;
@@ -213,9 +185,7 @@ li{
 	margin-right: -15px;
 }
 .item{
-	width: calc(100% / 3 - 30px);
 	padding: 15px;
-	float: left;
 	text-align: center;
 }
 .item-content{
