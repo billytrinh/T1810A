@@ -52,6 +52,7 @@ float:left;
 }
 .section_1_2 img{
 	margin-left: 20px;
+	
 }
 .section_2{
 	border-bottom: 1px solid #f4f6f8;
@@ -331,5 +332,8 @@ button{
 .payment img{
 	margin-top: 40px;
 	float: left;
+}
+@media screen and(max-width: 992px){
+
 }
 

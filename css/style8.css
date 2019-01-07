@@ -116,10 +116,21 @@ float:left;
 .section_3_2{
 	 width: 100%;
 	text-align: left;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
 }
-.section_3_2 input{
+.section_3_2_a input{
 	width: 100%;
 	padding: 15px;
+}
+button{
+	background-color: #2d82c5;
+	color: white;
+	padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 10px 20px 100px;
+    cursor: pointer;
 }

@@ -55,6 +55,7 @@
 						<a href="#"><img src="images/Search Ico.png"></a>
 					</div>
 				</div>
+
 				<section class="section section_3">
 					<div class="container">
 						<div class="container_content">
@@ -63,34 +64,104 @@
 							</div>
 							<div class="section_3_2">
 								<form method="" action="#">
-									<label for="mail">Email</label><br>
-									<input type="email" name="user_email" /><br>
+									<div class="section_3_2_a">
+										<label for="mail">Email</label><br>
+										<input type="email" name="user_email" class="input_hien" /><br>
 
-									<label for="name">Họ và Tên</label><br>
-									<input type="text" name="text-put" size="50"/><br>
+										<label for="name">Họ và Tên</label><br>
+										<input type="text" name="text-put" class="input_hien"size="50"/><br>
 
-									<label for="phone">Số điện thoại</label><br>
-									<input type="number" name="input-number" /><br>
+										<label for="phone">Số điện thoại</label><br>
+										<input type="number" name="input-number" class="input_hien" /><br>
+									</div>
+									<div class="section_3_2_b">
+										<table>
+											<tr>
+												<td>giới tinh:</td>
+												<td>
+													<input type="radio" name="user_radio"/>Nam
+													
+														<input type="radio" name="user_radio"/>Nữ 
+													
+													
+												</td>
+											</tr>
+										</table>
 
-									<label for="gioi_tinh">giới tinh</label><br>
-									<input type="radio" name="user_radio"/>Nam<br>
-									<input type="radio" name="user_radio"/>Nữ<br>
 
-									<label for="gioi_thieu">Giới thiệu bản thân</label>
-									<textarea cols="100" rows="10"></textarea>
+										<label for="gioi_thieu">Giới thiệu bản thân</label>
+										<textarea cols="60" rows="10"></textarea>
 
-									<label for="so_thich">So thich</label><br>
-									<input type="checkbox" name="used_check"/>Thể thao
-									<input type="checkbox" name="used_check"/>Phim ảnh
-									<input type="checkbox" name="used_check"/>Đọc sách
-									<input type="checkbox" name="used_check"/>Âm nhạc
-									<input type="checkbox" name="used_check"/>Âm nhạc
+										<label for="so_thich">So thich</label><br>
+										<input type="checkbox" name="used_check"/>Thể thao
+										<input type="checkbox" name="used_check"/>Phim ảnh
+										<input type="checkbox" name="used_check"/>Đọc sách
+										<input type="checkbox" name="used_check"/>Âm nhạc
+										<input type="checkbox" name="used_check"/>Khác
 
-										
+									</div>
+
+									<div id="dk_1"> 
+										<button type="button" onclick="changeColor()">Đăng ký</button><br>
+
+									</div>		
 
 
 								</form>
 							</div>
+
+
+							<script type="text/javascript">
+								
+								function changeColor(){
+									var input_text = document.getElementsByClassName("input_hien");
+									var color = input_text.value;
+									if(color.length < 1){
+		    	                       //alert("chua nhap gi");
+		    	                       input_text.style.border = "2px solid red";
+		    	                       var outer = input_text.outerHTML;
+		    	                       outer += '<p>Vui long nhap thong tin</p>';
+		    	                       input_text.outerHTML=outer;
+
+		    	                   }else{
+		    	                   	input_text.style.border = "1px solid green";
+		    	                   } 
+
+
+		    	                   var input_ten= document.getElementsByClassName("input_hien");
+		    	                   var color = input_ten.value;
+		    	                   if(color.length < 1){
+		    	                       //alert("chua nhap gi");
+		    	                       input_ten.style.border = "2px solid red";
+		    	                       var outer = input_text.outerHTML;
+		    	                       outer += '<p>Vui long nhap thong tin</p>';
+		    	                       input_text.outerHTML=outer;
+
+		    	                   }else{
+		    	                   	input_ten.style.border = "1px solid green";
+		    	                   }
+
+
+		    	                   var input_so_1 = document.getElementsByClassName("input_hien");
+		    	                   var color = input_so_1.value;
+		    	                   if(color.length < 1){
+		    	                       //alert("chua nhap gi");
+		    	                       input_so_1.style.border = "2px solid red";
+		    	                       var outer = input_text.outerHTML;
+		    	                       outer += '<p>Vui long nhap thong tin</p>';
+		    	                       input_text.outerHTML=outer;
+
+		    	                   }else{
+		    	                   	input_so_1.style.border = "1px solid green";
+		    	                   }
+
+
+								}
+
+
+							</script>
+
+
 						</div>
 					</div>
 					</section>
