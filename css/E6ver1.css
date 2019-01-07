@@ -9,7 +9,7 @@ body{
 li{
 	list-style-type: none;
 }
-a{
+.section a{
 	text-decoration: none;
 }
 /*CSS Section_1*/
@@ -34,11 +34,15 @@ a{
 	padding: 40px 0;
 }
 .container_2 .col-lg-8 a{
+	padding-right: 15px;
 	font-size: 16px;
 	font-weight: 500;
 }
 .container_2 .col-lg-2 a{
 	font-size: 16px;
+}
+.container_2 .col-lg-8 a:hover{
+	color: #ff5912;
 }
 /*CSS Section_3*/
 .section_3{
@@ -56,22 +60,58 @@ a{
 	padding: 22px 50px;
 	background: linear-gradient(to right,#3d45a5,#2c8bca);
 	color: #ffffff;
+	border-radius: 10px;
 }
 .return-dangnhap{
 	padding: 10px 0;
-	color: #344b91;
-	font-size: 
+}
+.return-dangnhap a{
+	color: #344b91; 
+}
+.clear{
+	clear: both;
+}
+/*style Radio*/
+.dieu-kien input{
+	display: none;
+}
+.dieu-kien label:before{
+	content: "";
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	background: #ffffff;
+	border: 2px solid #929292;
+	box-sizing: border-box;
+	float: left;
+	margin-right: 10px;
+}
+.dieu-kien input:checked + label:before{
+	background: #1860ad;
 }
 /*CSS Section_4*/
 .section_4{
+	background: #ffffff;
 	padding: 80px 0;
-}
-.color_xam-2{
-	color: #28313b;
 }
 .container_4 .col-lg-6 li a{
 	color: #28313b;
 }
 .container_4 .left_sec4 li a{
 	color: #28313b;
+}
+.center_sec4 li{
+	list-style-type: disc;
+}
+.center_sec4_right ul{
+	padding-left: 30px;
+}
+.container_4 ul li{
+	padding: 5px 0;
+}
+.center_sec4 li:hover{
+	color: #ff5912;
+}
+.center_sec4 li:hover a{
+	color: #ff5912;
 }
