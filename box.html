@@ -139,8 +139,12 @@
 				// $("#btn_submit").click(function(e){
 				// 	alert("aaa");
 				// });
+				$(".menu").bind('click',function(){
+
+				})
 				$("#btn_submit").bind("click",function(){
 					$(this).addClass("aaaaa");
+					console.log($(this));
 					$('.div_form input').each(function(){
 						if($(this).val().length < 1){
 							$(this).css("border","1px solid red");
