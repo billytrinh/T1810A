@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f4f6f8;
+	color:#28313b;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+}
+.section{
+	float: left;
+	width: 100%;
+
+}
+.container{
+	width: 1170px;
+	margin:0 auto;
+}
+
+/*****************************************/
+
+.section_1{
+	background: #ffffff;
+	border-bottom: 2px solid #f4f6f8;
+	padding: 20px 0;
+}
+.img{
+	color: #ff5912;
+}
+.words{
+	color: #34404b;
+}
+
+/*****************************************/
+
+.section_2{
+	background: #ffffff;
+	border-bottom: 2px solid #f4f6f8;
+	padding: 20px 0;
+}
+.section_2 .col-lg-7{
+	font-size: 15px;
+	font-weight: 500;
+}
+.section_2 .col-lg-7 span{
+	padding-left: 25px;
+	padding-right: 25px;
+	color: #34404b;
+}
+.section_2 .col-lg-3{
+	padding-left: -5px;
+	padding-right: -5px;
+}
+.section_2 .col-lg-3 a{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*****************************************/
+
+.section_3{
+	padding: 20px 0 50px 0;
+}
+.text{
+	color: #b8b9ba;
+	font-size: 120px;
+	padding: 50px 0;	
+}
+.dkien{
+	padding: 25px 0 30px 0;
+}
+.dki{
+	width: 352px;
+	height: 106px;
+	border-radius: 30px;
+	margin-top: 75px;
+	margin-bottom: 36px;
+	background-image: linear-gradient(to right,#4147a7,#64aad7);
+}
+.return{
+	padding: 10px 0;
+	color: #344b91;
+}
