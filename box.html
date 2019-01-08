@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -15,7 +15,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: green"></div>
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: pink"></div>
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: yellow"></div>
-			<table class="table table-bordered table-hover table-striped visible-xs">
+			<table class="table table-bordered table-hover table-striped" id="table_sv">
 				<thead>
 					<th>No</th>
 					<th>Ten Sinh vien</th>
@@ -39,6 +39,59 @@
 					</tr>
 				</tbody>
 			</table>
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<th>No</th>
+					<th>Ten Sinh vien</th>
+					<th>MSSV</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>#1</td>
+						<td class="text-center">Nguyen van A</td>
+						<td>#1234</td>
+					</tr>
+					<tr>
+						<td>#1</td>
+						<td>Nguyen van A</td>
+						<td>#1234</td>
+					</tr>
+					<tr>
+						<td>#1</td>
+						<td>Nguyen van A</td>
+						<td>#1234</td>
+					</tr>
+				</tbody>
+			</table>
+			<button type="button" onclick="changeX()">Change Color</button>
+			<script type="text/javascript">
+				var x = document.getElementById("table_sv");
+				//console.log(x);
+				var y = $("#table_sv"); // var y = jQuery("#table_sv");
+				//console.log(y);
+
+				var z = document.getElementsByClassName("table");
+				
+				//console.log(z1);
+				//var zz = document.getElementsByTagName("table");
+				//var z2=  $("table");
+
+				//for (var i = 0; i < z.length; i++) {
+				//	z[i].style.color = 'red';
+				//}
+				//z1.css("color","red");
+				//z1.css("font-size","50px");
+				
+				function changeX(){
+					var z1 = $(".table");
+						z1.css({
+						"color": "red",
+						"font-size": "30px",
+						"margin": "10px 20px 30px 40px"
+					});	
+				}
+
+			</script>
 			<div class="col-xs-6 col-xs-offset-3 hidden-xs">
 				<h1 class="text-center"><i class="glyphicon glyphicon-euro"></i></h1>
 				<h1 class="text-center"><i class="fab fa-facebook-f"></i></h1>
