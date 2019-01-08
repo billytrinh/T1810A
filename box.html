@@ -15,7 +15,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: green"></div>
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: pink"></div>
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: yellow"></div>
-			<table class="table table-bordered table-hover table-striped" id="table_sv">
+			<table class="table table-bordered table-hover table-striped" id="table_sv" >
 				<thead>
 					<th>No</th>
 					<th>Ten Sinh vien</th>
@@ -39,31 +39,9 @@
 					</tr>
 				</tbody>
 			</table>
-			<table class="table table-bordered table-hover table-striped">
-				<thead>
-					<th>No</th>
-					<th>Ten Sinh vien</th>
-					<th>MSSV</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td>#1</td>
-						<td class="text-center">Nguyen van A</td>
-						<td>#1234</td>
-					</tr>
-					<tr>
-						<td>#1</td>
-						<td>Nguyen van A</td>
-						<td>#1234</td>
-					</tr>
-					<tr>
-						<td>#1</td>
-						<td>Nguyen van A</td>
-						<td>#1234</td>
-					</tr>
-				</tbody>
-			</table>
-			<button type="button" onclick="changeX()">Change Color</button>
+			<div class="col-xs-12" id="div_tab" style="background-color: red;height: 100px;"></div>
+			<button type="button" onclick="changeX()">Change X</button>
+			<button type="button" onclick="changeY()">Change Y</button>
 			<script type="text/javascript">
 				var x = document.getElementById("table_sv");
 				//console.log(x);
@@ -83,22 +61,58 @@
 				//z1.css("font-size","50px");
 				
 				function changeX(){
-					var z1 = $(".table");
-						z1.css({
-						"color": "red",
-						"font-size": "30px",
-						"margin": "10px 20px 30px 40px"
-					});	
+					var z1 = $("#div_tab");
+					// z1.css({
+					// 	"color": "red",
+					// 	"font-size": "30px",
+					// 	"margin": "10px 20px 30px 40px"
+					// });	
+					//z1.hide();
+					//z1.fadeOut();
+					//z1.slideUp();
+					// z1.animate({
+					// 	"width":"50%",
+					// 	"height":"200px"
+					// },500);
+					//var x = '<p>Hello World;</p>';
+					//z1.append(x);
+					//z1.slideToggle(); // z1.toggle();
+					if(z1.hasClass("xyz")){
+						z1.removeClass("xyz");
+					}else{
+						z1.addClass("xyz");
+					}
+					
 				}
+				function changeY(){
+					var z1 = $("#div_tab");
+					//z1.show();
+					//z1.fadeIn();
+					//z1.slideDown();
+					// z1.animate({
+					// 	"width":"100%",
+					// 	"height":"100px"
+					// },500);
+					z1.removeClass("xyz");
 
+				}
+				function formX(){
+					var x = $(".div_form input[name=email]");
+					if(x.val().length < 1){
+						x.css("border","1px solid red");
+						x.after("<p style='color:red'>Vui long nhap email</p>");
+						// before("") --> them phia truoc
+					}
+				}
+				
 			</script>
-			<div class="col-xs-6 col-xs-offset-3 hidden-xs">
+			<div class="col-xs-6 col-xs-offset-3 hidden-xs div_form" >
 				<h1 class="text-center"><i class="glyphicon glyphicon-euro"></i></h1>
 				<h1 class="text-center"><i class="fab fa-facebook-f"></i></h1>
 				<form>
 				  <div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
 				  </div>
 				  <div class="form-group">
 				    <label for="exampleInputPassword1">Password</label>
@@ -114,13 +128,39 @@
 				      <input type="checkbox"> Check me out
 				    </label>
 				  </div>
-				  <button type="button">Submit</button>
+				  <button type="button" id="btn_submit">Submit</button>
 				  <button type="button" class="btn btn-default">Submit</button>
 				  <button type="button" class="btn btn-primary">Submit</button>
 				  <button type="button" class="btn btn-warning">Submit</button>
 				  <button type="button" class="btn btn-danger">Submit</button>
 				</form>
 			</div>
+			<script type="text/javascript">
+				// $("#btn_submit").click(function(e){
+				// 	alert("aaa");
+				// });
+				$("#btn_submit").bind("click",function(){
+					$(this).addClass("aaaaa");
+					$('.div_form input').each(function(){
+						if($(this).val().length < 1){
+							$(this).css("border","1px solid red");
+							$(this).after("<p style='color:red'>Vui long nhap email</p>");
+						}
+					});
+				});
+				var i = 1;
+				$('.div_form button').each(function(){
+					if(i%2 == 1){
+						$(this).addClass("no_1");
+					}else{
+						$(this).addClass("no_2");
+					}
+					i++;
+				});
+
+			
+
+			</script>
 		</div>
 	</div>
 	<div class="left">
