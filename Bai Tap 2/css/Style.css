@@ -1,17 +1,8 @@
-*{
-	margin: 0;
-	padding: 0;
-}
 body{
 	background-color: #f4f6f8;
 	color: #34404b;
 	font-size: 14px;
-	font-weight: 400;
-	line-height: 2;
-	font-family: 'PT Sans', sans-serif;
-}
-h3{
-	color: #ff5912;
+	font-family: Arial;
 }
 a{
 	color: #34404b;
@@ -19,6 +10,7 @@ a{
 }
 a:hover{
 	color: #ff5912;
+	text-decoration: none;
 }
 ul{
 	list-style-position: inside;
@@ -27,148 +19,72 @@ section{
 	float: left;
 	width: 100%;
 }
-.container{
-	width: 1170px;
-	margin: 0 auto;
-}
-.head{
+.section_1{
 	background-color: white;
 	margin-bottom: 2px;
-	padding: 25px 0;
+	padding: 15px 0;
 }
-.email{
-	width: 13%;
-	float: left;
-}
-.phone{
-	width: 13%; 
-	float:left;
-}
-.social{
-	float: right;
-}
-.subhead{
+
+.section_2{
 	background-color: white;
 	margin-bottom: 55px;
 	padding: 25px 0;
 }
-.logo{
-	width: 15%;
-	float: left;
+.section_2 .col-lg-3 i{
+	font-size: 27px;
 }
-.menu{
-	width: 40%;
-	float:left;
-	padding: 10px 0;
-	word-spacing: 43px;
+
+.section_3{
+	margin-bottom: 100px;
 }
-.submenu{
-	float: right;
-	word-spacing: 30px;
+.section_3 i{
+	font-size: 250px;
+	color: #b7b8b9;
 }
-.container2{
-	width: 810px;
-	margin: 0 auto;
-}
-.main_body label{
+.section_3 label{
 	font-size: 45px;
 	color: #7b7b7b;
+	font-weight: 100;
 }
-.main_body .face{
-	width: 25%;
-	margin: 0 auto;
+.section_3 .col-lg-6 label{
+	font-size: 35px;
+	color: #7b7b7b;
+	font-weight: 100;
 }
-.main_body .sau_thongtin{
-	width: 100%;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 100px;
-
-}
-.main_body .sau_thongtin #radio_dk{
+.section_3 #radio_dk{
 	display: none;
 }
-.main_body .sau_thongtin label:before{
+.section_3 .col-lg-6 label:before{
 	content: "";
 	width: 20px;
 	height: 20px;
 	border: 1px solid lightgrey;
 	background-color: white;
 	border-radius: 100%;
-	margin: 25px 5px 0 0;
+	margin-top: 15px;
 	float: left;
 }
-.main_body .sau_thongtin #radio_dk:checked + label:before{
-	width: 15px;
-	height: 15px;
+.section_3 .col-lg-6 #radio_dk:checked + label:before{
+	width: 20px;
+	height: 20px;
 	background-color: #1860ad;
-	border: 3px solid white;
+	border: 2px solid white;
 	box-shadow: 0 0 1px #8b8b8b;
 }
-
-.main_body .dieukhoan{
-	width: 60%;
-	margin: 0 auto;
-}
-.main_body .dieukhoan1{
-	font-size: 35px;
-	text-align: center;
-}
-
-.main_body input{
-	width: 100%;
-	height: 92px;
-	border: 2px solid #919191;
-	border-radius: 5px;
-	font-size: 40px;
-}
-.main_body #radio_dk{
-	float: left;
-	width: auto;
-
-}
-.main_body button{
+.section_3 button{
 	font-size: 45px;
 	color: white;
-	background-color: #1860ad;
-	padding: 20px;
+	background: linear-gradient(to right, #3b49a8,#2c8ac8);
+	padding: 15px 40px;	
 	border: none;
 	border-radius: 15px;
-	width: 50%;
-	cursor: pointer;
 }
-.main_body a{
+.section_3 a{
 	font-size: 42px;
 	color: #334b91;
-	text-align: center;
 }
-.foot{
+
+.section_4{
 	background-color: white;
 	padding: 40px 0;
-}
-.logo_foot{
-	width: 30%;
-	float: left;
-}
-.footlist{
-	width: 55%;
-	float: left;
-}
-.footlist1{
-	width: 33%;
-	float: left;
-}
-.footlist2{
-	width: 33%;
-	float: left;
-}
-.footlist3{
-	width: auto;
-	float: left;
-}
-.footlist li{
-	list-style-type: circle;
-}
-.payment{
-	width: auto;
 }
