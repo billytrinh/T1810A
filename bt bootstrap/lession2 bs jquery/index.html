@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="vendor/font/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/ex1.css">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<section class="section section_1 col-lg-12">
+		<div class="container">
+			<div class="col-lg-6 col-xs-6 header_left">
+				
+				<img src="img/thu.png">
+				<span>info@shopy.com</span>
+				<img src="img/phone.png">
+				<span>453-5553-996</span>
+
+
+			</div>
+			<div class="col-lg-6 col-xs-6 header_right">
+				<img src="img/fb.png">
+				<img src="img/twiter.png">
+				<img src="img/gg.png">
+				<img src="img/inta.png">
+			</div>
+		</div>
+	</section>
+	<section class="section section_2 col-lg-12">
+		<div class="container">
+			<div class="row menu">
+				<nav class="navbar col-xs-6 col-lg-9">
+					
+						<div class="navbar-header">
+							<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+						</div>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">Hot Deals</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					
+				</nav>
+				<div class="col-lg-3 col-xs-6 fb">
+					<img src="img/cart.png">
+					<img src="img/nguoi.png">
+					<img src="img/serch.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section_3 col-lg-12">
+		<div class="container">
+			<div class="row" style="margin-top: 20px;">
+				<p class="text-center"><img src="img/nguoi1.png"></p>
+			</div>
+			<form class="form">
+				<div class="form-group div_form">
+					<label for="exampleInputEmail1">Email address *</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				</div>
+				<div class="form-group div_form1">
+					<label for="exampleInputPassword1">Password *</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<div class="form-group div_form2">
+					<label for="exampleInputPassword1">Nhập lại Password *</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<div class="form-group div_form3">
+					<label for="exampleInputPhone1">Phone *</label>
+					<input type="text" class="form-control" id="exampleInputPhone1" placeholder="Phone">
+				</div>
+				<div class="form-group div_form4">
+					<label for="exampleInputEmail1">Mã giới thiệu</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Mã giới thiệu">
+				</div>
+
+				<div class="radio form1">
+					<label>
+						<input type="radio">
+						<p>Đồng ý về chính sách bảo mật và điều khoản sử dụng</p>
+					</label>
+				</div>
+				<button type="button" class="btn btn-primary" id="btn_submit">Đăng ký</button>
+			</form>
+		</div>
+	</section>
+	<section class="section section_4 col-lg-12">
+		<div class="container">
+			<div class="row footer">
+				<div class="about">
+					<div class="section_5_1">
+						<p><img src="img/logo.png" alt=""></p>
+						<p>Shopy c 2015. your copy right here.</p>
+					</div>
+				</div>
+				<div class="about">
+					<div class="section_5_2">
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Support</a></li>
+						</ul>
+					</div>
+				</div>	
+				<div class="about">
+					<div class="section_5_3">
+						<ul>
+							<li><a href="#">Our feed</a></li>
+							<li><a href="#">Terms and conditions</a></li>
+							<li><a href="#">Our privacy</a></li>
+						</ul>
+					</div>
+				</div>	
+				<div class="about">
+					<div class="section_5_4">
+						<ul>
+							<li><a href="#">Join us</a></li>
+							<li><a href="#">Live support</a></li>
+						</ul>
+					</div>
+				</div>	
+				<div class="about">
+					<div class="section_5_5">
+						<img src="img/co.png" alt="payments">
+					</div>
+				</div>		
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		$("#btn_submit").bind("click",function(){
+						//$(this).addClass("aaaaa");
+						$('.div_form input').each(function(){
+							if($(this).val().length < 1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>Vui long nhap email</p>");
+							}
+						});
+						$('.div_form1 input').each(function(){
+							if($(this).val().length < 1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>Vui long nhap password</p>");
+							}
+						});
+						$('.div_form2 input').each(function(){
+							if($(this).val().length < 1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>Vui long nhap password</p>");
+							}
+						});
+						$('.div_form3 input').each(function(){
+							if($(this).val().length < 1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>Vui long nhap Số điện thoại</p>");
+							}
+						});
+					});
+				</script>
+
+</body>
+</html>
