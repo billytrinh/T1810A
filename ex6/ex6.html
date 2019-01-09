@@ -1,55 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Layout Demo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
-	<link rel="stylesheet" type="text/css" href="ex6.css">
-</head> 
+	<title>Ex6</title>
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/ex6.css">
+</head>
 <body>
-	<div class="container">
-		<div>
-			
-				<i class="col-lg-1 col-md-1 col-sm-2 col-xs-2 far fa-envelope"></i>
-				<p class="col-lg-2 col-md-2 col-sm-4 col-xs-4">info@shopy.com</p>
-				<i class="col-lg-1 col-md-1 col-sm-2 col-xs-2 fas fa-phone-volume"></i>
-				<p class="col-lg-2 col-md-2 col-sm-4 col-xs-4">453-5553-996</p>
-			
-		</div>
-		<div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
-				<i class="fab fa-facebook-f"></i>
-			
-				<i class="fab fa-twitter"></i>
-			
-				<i class="fab fa-google-plus-g"></i>
-			
-				<i class="fab fa-instagram"></i>
-			
+	<div class="section_1">
+		<div class="container">
+			<div class="col-lg-8 col-md-8 hidden-sm hidden-xs">
+				<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+					<i class="email far fa-envelope"></i>
+					<p class="email"> info@shopy.com</p>
+				</div>
+				<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+					<i class="phone fas fa-phone-square"></i>
+					<p class="phone">453-5553-996</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+				<i class="social fab fa-facebook-f"></i>
+				<i class="social fab fa-twitter"></i>
+				<i class="social fab fa-google-plus-g"></i>
+				<i class="social fab fa-instagram"></i>
+			</div>
 		</div>
 	</div>
 	<hr>
-	<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="section_2">
 		<div class="container">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-				<img src="logo.png">
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+				<center><img src="img/logo.png"></center>
 			</div>
-			<p class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
-				Home
-			</p>
-			<p class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
-				Products
-			</p>
-			<p class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
-				Hot Deals
-			</p>
-			<p class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
-				About
-			</p>
-			<p class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-				Contact
-			</p>
+				<p class="menu col-lg-1 col-md-1 hidden-sm hidden-xs">Home</p>
+				<p class="menu col-lg-1 col-md-1 hidden-sm hidden-xs">Products</p>
+				<p class="menu col-lg-1 col-md-1 hidden-sm hidden-xs">Hot Deals</p>
+				<p class="menu col-lg-1 col-md-1 hidden-sm hidden-xs">About</p>
+				<p class="menu col-lg-1 col-md-1 hidden-sm hidden-xs">Contact</p>
+				<p class="col-lg-1 col-md-1 hidden-sm hidden-xs">Search</p>
+				<p class="col-lg-1 col-md-1 hidden-sm hidden-xs">Users</p>
+				<p class="col-lg-2 col-md-1 hidden-sm hidden-xs">Cart</p>
+		
+			<div class="hidden-menu hidden-lg hidden-md col-sm-12 col-xs-12">
+				<center>
+					<div class="dropdown">
+					  <p class="submenu text">Menu</p>
+					  <div class="dropdown-content">
+					  <p class="text">Home</p>
+					  <p class="text">Products</p>
+					  <p class="text">Hot Deals</p>
+					  <p class="text">About</p>
+					  <p class="text">Contact</p>
+					  </div>
+					</div>
+				</center>
+			</div>
 		</div>
-	</section>
+	</div>
+	<div class="section_3">
+		<div class="container">
+		<div class="container2">
+			<center><i class="avatar far fa-user-circle"></i></center>
+			<form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Email</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Ho va ten</label>
+			    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ho va ten">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">So dien thoai</label>
+			    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="So dien thoai">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Mat khau</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mat khau">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Nhap Lai Mat khau</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nhap Lai Mat khau">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Ma gioi thieu</label>
+			    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ho va ten">
+			  </div>
+			  <center><input type="radio">Dong y ve chinh sach bao mat<br> va dieu khoan su dung<br>
+			  	<input type="submit" class="btn btn-default">
+			
+			  <a href="#"><p>Tro lai dang nhap</p></a>
+			</center>
+			</form>
+		</div>
+	</div>
+	</div>
+	<div class="section_4">
+		<div class="container">
+			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+				<center>
+					<p class="logo"><img src="img/logo.png"></p>
+					<p class="logo">shopy c 2015. your copy right here</p>
+				</center>
+			</div>
+			<ul class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+				<li>about</li>
+				<li>contact</li>
+				<li>support</li>
+			</ul>
+			<ul class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+				<li>our feed</li>
+				<li>terms and conditions</li>
+				<li>our privacy</li>
+			</ul>
+			<ul class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+				<li>join us</li>
+				<li>live support</li>
+				<li style="list-style: none">&nbsp</li>
+			</ul>
+			<div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+				<p class="payment">Payment Methods</p>
+				<img src="img/payment.png">
+			</div>
+		</div>
+	</div>
 </body>
 </html>
