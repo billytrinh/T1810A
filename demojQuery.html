@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Color Font size</title>
+	<link href="https://fonts.googleapis.com/css?family=Aleo:400,400i,700,700i|Merriweather:300,400,400i,700,700i,900,900i|Open+Sans:300,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style5.css">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="col-md-6 col-md-offset-3 text-1" id="text_1">
+		<h1 class="text-center">Lorem</h1>
+		<p class="text-justify">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p class="text-justify">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate 	velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint 	occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="col-md-6 col-md-offset-3 text-left">
+	<h3>Change background</h3>
+	<button type="button" class="btn btn-primary" onclick="chang_red()">Red</button>
+	<button type="button" class="btn btn-primary" onclick="chang_yellow()">Yellow</button>
+	<button type="button" class="btn btn-primary" onclick="chang_blue()">Blue</button>
+	<button type="button" class="btn btn-primary" onclick="change_green()">Green</button>
+</div>
+<div class="col-md-6 col-md-offset-3 text-left">
+	<h3>Change font family</h3>
+	<button type="button" class="btn btn-default" onclick="change_arial()">Arial</button>
+	<button type="button" class="btn btn-default" onclick="change_open_sans()">Open sans</button>
+	<button type="button" class="btn btn-default" onclick="change_aleo()">Aleo</button>
+	<button type="button" class="btn btn-default" onclick="change_merriweather()">Merriweather</button>
+</div>
+<div class="col-md-6 col-md-offset-3 text-left">
+	<h3>Change color</h3>
+	<button type="button" class="btn btn-primary" onclick="chang_fred()">Red</button>
+	<button type="button" class="btn btn-primary" onclick="chang_fyellow()">Yellow</button>
+	<button type="button" class="btn btn-primary" onclick="chang_fblue()">Blue</button>
+	<button type="button" class="btn btn-primary" onclick="change_fgreen()">Green</button>
+</div>
+<div class="col-md-6 col-md-offset-3 text-left">
+	<h3>Change font size</h3>
+	<button type="button" class="btn btn-primary" onclick="chang_tang()">+</button>
+	<button type="button" class="btn btn-default" class="button_cach" "></button>
+	<button type="button" class="btn btn-primary" onclick="chang_giam()">-</button>
+</div>
+	
+	<div class="col-md-6 col-md-offset-3 text-1 div_form" style="padding: 150px 0">
+		<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default" onclick="formX()">Submit</button>
+</form>
+	</div>
+
+<script type="text/javascript">
+	var z = $(".text-1");
+	function chang_red(){
+		z.css({
+			"background":"red",
+			"color":"white",
+		});
+	}
+	function chang_yellow(){
+		z.css({
+			"background":"yellow",
+			"color":"white",
+		});
+	}
+	function chang_blue(){
+		z.css({
+			"background":"blue",
+			"color":"white",
+		});
+	}
+	function change_green(){
+		z.css({
+			"background":"green",
+			"color":"white",
+		});
+	}
+	function change_arial(){
+		z.css('font-family','Arial');
+	}
+	function change_open_sans(){
+		z.css('font-family','Open sans');
+	}
+	function change_aleo(){
+		z.css('font-family','Aleo');
+	}
+	function change_merriweather(){
+		z.css('font-family','Merriweather');
+	}
+	function chang_fred(){
+		z.css('color','red');
+	}
+	function chang_fyellow(){
+		z.css('color','yellow');
+	}
+	function chang_fblue(){
+		z.css('color','blue');
+	}
+	function change_fgreen(){
+		z.css('color','green');
+	}
+	function chang_tang(){
+		z1 = jQuery("#text_1");
+		var x = z1.css('font-size');
+		x = parseInt(x);
+		console.log(x);
+		x = x + 1;
+		z1.css('font-size',x + 'px');
+	}
+	function chang_giam(){
+		z1 = jQuery("#text_1");
+		var x = z1.css('font-size');
+		x = parseInt(x);
+		console.log(x);
+		x = x - 1;
+		z1.css('font-size',x + 'px');
+	}
+
+	function formX(){
+		var x = $(".div_form input[name=email]");
+		if(x.val().length < 1){
+			x.css("border","1px solid red");
+			x.after("<p style='color: red'>Vui long nhap email</p>");
+		}
+	}
+</script>
+</body>
+</html>
