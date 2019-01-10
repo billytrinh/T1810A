@@ -6,6 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
 		<link rel="stylesheet" type="text/css" href="css/Style.css">
+		<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
 	</head>
 	<body>
 		<section class="section_1">
@@ -55,30 +58,36 @@
 						<i class="far fa-user-circle"></i>
 					</div>
 					<div class="col-lg-2"></div>
-					<form class="col-lg-8">
+					<form class="col-lg-8" data-toggle="validator" role="form">
 						<div class="form-group">
-							<label>Email</label>
-							<input type="email" name="email_input" class="form-control" id="email_input">
+							<label for="email_input" class="control-label">Email</label>
+							<input type="email" class="form-control" id="email_input" placeholder="Nhap email" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">		
-							<label>Họ và tên</label>
-							<input type="text" name="name_input" class="form-control" id="name_input">
+							<label for="name_input" class="control-label">Họ và tên</label>
+							<input type="text" class="form-control" id="name_input" placeholder="Nhap ten" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">	
-							<label>Số điện thoại</label>
-							<input type="text" name="phone_input" class="form-control" id="phone_input">
+							<label for="phone_input" class="control-label">Số điện thoại</label>
+							<input type="text" class="form-control" id="phone_input" placeholder="Nhap so dien thoai" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">
-							<label>Mật khẩu</label>
-							<input type="password" name="password_input" class="form-control" id="password_input">
+							<label for="password_input" class="control-label">Mật khẩu</label>
+							<input type="password" class="form-control" id="password_input" placeholder="Nhap mat khau" required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">		
-							<label>Nhập lại Mật khẩu</label>
-							<input type="password" name="password_input" class="form-control" id="password_input_2">
+							<label for="password_input_2" class="control-label">Nhập lại Mật khẩu</label>
+							<input type="password" class="form-control" id="password_input_2" placeholder="Nhap lai mat khau" data-match="#password_input" match-date-error="Mat khau chua giong nhau." required>
+							<div class="help-block with-errors"></div>
 						</div>
 						<div class="form-group">		
-							<label>Mã giới thiệu</label>
-							<input type="text" name="magt_input" class="form-control" id="magt_input">	
+							<label for="magt_input_input" class="control-label">Mã giới thiệu</label>
+							<input type="text" class="form-control" id="magt_input" placeholder="Nhap ma gioi thieu" required>
+							<div class="help-block with-errors"></div>	
 						</div>
 					</form>	
 					<div class="col-lg-12 text-center">
@@ -88,7 +97,7 @@
 						</div>
 					</div>	
 					<div class="col-lg-12 text-center">
-						<button type="submit">Đăng ký</button><br>
+						<button type="submit" class="btn btn-primary">Đăng ký</button><br>
 						<a href="#">Trở lại đăng nhập</a>	
 					</div>
 				</div>
