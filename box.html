@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -167,14 +168,14 @@
 			<div class="col-xs-6 col-xs-offset-3 hidden-xs div_form" >
 				<h1 class="text-center"><i class="glyphicon glyphicon-euro"></i></h1>
 				<h1 class="text-center"><i class="fab fa-facebook-f"></i></h1>
-				<form>
+				<form data-toggle="validator" role="form">
 				  <div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>
-				    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
 				  </div>
 				  <div class="form-group">
 				    <label for="exampleInputPassword1">Password</label>
-				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
 				  </div>
 				  <div class="form-group">
 				    <label for="exampleInputFile">File input</label>
@@ -183,10 +184,10 @@
 				  </div>
 				  <div class="checkbox">
 				    <label>
-				      <input type="checkbox"> Check me out
+				      <input type="checkbox" required> Check me out
 				    </label>
 				  </div>
-				  <button type="button" id="btn_submit">Submit</button>
+				  <button type="submit" id="btn_submit2">Submit</button>
 				  <button type="button" class="btn btn-default">Submit</button>
 				  <button type="button" class="btn btn-primary">Submit</button>
 				  <button type="button" class="btn btn-warning">Submit</button>
