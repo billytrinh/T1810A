@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="vendor/fontawesome/css/all.css">
 	<link rel="stylesheet" href="css/ex6.css">
+	<script type="text/javascript" src="jquery/jquery.js"></script>
 </head>
 <body>
 	<div class="section_1">
@@ -69,7 +70,7 @@
 			  </div>
 			  <div class="form-group">
 			    <label for="exampleInputPassword1">Ho va ten</label>
-			    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ho va ten">
+			    <input type="text" class="form-control" id="exampleInputPassword1" name ="name" placeholder="Ho va ten">
 			  </div>
 			  <div class="form-group">
 			    <label for="exampleInputPassword1">So dien thoai</label>
@@ -77,24 +78,64 @@
 			  </div>
 			  <div class="form-group">
 			    <label for="exampleInputPassword1">Mat khau</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mat khau">
+			    <input type="password" class="form-control" id="exampleInputPassword1" name="pass1" placeholder="Mat khau">
 			  </div>
 			  <div class="form-group">
 			    <label for="exampleInputPassword1">Nhap Lai Mat khau</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nhap Lai Mat khau">
+			    <input type="password" class="form-control" id="exampleInputPassword1" name="pass2" placeholder="Nhap Lai Mat khau">
 			  </div>
 			  <div class="form-group">
 			    <label for="exampleInputPassword1">Ma gioi thieu</label>
-			    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ho va ten">
+			    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ma gioi thieu">
 			  </div>
 			  <center><input type="radio">Dong y ve chinh sach bao mat<br> va dieu khoan su dung<br>
-			  	<input type="submit" class="btn btn-default">
+			  	<button type="button" class="btn btn-default" onclick="checkform()">submit</button>
 			
 			  <a href="#"><p>Tro lai dang nhap</p></a>
 			</center>
 			</form>
 		</div>
 	</div>
+	<script type="text/javascript">
+		function checkform(){
+			var x = $("input[type=email]");
+			if (x.val().length<1){
+				x.css("border","1px solid red");
+				x.after("<p style='color:red'>Nhap email</p>");	
+			
+			}
+			var x = $("input[name=name]");
+			if (x.val().length<1){
+				x.css("border","1px solid red");
+				x.after("<p style='color:red'>Nhap ten</p>");	
+			
+			}
+			var x = $("input[type=number]");
+			if (x.val().length<1){
+				x.css("border","1px solid red");
+				x.after("<p style='color:red'>Nhap so dien thoai</p>");	
+			
+			}
+			var x = $("input[name=pass1]");
+			if (x.val().length<1){
+				x.css("border","1px solid red");
+				x.after("<p style='color:red'>Nhap mat khau</p>");	
+			
+			}
+			var y = $("input[name=pass2]");
+			if (y.val().length<1){
+				y.css("border","1px solid red");
+				y.after("<p style='color:red'>Nhap lai mat khau</p>");	
+			
+			}
+			var x = $("input[name=pass1]");
+			var y = $("input[name=pass2]");
+			if(x.val()!=y.val()){
+				y.css("border","1px solid red");
+				y.after("<p style='color:red'>Mat khau khong khop</p>");	
+			}
+		}
+	</script>
 	</div>
 	<div class="section_4">
 		<div class="container">
