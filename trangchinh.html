@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Bài tập về nhà</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+
+    <table class="table table-bordered table-hover table-striped" id="table_sv">
+                <thead>
+                    <th>No</th>
+                    <th>Ten Sinh vien</th>
+                    <th>MSSV</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <tclass="text-center">Nguyen van A</td>
+                        <td>#1234</td>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td>Nguyen van A</td>
+                        <td>#1234</td>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td>Nguyen van A</td>
+                        <td>#1234</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-hover table-striped">
+                <thead>
+                    <th>No</th>
+                    <th>Ten Sinh vien</th>
+                    <th>MSSV</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>Nguyen van A</td>
+                        <td>#1234</td>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td>Nguyen van A</td>
+                        <td>#1234</td>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td>Nguyen van A</td>
+                        <td>#1234</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" onclick="changeX()">Change Color</button>
+            <script type="text/javascript">
+                var x = document.getElementById("table_sv");
+                //console.log(x);
+                var y = $("#table_sv"); // var y = jQuery("#table_sv");
+                //console.log(y);
+                var z = document.getElementsByClassName("table");
+                
+                //console.log(z1);
+                //var zz = document.getElementsByTagName("table");
+                //var z2=  $("table");
+                //for (var i = 0; i < z.length; i++) {
+                //  z[i].style.color = 'red';
+                //}
+                //z1.css("color","red");
+                //z1.css("font-size","50px");
+                
+                function changeX(){
+                    var z1 = $(".table");
+                        z1.css({
+                        "color": "red",
+                        "font-size": "30px",
+                        "margin": "10px 20px 30px 40px"
+                    }); 
+                }
+            </script>
+    <section class="sec sec1">
+    	<div class="container">
+            <div class="row">
+            <
+                <div class="col-xs-12 col-sm-6 col-md-8">
+    				<a class="fbsec1" href="#"><img src="anh/mail.png"></a>
+               
+                    <a class="fbsec1" href="#">info@shopy.com</a>
+           
+    				<a class="fbsec1" href="#"><img src="anh/logophone.png"></a>
+                
+                    <a class="fbsec1" href="#">453 - 5553 - 966</a>
+    		
+                 	</div>		
+    		
+                <div class="col-xs-6 col-md-4">
+    			<a class="fbsec1" href="#"><img src="anh/facebook.png"></a>
+    			<a class="fbsec1" href="#"><img src="anh/twitter.png"></a>
+    			<a class="fbsec1" href="#"><img src="anh/googleplus.png"></a>
+    			<a class="fbsec1" href="#"><img src="anh/instagram.png"></a>
+            </div>
+    		
+    	</div>
+    </section>
+    	
+
+       
+    <section class="sec sec2">
+    	<div class="container">
+    			<div class="col-xs-6 col-md-4">
+    			<a href="#"><img src="anh/logobaithi.png">  </a>
+    			</div>
+    			<div class="col-xs-6 col-md-4">
+    			<a class="sec2a" href="#">Home</a>
+                <a class="sec2a" href="#">Products</a>
+                <a class="sec2a" href="#">Hot Deals</a>
+                <a class="sec2a" href="#">About</a>
+                <a class="sec2a" href="#">Contact</a>
+                </div>
+    			<div class="col-xs-6 col-md-4">
+    			<a class="sec2a" href="#"><img src="anh/kinhlup.png"></a>
+    			<a class="sec2a" href="file:///E:/GitHub/T1810A/dangky.html"><img src="anh/nguoi.png"></a>
+    			<a class="sec2a" href="#"><img src="anh/logo1.png"></a>
+    		</div>
+    	</div>
+    </section>
+
+
+    <section class="sec sec3">
+    	<div class="container">
+        	<div class="sec3_1">
+            	<div class="menu">
+                    <div class="menu1">
+            		<h3>Categories</h3>         
+                	<ul>
+	                	<li><a href="#">Man</a></li>
+	                    <li><a href="#">Women</a></li>
+	                    <li><a href="#">Childrens</a></li>
+	                    <li><a href="#">Hot Deals</a></li>
+                	</ul>
+                </div>
+           		</div>
+
+           		<div class="menu">
+                    <div class="menu1">
+               		<ul>
+                    	<h3>Price Filtter</h3> 
+                    	</ul>
+            	</div>
+                </div>
+            	<div class="menu">   
+                    <div class="menu1">             
+	                  <h3>Sizes</h3>
+	                  <ul>
+	                    <li>
+                            <input id="Small"type="checkbox"/>
+                            <label for="Small">Small </label></li> 
+                        <li>
+                            <input id="Midum"type="checkbox"/>
+                            <label for="Midum">Midum </label></li>
+                        <li>
+                            <input id="Larg"type="checkbox"/>
+                            <label for="Larg">Larg </label></li> 
+                        <li>
+                            <input id="X Larg"type="checkbox"/>
+                            <label for="X Larg">X Larg </label></li>
+	                </ul>
+            	</div>
+                </div>
+
+           		<div class="menu">
+                    <div class="menu1">
+	           		<h3>Brands</h3>
+	           		<ul> 
+	           			<li>
+                            <input id="Reebok"type="checkbox"/>
+                            <label for="Reebok">Reebok </label></li> 
+	           			<li>
+                            <input id="Adidas"type="checkbox"/>
+                            <label for="Adidas">Adidas </label></li>
+	           			<li>
+                            <input id="Nike"type="checkbox"/>
+                            <label for="Nike">Nike </label></li>
+	           			<li>
+                            <input id="Active"type="checkbox"/>
+                            <label for="Active">Active </label></li>
+                    </ul> 
+         </div>
+     </div>
+</div>
+
+<div class="container">
+    <div class="sec3_2">
+        
+    <div class="list" id="list_product">
+    </div>
+</div>
+        	
+
+            <div class="sec sec4">
+                <div class="sec4_1">
+                <a href="#">NEWS LETTER</a>
+                </div>
+                <div class="sec4_2">
+                <a href="#">Join us now to get all news and special offers</a>
+                </div>
+
+            <div class="sec4_3">
+                <a href="#"> <img src="anh/mail.png"></a>
+                <a href="#"> type your email here</a>
+            </div>
+
+            <div class="sec4_4">
+                <a href="#">Join us</a>              
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sec sec5">
+    	<div class="container">
+
+    	<div class="sec5_1">        
+            <a href="#"> <img src="anh/logobaithi.png"></a>
+      <br>
+        	<a href="#" class="q">shopy c 2015.your copy right here</a>
+        </div>
+
+        <div class="sec5_2">
+        	<li><a href="#" class="q">about us</a></li>
+            <br>
+        	<li><a href="#" class="q">contact us</a></li>
+            <br>
+        	<li><a href="#" class="q">support</a></li>
+        </div>
+
+        <div class="sec5_3">
+        	<li><a href="#" class="q">our feed</a></li> 
+            <br>
+        	<li><a href="#" class="q">terms and conditions</a></li>
+            <br>
+        	<li><a href="#" class="q">our privacy</a></li>
+        </div>
+
+        <div class="sec5_4">
+        	<li><a href="#" class="q">join us</a></li>
+            <br>
+        	<li><a href="#" class="q">live support</a></li>
+        </div>
+
+        <div class="sec5_5">
+        	<li><a href="#" class="q">Payment Methods</a></li>
+            <br>
+        	<a href="#"> <img src="anh/logothanhtoan.png"></a>
+        </div>
+
+        </div>
+    	</div>
+    </section>
+<script type="text/javascript">
+        var data = {
+            status: 1,
+            message: 'success',
+            data: [
+                {
+                    image: 'anh/aodo.png',
+                    name: 'Reebok Track Jacket',
+                    price: '1000$'
+                },
+                {
+                    image: 'anh/aodo.png',
+                    name: 'Reebok Track Jacket',
+                    price: '1000$'
+                },
+                {
+                    image: 'anh/aodo.png',
+                    name: 'Reebok Track Jacket',
+                    price: '1000$'
+                },
+                {
+                    image: 'anh/aodo.png',
+                    name: 'Reebok Track Jacket',
+                    price: '1000$'
+                },
+                {
+                    image: 'anh/aodo.png',
+                    name: 'Reebok Track Jacket',
+                    price: '1000$'
+                },
+                {
+                    image: 'anh/aodo.png',
+                    name: 'Reebok Track Jacket',
+                    price: '1000$'
+                },
+                {
+                    image: 'anh/aodo.png',
+                    name: 'Reebok Track Jacket',
+                    price: '1000$'
+                },
+                {
+                    image: 'anh/aoden.png',
+                    name: 'Reebok Track Jacket',
+                    price: '100$'
+                },
+                {
+                    image: 'anh/aohong.png',
+                    name: 'Reebok Track Jacket',
+                    price: '100$'
+                }
+                
+            ]
+        }
+        var products = data.data;
+        var content_html = ''
+        for (var i = 0; i < products.length; i++) {
+            content_html += '<div class="item">';
+            content_html += '   <p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+            content_html += '   <p><a href="#">'+products[i].name+'</a></p>';
+            content_html += '   <p><span>'+products[i].price+'</span></p>';
+            content_html += '</div>';
+        }
+        document.getElementById("list_product").innerHTML =  content_html;
+      
+    </script>
+</body>
+
+</html>
