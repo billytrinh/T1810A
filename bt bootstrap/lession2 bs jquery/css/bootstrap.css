@@ -1,0 +1,12 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.section{
+	float: left;
+	width: 100%;
+}
+.container{
+	width: 1170px;
+	margin: auto;
+}
