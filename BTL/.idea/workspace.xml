@@ -34,8 +34,8 @@
           <file leaf-file-name="product.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/product.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-735">
-                  <caret line="165" column="6" lean-forward="true" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="6" />
+                <state relative-caret-position="861">
+                  <caret line="274" column="60" lean-forward="false" selection-start-line="274" selection-start-column="60" selection-end-line="274" selection-end-column="60" />
                   <folding>
                     <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -77,8 +77,8 @@
           <file leaf-file-name="product.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/product.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="410">
-                  <caret line="198" column="1" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="198" selection-end-column="1" />
+                <state relative-caret-position="-4184">
+                  <caret line="198" column="1" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="198" selection-end-column="1" />
                   <folding>
                     <element signature="e#1056#1141#0" expanded="false" />
                     <element signature="e#1165#1221#0" expanded="false" />
@@ -201,12 +201,12 @@
       <updated>1545746666536</updated>
       <workItem from="1545746677839" duration="61051000" />
       <workItem from="1546155553480" duration="13522000" />
-      <workItem from="1546502289200" duration="2396000" />
+      <workItem from="1546502289200" duration="3161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76969000" />
+    <option name="totallyTimeSpent" value="77734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -355,8 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/product.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="198" column="1" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="198" selection-end-column="1" />
+        <state relative-caret-position="-4184">
+          <caret line="198" column="1" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="198" selection-end-column="1" />
           <folding>
             <element signature="e#1056#1141#0" expanded="false" />
             <element signature="e#1165#1221#0" expanded="false" />
@@ -371,8 +371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-735">
-          <caret line="165" column="6" lean-forward="true" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="6" />
+        <state relative-caret-position="861">
+          <caret line="274" column="60" lean-forward="false" selection-start-line="274" selection-start-column="60" selection-end-line="274" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />

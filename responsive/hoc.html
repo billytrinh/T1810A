@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    @media
+    2 cach : - Cách 1: Làm cho màn hình web trước, r thay đổi các layout cho các kích cơ thiết bị nhỏ hơn sau
+             - Cách 2: Thiết kế giao diện cho màn hình mobile trước
+    -Cách làm responsive hiện tại: Boostrap + JQUERY
+    Framework(từ cái có sẵn xây dựng lên)                     Library(chức năng)
+    Bootstrap                     JQUERY
+    *Tìm hiểu đ/n Framework & Library
+    =>Plastform : đc xây dựng từ nhiều framework (**)
+
+
+    Bootstrap: table, form, button, text
+        - hidden-xs & visible-xs
+        - 60% mobile, 30-40% PC, 5-7% tablet
+
+        - @font-face
+        - fontawesome.com
+
+        - col-xs-offset & coll-xs-pull
+
+
+
+    (*) : data-toggle = "", data-target = ""
+    ............................
+
+    -Thứ tự include file: JQUERY --> Bootstrap.js
+
+    -Bootstrap/JS :
+        + Model : Tạo pop-up trên web.
+        + Dropdown : Tạo menu có các menu con, dạng click (hoặc thay thế cho ô select - ẩn ô select mựac định đi).
+        (*) - Tìm hiểu tạo pup-up dạng hover.
+        + Tap : Tạo các trang như chi tiết sp, coment sp, đánh giá...
+        + Carousel : Ít dùng vì k đẹp.
+        (*) - Một số Carousel slider đẹp : nivo slider(nhược điểm: chỉ dùng với ảnh),
+                                           owf carousel: ưu điểm: dùng đc nội dung ảnh và các nội dung khác,
+                                                                  tốt cho responsive
+        + Validator bootstrap: <form role="form" data-toggle="validator">
+                                    ...
+                                    <input type="text" name="" class="" id="" required>
+                               </form>
+
+        (*) : Xử lý background responsive -- tìm hiểu background-cover
+
+        (*) : TÌm hiểu thao tác command
+              Hosting là gì?
+
+
+    <div class="form-group has-feedback">
+        <label for="password"  class="col-md-4 control-label">
+            Password
+        </label>
+        <div class="col-md-6  inputGroupContainer">
+            <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <input class="form-control" id="userPw" type="password" placeholder="password"
+                       name="password" data-minLength="5"
+                       data-error="some error"
+                       required/>
+                <span class="glyphicon form-control-feedback"></span>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group has-feedback">
+        <label for="confirmPassword"  class="col-md-4 control-label">
+            Confirm Password
+        </label>
+        <div class="col-md-6  inputGroupContainer">
+            <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <input class="form-control {$borderColor}" id="userPw2" type="password" placeholder="Confirm password"
+                       name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
+                       data-match-error="some error 2"
+                       required/>
+                <span class="glyphicon form-control-feedback"></span>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $('#reg_form').bootstrapValidator({
+                // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    first_name: {
+                        validators: {
+                            stringLength: {
+                                min: 2,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your first name'
+                            }
+                        }
+                    },
+                    last_name: {
+                        validators: {
+                            stringLength: {
+                                min: 2,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your last name'
+                            }
+                        }
+                    },
+
+                    phone: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your phone number'
+                            },
+                            phone: {
+                                country: 'US',
+                                message: 'Please supply a vaild phone number with area code'
+                            }
+                        }
+                    },
+                    address: {
+                        validators: {
+                            stringLength: {
+                                min: 8,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your street address'
+                            }
+                        }
+                    },
+                    city: {
+                        validators: {
+                            stringLength: {
+                                min: 4,
+                            },
+                            notEmpty: {
+                                message: 'Please supply your city'
+                            }
+                        }
+                    },
+                    state: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please select your state'
+                            }
+                        }
+                    },
+                    zip: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your zip code'
+                            },
+                            zipCode: {
+                                country: 'US',
+                                message: 'Please supply a vaild zip code'
+                            }
+                        }
+                    },
+                    comment: {
+                        validators: {
+                            stringLength: {
+                                min: 10,
+                                max: 200,
+                                message:'Please enter at least 10 characters and no more than 200'
+                            },
+                            notEmpty: {
+                                message: 'Please supply a description about yourself'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your email address'
+                            },
+                            emailAddress: {
+                                message: 'Please supply a valid email address'
+                            }
+                        }
+                    },
+
+                    password: {
+                        validators: {
+                            identical: {
+                                field: 'confirmPassword',
+                                message: 'Confirm your password below - type same password please'
+                            }
+                        }
+                    },
+                    confirmPassword: {
+                        validators: {
+                            identical: {
+                                field: 'password',
+                                message: 'The password and its confirm are not the same'
+                            }
+                        }
+                    },
+
+
+                }
+            })
+
+
+                .on('success.form.bv', function(e) {
+                    $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                    $('#reg_form').data('bootstrapValidator').resetForm();
+
+                    // Prevent form submission
+                    e.preventDefault();
+
+                    // Get the form instance
+                    var $form = $(e.target);
+
+                    // Get the BootstrapValidator instance
+                    var bv = $form.data('bootstrapValidator');
+
+                    // Use Ajax to submit form data
+                    $.post($form.attr('action'), $form.serialize(), function(result) {
+                        console.log(result);
+                    }, 'json');
+                });
+        });
+
+
+
+    </script>
+</body>
+</html>

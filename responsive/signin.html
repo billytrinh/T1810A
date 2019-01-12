@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <script src="vendor/jquery/jquery-3.3.1.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/validator.js"></script>
+</head>
+
+<body>
+<header class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 header-left" style="padding-right: 0">
+                <img src="image/Mail%20Ico.png" alt="">
+                <span>info@shoppy.com</span>
+            </div>
+            <div class="col-lg-2 header-left" style=" padding-left: 0">
+                <img src="image/Phone%20Ico.png" alt="">
+                <span>453-553-996</span>
+            </div>
+            <div class="col-lg-8 header-right">
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-google-plus-g"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-default container-fluid" id="nav">
+    <div class="container">
+        <div class="navbar-header logo" style="padding-right: 5%">
+            <a class="navbar-brand" href="#"><img src="image/Logo.png" alt=""></a>
+        </div>
+        <ul class="nav navbar-nav menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Hot Deals</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="search"><img src="image/Search%20Ico.png" alt=""></a></li>
+            <li><a href="#" class="user"><img src="image/User%20Ico.png" alt=""></a></li>
+            <li><a href="#" class="cart"><img src="image/Cart.png" alt=""><span>5</span></a></li>
+        </ul>
+    </div>
+</nav>
+<main class="container-fluid">
+    <div class="container">
+        <div class="col-lg-6 col-lg-offset-3">
+            <div class="singin container-fluid">
+                <div class="row">
+                    <div class="face col-lg-12">
+                        <p class="text-center"><img src="image/Layer%201.png" alt=""></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-singin col-lg-12">
+                        <form method="" action="#" role="form" data-toggle="validator" class="form-horizontal"
+                              id="form">
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <label for="inputEmail" class="control-label">Email</label><br>
+                                    <input type="email" name="email" class="form-control" id="inputEmail">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <label for="inputName" class="control-label">Họ và Tên</label><br>
+                                    <input type="text" name="inputName" class="form-control" id="inputName">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <label for="inputPhone" class="control-label">Số điện thoại</label><br>
+                                    <input type="number" name="inputPhone" class="form-control" id="inputPhone">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <label for="inputPassword" class="control-label">Mật khẩu</label><br>
+                                    <input type="password" name="inputPassword" class="form-control" id="inputPassword">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <label for="inputRepass" class="control-label">Nhập lại mật khẩu</label><br>
+                                    <input type="password" name="inputRepass" data-match="#inputPassword" class="form-control" id="inputRepass">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <label for="inputCode" class="control-label">Mã giới thiệu</label><br>
+                                    <input type="text" name="inputCode" class="form-control" id="inputCode">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="radio">
+                                <label class="text-center col-lg-6 col-lg-offset-3">
+                                    <input type="radio" name="rule" id="">Đồng ý về chính sách bảo mật và
+                                    điều khoản sử dụng
+                                </label>
+                            </div>
+                            <div class="form-group inputSubmit">
+                                <div class="col-lg-4 col-lg-offset-4">
+                                    <button type="submit" class="btn btn-default col-lg-12">Đăng Ký</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-6 col-lg-offset-3">
+                                    <a href="#" class="col-lg-12 text-center">Trở lại đăng nhập</a>
+                                </div>
+                            </div>
+                        </form>
+                        <script>
+                            $(document).ready(function () {
+                                $('#form').validator({
+                                    feedback:{
+                                        valid: 'glyphicon glyphicon-ok',
+                                        invalid: 'glyphicon glyphicon-remove',
+                                        validating: 'glyphicon glyphicon-refresh'
+                                    },
+                                    fields:{
+                                        email: {
+                                            validators: {
+                                                notEmpty: {
+                                                    message: 'Nhập vào email của bạn.'
+                                                },
+                                                emailAddress: {
+                                                    message: 'Email chưa đúng.'
+                                                }
+                                            }
+                                        },
+                                        password: {
+                                            validators: {
+                                                identical: {
+                                                    field: 'confirmPassword',
+                                                    message: 'Confirm your password below - type same password please'
+                                                }
+                                            }
+                                        },
+                                        inputRepass: {
+                                            validators: {
+                                                identical: {
+                                                    field: 'password',
+                                                    message: 'The password and its confirm are not the same'
+                                                }
+                                            }
+                                        },
+                                    },
+                                }).on('success.form.bv', function(e) {
+                                    $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                                    $('#form').data('bootstrapValidator').resetForm();
+
+                                    // Prevent form submission
+                                    e.preventDefault();
+
+                                    // Get the form instance
+                                    var $form = $(e.target);
+
+                                    // Get the BootstrapValidator instance
+                                    var bv = $form.data('bootstrapValidator');
+
+                                    // Use Ajax to submit form data
+                                    $.post($form.attr('action'), $form.serialize(), function(result) {
+                                        console.log(result);
+                                    }, 'json');
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="container-fluid">
+    <div class="container">
+        <div class="col-lg-3">
+            <img src="image/Logo.png" alt=""><br>
+            <span>shopy c 2015 . your copy right here</span>
+        </div>
+        <div class="col-lg-2 col-lg-offset-1">
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">support</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2">
+            <ul>
+                <li><a href="#">our feed</a></li>
+                <li><a href="#">terms and conditions</a></li>
+                <li><a href="#">our privacy</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2">
+            <ul>
+                <li><a href="#">join us</a></li>
+                <li><a href="#">live support</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2">
+            <span>Payment Methods</span>
+            <img src="image/Payment%20Images.png">
+        </div>
+    </div>
+</footer>
+</body>
+</html>
