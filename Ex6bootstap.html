@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,700i,900,900i" rel="stylesheet">
 	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
 	<link rel="stylesheet" href="css/E6ver1.css">
 </head>
 <body>
@@ -57,7 +59,8 @@
 		<div class="container container_3">
 			<div class="nhap_thong_tin col-lg-6 col-lg-offset-3 div_form">
 				<h1 class="text-center ico_user"><i class="far fa-user-circle"></i></h1>
-				<form>
+				<!--
+				<form data-toggle="validator" role="form">
   					<div class="form-group">
     					<label for="exampleInputEmail1">Email</label>
     					<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -88,12 +91,66 @@
    						 </label>
 					</div>
  					 <div class="text-center">
- 					 	<button type="button" class="btn btn-default dang-ky" id="btn_submit">Đăng ký</button>
- 					 </div>
+ 					 	<button type="submit" class="btn btn-default dang-ky" id="btn_submit">Đăng ký</button>
+ 					 </div> 
  					 <div class="text-center return-dangnhap">
  					 	<a href="#">Trở lại đăng nhập</a>
  					 </div>
-					</form>
+					</form> -->
+
+		<form data-toggle="validator" role="form">
+ 			 <div class="form-group">
+    			<label for="inputEmail" class="control-label">Email</label>
+				<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Vui lòng nhập Email" required>
+
+    			<div class="help-block with-errors"></div>
+			</div>
+
+  			<div class="form-group">
+    			<label for="inputName" class="control-label">Họ và tên</label>
+    			<input type="text" class="form-control" id="inputName" placeholder="Nguyễn Văn A" data-error="Vui lòng nhập Họ tên" required>
+    			<div class="help-block with-errors"></div>
+  			</div>
+  			<div class="form-group">
+    			<label for="inputName" class="control-label">Số điện thoại</label>
+    			<input type="number" class="form-control" id="inputName" placeholder="0123456789" data-error="Vui lòng nhập Số điện thoại" required>
+    			<div class="help-block with-errors"></div>
+  			</div>
+  
+  			<div class="form-group">
+    			<label for="inputPassword" class="control-label">Mật khẩu</label>
+    			<div>
+      			<div class="form-group">
+        		<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+        		<div class="help-block">Minimum of 6 characters</div>
+      			</div>
+      			<div class="form-group">
+      				<label for="inputPasswordConfirm" class="control-label">Nhập lại mật khẩu</label>
+        			<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+        			<div class="help-block with-errors"></div>
+      			</div>
+    			</div>
+  			</div>
+  			<div class="form-group">
+    			<label for="inputCode" class="control-label">Mã giới thiệu</label>
+    			<input type="text" class="form-control" id="inputName" placeholder="OFX2BDA" data-error="Vui lòng nhập Mã giới thiệu" required>
+    			<div class="help-block with-errors"></div>
+  			</div>
+  			<div class="form-group">
+   			<div class="radio dieu-kien">
+        			<input id="dkc" type="radio" name="underwear" required>
+        			<label for="dkc">
+        				Đồng ý về chính sách bảo mật và điều khoản sử dụng
+     			 	</label>
+   			 </div>
+  			</div>
+  			<div class="form-group text-center">
+    			<button type="submit" class="btn btn-primary dang-ky">Đăng ký</button>
+  			</div>
+  			<div class="text-center return-dangnhap">
+ 					 	<a href="#">Trở lại đăng nhập</a>
+ 			 </div>
+			</form>
 			</div>
 		</div>
 	</section>
@@ -163,7 +220,18 @@
 					$(this).css("border","1px solid red");
 					$(this).after("<span style='color:red'>Vui long nhap</span>" + ms);
 						}
+				/*
+				if($(this).val().length < 1){
+					var mss;
+					if($(this).attr("name")==('email')){
+						mss =' <span style="color:red"> Email</span>';
+					}
+					$(this).css("border","1px solid red");
+					$(this).after("<span style='color:red'> Vui long nhap</span>"+mss);
+				}*/
+
 					});
+
 				});
 	</script>
 </body>
