@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GTD</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
+	
+</head>
+<body>
+	<section class="section section_1">
+		<div class="container container_1">
+				<div class="col-lg-6 trai">
+					<ul class="list-inline">
+						<li><a href="#" class="color_cam"><i class="far fa-envelope"></i></a></li>
+						<li><a href="#" class="color_den">info@gmail.com</a></li>
+						<li><a href="#" class="color_cam"><i class="fas fa-phone-square"></i></a></li>
+						<li><a href="#" class="color_den">453-5553-996</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-6 phai">
+					<ul class="list-inline text-right">
+						<li><a href="#" class="color_cam"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="#" class="color_cam"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#" class="color_cam"><i class="fab fa-google-plus-square"></i></a></li>
+						<li><a href="#" class="color_cam"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+		</div>
+	</section> 
+	<section class="section section_2">
+		<div class="container container_2">
+
+			<div class="col-lg-2">
+				<a href="#"><img src="img/shopy.png"></a>
+			</div>
+
+			<div class="col-lg-8">
+				<ul class="list-inline text-center">
+					<li><a href ="#" class="color_den">Home</a></li>
+					<li><a href ="#" class="color_den" >Products</a></li>
+					<li><a href ="#" class="color_den">Hot Deals</a></li>
+					<li><a href ="#" class="color_den">About</a></li>
+					<li><a href ="#" class="color_den">Contact</a></li>
+
+				</ul>
+			</div>
+			<div class="col-lg-2">
+				<ul class="list-inline text-right">
+					<li><a href ="#" class="color_den"><i class="fas fa-search"></i></a></li>
+					<li><a href ="#" class="color_den"><i class="fas fa-user"></i></a></li>
+					<li><a href ="#" class="color_den"><i class="fas fa-cart-plus"></i></a></li>
+
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section section_3">
+		<div class="container container_3">
+			<div class="dien_thong_tin col-lg-6 col-lg-offset-3 div_form">
+				<h1 class="text-center anh_td"><i class="fas fa-user-circle"></i></h1>
+				<form data-toggle="validator" role="form" >
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						
+						<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Vui lòng nhập email" required>
+						<div class="help-block with-errors"></div>
+
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName1">Họ và Tên</label>
+						
+						<input type="text" class="form-control" id="inputName" placeholder="Họ và Tên" data-error="Vui lòng nhập tên" required>
+						<div class="help-block with-errors"></div>
+
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPhone1">Số điện thoại</label>
+						
+						<input type="number" class="form-control" id="inputPhone" placeholder="Số điện thoại" data-error="Vui lòng nhập số điện thoại" required>
+						<div class="help-block with-errors"></div>
+
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Mật khẩu</label>
+						
+						<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" data-error="Vui lòng nhập mật khẩu" required>
+						<div class="help-block with-errors"></div>
+
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword2">Nhập lại mật khẩu</label>
+						
+						<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+						<div class="help-block with-errors"></div>
+
+					</div>
+					<div class="form-group">
+						<label for="exampleInputCode1">Mã giới thiệu</label>
+						<input type="text" name="code" class="form-control" id="exampleInputCode1" placeholder="Mã giới thiệu">
+					</div>
+					<div class="radio text-center dieu_khoan">
+						<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							Đồng ý về chính sách bảo mật và điều khoản sử dụng
+						</label>
+					</div>
+					
+
+					<div class="text-center">
+						
+						<button type="submit" class="btn btn-default dang_ky" id="btn_submit">Đăng ký</button>
+
+						
+					</div>
+					<div class="text-center">
+						<a href="#" class="tro_lai">Trở lại đăng nhập</a>
+					</div>
+
+					</form>
+			</div>
+			<script type="text/javascript">
+				$('#btn_submit').click(function(){
+					$('.help-block with-errors').toggle();
+				});
+
+
+
+
+			</script>
+		</div>
+	</section>
+
+	<section class="section section_4">
+		<div class="container container_4">
+			<div class="col-lg-4 mark_1">
+				<ul>
+					<li><a href="#"><img src="img/shopy.png"></a></li>
+					<li><a href="#" class="color_den" >shopy c @ 2015.your copy right here</a></li>
+				</ul>
+			</div>
+
+			<div class="col-lg-6 mark_2">
+				<div class="col-lg-4">
+					<ul>
+						<li>about us</a></li>
+						<li>contact us</li>
+						<li>support us</li>
+					</ul>
+				</div>
+				<div class="col-lg-4">
+					<ul>
+						<li>our feed</li>
+						<li>terms and conditions</li>
+						<li>Our privacy</li>
+					</ul>
+				</div>
+				<div class="col-lg-4">
+					<ul>
+						<li>join us</li>
+						<li>live support</li>
+						
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-2 mark_3">
+				<ul class="text-right">
+					<li><a href="#" class="color_cam" >Payment Methods</li>
+					<li><a href="#" ><img src="img/co.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</section>
+
+
+</body>
+</html>
