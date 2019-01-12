@@ -41,3 +41,10 @@
 	color: #3759b0;
 	text-align: center;
 }
+@media screen and(max-width:992px){
+
+}	
+.container_10{
+	width: 500px;
+	margin: 0 auto;
+}
