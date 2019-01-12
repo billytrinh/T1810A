@@ -7,6 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
 	<link rel="stylesheet" href="css/e6bst.css">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
 	
 </head>
 <body>
@@ -62,32 +65,47 @@
 
 	<section class="section section_3">
 		<div class="container container_3">
-			<div class="dien_thong_tin col-lg-6 col-lg-offset-3">
+			<div class="dien_thong_tin col-lg-6 col-lg-offset-3 div_form">
 				<h1 class="text-center anh_td"><i class="fas fa-user-circle"></i></h1>
-				<form>
+				<form data-toggle="validator" role="form" >
 					<div class="form-group">
 						<label for="exampleInputEmail1">Email address</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						<!-- <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> -->
+						<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Vui lòng nhập email" required>
+						<div class="help-block with-errors"></div>
+
 					</div>
 					<div class="form-group">
 						<label for="exampleInputName1">Họ và Tên</label>
-						<input type="text" class="form-control" id="exampleInputName1" placeholder="Họ và Tên">
+						<!-- <input type="text" name="ten" class="form-control" id="exampleInputName1" placeholder="Họ và Tên"> -->
+						<input type="text" class="form-control" id="inputName" placeholder="Họ và Tên" data-error="Vui lòng nhập tên" required>
+						<div class="help-block with-errors"></div>
+
 					</div>
 					<div class="form-group">
 						<label for="exampleInputPhone1">Số điện thoại</label>
-						<input type="number" class="form-control" id="exampleInputPhone1" placeholder="Số điện thoại">
+						<!-- <input type="number" name="phone"class="form-control" id="exampleInputPhone1" placeholder="Số điện thoại"> -->
+						<input type="number" class="form-control" id="inputPhone" placeholder="Số điện thoại" data-error="Vui lòng nhập số điện thoại" required>
+						<div class="help-block with-errors"></div>
+
 					</div>
 					<div class="form-group">
 						<label for="exampleInputPassword1">Mật khẩu</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						<!-- <input type="password" name="password_1" class="form-control" id="exampleInputPassword1" placeholder="Password" > -->
+						<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" data-error="Vui lòng nhập mật khẩu" required>
+						<div class="help-block with-errors"></div>
+
 					</div>
 					<div class="form-group">
 						<label for="exampleInputPassword2">Nhập lại mật khẩu</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						<!-- <input type="password" name="password_2" class="form-control" id="exampleInputPassword1" placeholder="Password"> -->
+						<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+						<div class="help-block with-errors"></div>
+
 					</div>
 					<div class="form-group">
 						<label for="exampleInputCode1">Mã giới thiệu</label>
-						<input type="text" class="form-control" id="exampleInputCode1" placeholder="Mã giới thiệu">
+						<input type="text" name="code" class="form-control" id="exampleInputCode1" placeholder="Mã giới thiệu">
 					</div>
 					<div class="radio text-center dieu_khoan">
 						<label>
@@ -96,7 +114,9 @@
 						</label>
 					</div>
 					<div class="text-center">
-						<button type="submit" class="btn btn-default dang_ky">Đăng ký</button>
+						<!-- <button type="button" onclick="formX()"class="btn btn-default dang_ky">Đăng ký</button> -->
+						<button type="submit" class="btn btn-default dang_ky" id="btn_submit">Đăng ký</button>
+
 						
 					</div>
 					<div class="text-center">
@@ -105,6 +125,51 @@
 
 					</form>
 			</div>
+			<script type="text/javascript">
+
+
+
+
+
+				// function formX(){
+				// 	var x = $(".div_form input[name=email]");
+				// 		if(x.val().length <1){
+				// 			x.css("border","1px solid red");
+				// 			x.after("<p style='color : red'>vui long nhap email </p>");
+				// 			//before("") --> them phia truoc
+				// 		}
+				// 		var x = $(".div_form input[name=ten]");
+				// 		if(x.val().length <1){
+				// 			x.css("border","1px solid red");
+				// 			x.after("<p style='color : red'>vui long nhap ten</p>");
+				// 			//before("") --> them phia truoc
+				// 		}
+				// 		var x = $(".div_form input[name=phone]");
+				// 		if(x.val().length <1){
+				// 			x.css("border","1px solid red");
+				// 			x.after("<p style='color : red'>vui long nhap số điện thoại</p>");
+				// 			//before("") --> them phia truoc
+				// 		}
+				// 		var x = $(".div_form input[name=password_1]");
+				// 		if(x.val().length <1){
+				// 			x.css("border","1px solid red");
+				// 			x.after("<p style='color : red'>vui long nhap mật khẩu</p>");
+				// 			//before("") --> them phia truoc
+				// 		}
+				// 		var x = $(".div_form input[name=password_2]");
+				// 		if(x.val().length <1){
+				// 			x.css("border","1px solid red");
+				// 			x.after("<p style='color : red'>vui long nhap lại mật khẩu </p>");
+				// 			//before("") --> them phia truoc
+				// 		}
+				// 		var x = $(".div_form input[name=code]");
+				// 		if(x.val().length <1){
+				// 			x.css("border","1px solid red");
+				// 			x.after("<p style='color : red'>vui long nhap thong tin mã</p>");
+				// 			//before("") --> them phia truoc
+				// 		}
+				// }
+			</script>
 		</div>
 	</section>
 

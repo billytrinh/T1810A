@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS DOM demo</title>
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="box-box" id="box_1">
+	<!--<div class="box-box" id="box_1" style="font-size: 14px;">-->
+		<p>ten toi la. hoc sinh lop. ban co the cho toi phong van ban dc ko. chi ben phong tuyen sinh. chi co the tu van e 1 vai dieu dc ko.vuavnjvo i bvaufhfqiuayfiqabfjhasfoiqeutq</p>
+	</div>
+	
+	<!--<div class="box-box" id="box_1"></div>-->
+	<button type="button" onclick="xanh_dam()">xanh dam</button>
+	<button type="button" onclick="xanh_la()">xanh la cay</button>
+	<button type="button" onclick="maudo()">do</button>
+	<button type="button" onclick="den()">den</button>
+	<button type="button" onclick="nghieng()">chu nghieng</button>
+	<button type="button" onclick="dam()">chu dam</button>
+	<button type="button" onclick="tangfontsize()">tang co chu</button>
+	<button type="button" onclick="giamfontsize()">giam co chu</button>
+
+    <input type="text" name="text_field" class="aaa" id="input_text" required="required">
+    <button type="button" onclick="changeColor()">Change Color</button>
+    <input type="text" name="text_field" class="aaa" id="input_text2" required="required">
+    <button type="button" onclick="changeColor2()">Change Color</button>
+   
+
+	
+	<style type="text/css">
+		.box-box{width: 500px; height: 100px; border: 1px solid #000;}
+	</style>
+	<script type="text/javascript">
+		var z= document.getElementsByClassName("box-box");
+		// function changeHtml(){
+		// 	var box = document.getElementById("box_1");
+		// var xyz = box.innerHTML
+		// var xyz = box.innerHTML;
+		// xyz += '<p>hello</p>'
+		// box.innerHTML ='<span>hello world</span>';
+
+		 // box.innerText = 'Good morning';
+		 // box.style.backgroundColor = 'green';
+		 // box.style.color ="red";
+		 // box.style.fontSize = '50px';
+
+		//  if(box.style.display == 'none'){
+		//  	box.style.display = 'block';
+		//  }else{
+		//  	box.style.display= 'none';
+		//  }
+
+		function xanh_dam(){
+			var z1 = $(".box-box");
+			z1.css({
+				"color": "blue";
+			});
+		}
+		function xanh_la(){
+			var z2 = $(".box-box");
+			z2.css({
+				"color": "green";
+			});
+		}  
+
+		function maudo(){
+			var z3 = $(".box-box");
+			z3.css({
+				"color": "red";
+			});
+		}
+
+		function den(){
+			var z4 = $(".box-box");
+			z4.css({
+				"color": "black";
+			});
+		}
+
+		function nghieng(){
+			var box = document.getElementById("box_1");
+			box.style.fontFamily='Arial';
+		}
+
+		function dam(){
+			var box = document.getElementById("box_1");
+			box.style.fontFamily='Times New Roman';
+		}
+
+		function tangfontsize(){
+			var box = document.getElementById("box_1");
+			var x = box.style.fontSize;
+			x= parseInt(x);
+			//conseloe.log(x);
+			if(isNaN(x)){
+				x=14;
+			}
+			x += 5;
+			x= x+ 'px';
+			box.style.fontSize = x; 
+		}
+
+		function giamfontsize(){
+			var box = document.getElementById("box_1");
+			var x = box.style.fontSize;
+			x= parseInt(x);
+
+			x -= 5;
+			x= x+ 'px';
+			box.style.fontSize = x; 
+		}
+
+		function changColor2(){
+			//var input_text_array = document.getElementsByClassName("aaa");
+			var input_text_array= document.getElementsByTagName("input");
+			for(var i=0; i<input_text_array.length; i++){
+				var input_text = input_text_array[i];
+				var color = input_text.value;
+		    if(color.length < 1){
+		    	//alert("chua nhap gi");
+		    	//input_text.style.border = "1px solid red";
+		    	input_text.classList.add('abcxyz'); //them class
+		    	// input_text.classList.remove("aaa"); //bo class
+		    	var outer = input_text.outerHTML;
+		    	outer += '<p>Vui long nhap thong tin</p>';
+		    	input_text.outerHTML=outer;
+
+		    }else{
+		    	input_text.style.border = "1px solid green";
+		    	var box = document.getElementById("box_1");
+		        box.style.color = color;
+		    }
+			}
+		}
+
+        function changeColor(){
+        	var input_text = document.getElementById("input_text");
+		    var color = input_text.value;
+		    if(color.length < 1){
+		    	//alert("chua nhap gi");
+		    	//input_text.style.border = "1px solid red";
+		    	input_text.classList.add('abcxyz'); //them class
+		    	// input_text.classList.remove("aaa"); //bo class
+		    	var outer = input_text.outerHTML;
+		    	outer += '<p>Vui long nhap thong tin</p>';
+		    	input_text.outerHTML=outer;
+
+		    }else{
+		    	input_text.style.border = "1px solid green";
+		    	var box = document.getElementById("box_1");
+		        box.style.color = color;
+		    }
+		    
+        }
+		
+
+		var xyz ={
+			name:"nguyen van A",
+			ngay_sinh:"12/12/1999"
+		};
+
+		console.log(xyz.name);
+
+		var arr=[
+           {
+           	name:"nguyen van A",
+			ngay_sinh:"12/12/1999"
+           },
+           {
+           	name:"nguyen van B",
+			ngay_sinh:"12/12/2000"
+           }
+		];
+
+		
+
+
+
+		
+
+		 
+		
+
+	</script>
+
+   
+</body>
+</html>
+
+
+
+
+<div class="section_1_1_trai">
+						<div class="mai-top">
+							<img src="images/MailIco.png"/>
+							<span><a href="#">info@gmail.com</a></span>
+						</div>
+						<div class="phone-top">
+							<img src="images/PhoneIco.png"/>
+							<span><a href="#">453-33454</a></span>
+						</div>
+					</div>  
+
+					<div class="section_1_2">
+						<div class="col-lg-6">
+							<img src="images/facebook.png"/>
+							<img src="images/twitter.png"/>
+							<img src="images/google +.png"/>
+							<img src="images/instegram.png"/>
+						</div>
+					</div>
