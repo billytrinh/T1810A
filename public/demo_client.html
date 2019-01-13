@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Client side Server side</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/style11.css">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Danh sach sinh vien</h1>
+		<div class="list-sinh-vien col-md-6 col-md-offset-3">
+			<div>
+				<table class="table table-bordered table-hover table-striped">
+					<thead>
+						<th>No</th>
+						<th>Ten Sinh Vien</th>
+						<th>MSSV</th>
+					</thead>
+					<tbody class="table-1" id="list-1">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		//var url = 'http://localhost:3004/list_sv';
+		$.ajax({
+			url: 'http://localhost:3004/list_sv',
+			method: 'GET',
+			success: function(result){
+				//console.log(result);
+				var list = result.data;
+				var content_html = ''
+				for (var i = 0; i < list.length; i++) {
+				content_html += '<tr>';
+					content_html += '	<td>'+list[i].no+'</td>';
+					content_html += '	<td>'+list[i].name+'</td>';
+					content_html += '	<td>'+list[i].mssv+'</td>';
+				content_html +='</tr>';
+				}
+			document.getElementById("list-1").innerHTML =  content_html;
+			}
+		});
+		
+	</script>
+</body>
+</html>

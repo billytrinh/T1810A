@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuong US</title>
+	<link rel="stylesheet" href="css/E6style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<section class="section section_1">
+		<div class="container container_1">
+			<div class="sec1_left">
+				<ul>
+					<li><a href="#"><img src="images/ico_mail.png"></a></li>
+					<li><a href="#">info@shopy.com</a></li>
+					<li><a href="#"><img src="images/ico_phone.png"></a></li>
+					<li><a href="#">453 - 5553 - 996</a></li>
+				</ul>
+			</div>
+			<div class="sec1_right">
+				<ul>
+					<li><a href="#"><img src="images/ico_fb.png"></a></li>
+					<li><a href="#"><img src="images/ico_tiwte.png"></a></li>
+					<li><a href="#"><img src="images/ico_gg.png"></a></li>
+					<li><a href="#"><img src="images/ico_insta.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</section> <!--end section_1-->
+
+	<section class="section section_2">
+		<div class="container container_2">
+			<div class="sec2_left">
+				<p><a href="#"><img src="images/ico_logo.png"></a></p>
+			</div>
+			<div class="sec2_center">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Hot Deals</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="sec2_right">
+				<ul>
+					<li><a href="#"><img src="images/ico_search.png"></a></li>
+					<li><a href="#"><img src="images/ico_guest.png"></a></li>
+					<li><a href="#"><img src="images/ico_cart.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</section> <!--end section_1-->
+
+	<section class="section section_3">
+		<div class="container container_3">
+			<div class="container3_content">
+				<div class="sec3_top" id="box_1">
+					<p><img src="images/user.png"></p>
+				</div>
+						<!--    -->
+				<div class="sec3_mid">
+					<p>Email</p>
+					<input type="email" name="user_mail" class="aa" id="input_text">
+					<label></label>
+
+					<div class="clear"></div>
+				</div>
+				<div class="sec3_mid">
+					<p>Họ và tên</p>
+					<input type="text" name="user_name" class="aa" id="input_text">
+					<label></label>
+
+					<div class="clear"></div>
+				</div>
+				<div class="sec3_mid">
+					<p>Số điện thoại</p>
+					<input type="number" name="user_phone" class="aa" id="input_text">
+					<label></label>
+
+					<div class="clear"></div>
+				</div>
+				<div class="sec3_mid">
+					<p>Mật khẩu</p>
+					<input type="password" name="user_pass" class="aa" id="input_text">
+					<label></label>
+
+					<div class="clear"></div>
+				</div>
+				<div class="sec3_mid">
+					<p>Nhập lại mật khẩu</p>
+					<input type="password" name="user_pass2" class="aa" id="input_text">
+					<label></label>
+
+					<div class="clear"></div>
+				</div>
+				<div class="sec3_mid">
+					<p>Mã giới thiệu</p>
+					<input type="text" name="user_mail" class="aa" id="input_text">
+					<label></label>
+
+					<div class="clear"></div>
+				</div>
+						<!--    -->
+				<div class="sec3_bot sec3_dik">
+					<input id="dik" type="radio" name="user_radio">
+					<label for="dik">Đồng ý về chính sách bảo mật và điều khoản sử dụng</label>
+
+					<div class="clear"></div>
+				</div>
+				<div class="sec3_bot sec3_button">
+					<div><button type="button" onclick="changecolor()">Đăng ký</button></div>
+					<div class="clear"></div>
+				</div>
+				<div class="sec3_bot">
+					<p><a href="#">Trở lại đăng nhập</a></p>
+
+					<div class="clear"></div>
+				</div>
+			</div> <!--end container3_content-->
+		</div>
+	</section> <!--end section_1-->
+
+	<section class="section section_4">
+		<div class="container container_4">
+			<div class="sec4_left">
+				<ul>
+					<li><a href="#"><img src="images/ico_logo.png"></a></li>
+					<li>shopy c 2015.your copy right here</li>
+				</ul>
+			</div>
+			<div class="sec4_center">
+				<div class="sec4_center1">
+					<ul>
+						<li><a href="#">about us</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="#">support</a></li>
+					</ul>
+				</div>
+				<div class="sec4_center2">
+					<ul>
+						<li><a href="#">our feed</a></li>
+						<li><a href="#">terms and conditions</a></li>
+						<li><a href="#">our privacy</a></li>
+					</ul>
+				</div>
+				<div class="sec4_center3">
+					<ul>
+						<li><a href="#">join us</a></li>
+						<li><a href="#">live support</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sec4_right">
+				<ul>
+					<li><a class="text4" href="#">Payment Methods</a></li>
+					<li><a href="#"><img src="images/ico_pay.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</section> <!--end section_1-->
+	<script type="text/javascript">
+		function changecolor(){
+			var input_text_array = document.getElementsByClassName("aa");
+			for (var i = 0; i < input_text_array.length; i++) {
+				var input_text = input_text_array[i];
+				var color = input_text.value;
+				if(color.length < 1){
+				input_text.style.border = '1px solid red';
+					}
+				}
+			}
+			
+	</script>
+</body>
+</html>

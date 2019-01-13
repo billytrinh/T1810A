@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuong Us home work 5</title>
+	<link href="https://fonts.googleapis.com/css?family=Aleo:300,400,400i,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style5.css">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="col-lg-6 col-xs-offset-3">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">TAB 1</div>
+    <div role="tabpanel" class="tab-pane" id="profile">TAB 2</div>
+    <div role="tabpanel" class="tab-pane" id="messages">TAB 3</div>
+    <div role="tabpanel" class="tab-pane" id="settings">TAB 4</div>
+  </div>
+
+</div>
+
+		<h1 class="text-center"><i class="fab fa-facebook-square"></i></h1>
+
+
+		<div class="col-lg-6 col-xs-offset-3">
+
+			<div class="dropdown">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown trigger
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+   	<li>Home</li>
+   	<li>Products</li>
+   	<li>Contact</li>
+   	<li>Hot Deals</li>
+  </ul>
+</div>
+
+
+
+
+			<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
+		<div class="col-lg-6 col-xs-offset-3 hidden-xs">
+		<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+	</div>
+	</div>
+	<table class="table table-bordered table-hover table-striped">
+		<thead>
+			<th>No</th>
+			<th>Ten Sinh vien</th>
+			<th>MSSV</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>#1</td>
+				<td>Nguyen Van A</td>
+				<td>#1234</td>
+			</tr>
+			<tr>
+				<td>#1</td>
+				<td>Nguyen Van B</td>
+				<td>#1234</td>
+			</tr>
+			<tr>
+				<td>#1</td>
+				<td>Nguyen Van C</td>
+				<td>#1234</td>
+			</tr>
+			<tr>
+				<td>#1</td>
+				<td>Nguyen Van D</td>
+				<td>#1234</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="table table-bordered table-hover table-striped">
+		<thead>
+			<th>No</th>
+			<th>Ten Sinh vien</th>
+			<th>MSSV</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>#1</td>
+				<td>Nguyen Van A</td>
+				<td>#1234</td>
+			</tr>
+			<tr>
+				<td>#1</td>
+				<td>Nguyen Van B</td>
+				<td>#1234</td>
+			</tr>
+			<tr>
+				<td>#1</td>
+				<td>Nguyen Van C</td>
+				<td>#1234</td>
+			</tr>
+			<tr>
+				<td>#1</td>
+				<td>Nguyen Van D</td>
+				<td>#1234</td>
+			</tr>
+		</tbody>
+	</table>
+	<button onclick="change_color()">Change color</button>
+		<script type="text/javascript">
+			var x = document.getElementById("table_sv"); //doi tuong cua DOM
+			//console.log(x);
+			var y = $("#table_sv"); //doi tuong cua Jquery 
+			//cach goi khac var y = jQuery("#table_sv");
+			//console.log(y);
+			var z = document.getElementsByClassName("table");
+			var z1 = $(".table");
+			//console.log(z1); mot doi tuong duoc chon lam dai dien cho mang. khi tac dong vao doi tuong dai dien hi cac doi tuong khac cung bi anh huong.
+			//var zz = document.getElementsByTagName("table");
+			//var z2 = $("table");
+
+			//for (var i = 0; i <z.length; i++) {
+				//z[i].style.color = 'red';
+			//}
+			//z1.css('color','red');
+
+			function change_color(){
+				z1.css({
+				"color":"red",
+				"font-size":"18px",
+				});
+			}
+		</script>
+
+
+
+
+
+
+
+
+	<section class="section section_1">
+		<div class="container container_1">
+			<div class="section1_1 col-lg-6 col-xs-6">
+				<ul>
+					<li><a href="#"><img src="images/ico_mail.png" alt="#"></a></li>
+					<li><a href="#">info@shopy.com</a></li>
+					<li><a href="#"><img src="images/ico_phone.png"></a></li>
+					<li><a href="#">453 - 5553 - 996</a></li>
+				</ul>
+			</div>
+			<div class="section1_2 col-lg-6 col-xs-6">
+				<ul>
+					<li><a href="#"><img src="images/ico_fb.png"></a></li>
+					<li><a href="#"><img src="images/ico_tiwte.png"></a></li>
+					<li><a href="#"><img src="images/ico_gg.png"></a></li>
+					<li><a href="#"><img src="images/ico_insta.png"></a></li>
+				</ul>
+			</div>
+		</div> <!--end container_1-->
+	</section> <!--end section_1-->
+
+	<section class="section section_2">
+		<div class="container container_2">
+			<div class="section2_1 col-lg-3 col-xs-2">
+				<p><a href="#"><img src="images/ico_logo.png"></a></p>
+			</div>
+			<div class="section2_2 col-lg-6 col-xs-8">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Hot Deals</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="section2_3 col-lg-3 col-xl-2">
+				<ul>
+					<li><a href="#"><img src="images/ico_search.png"></a></li>
+					<li><a href="#"><img src="images/ico_guest.png"></a></li>
+					<li><a href="#"><img class="cart" src="images/ico_cart.png"></a></li>
+				</ul>
+			</div>
+		</div> <!--end container_2-->
+	</section> <!--end section_2-->
+
+	<section class="section section_3">
+		<div class="container container_3">
+			<div class="left col-lg-4 col-xs-3">
+				<div class="list1">
+					<div class="block">
+						<div class="block-content">
+							<h3>Categories</h3>
+							<ul>
+								<li><a href="#">Man</a></li>
+								<li><a href="#">Women</a></li>
+								<li><a href="#">Childrens</a></li>
+								<li><a href="#">Hot Deals</a></li>
+							</ul>
+						</div>
+					</div> <!--ends -Cate box-->
+					<div class="block block-prices">
+						<div class="block-content">
+							<h3>Price Filtter</h3>
+
+						</div>
+					</div> <!--end Price box-->
+					<div class="block block-sizes">
+						<div class="block-content">
+							<h3>Sizes</h3>
+							<ul>
+								<li>
+									<input id="small" type="checkbox"/>
+									<label for="small">Small</label>
+								</li>
+								<li>
+									<input id="midum" type="checkbox"/>
+									<label for="midum">Midum</label>
+								</li>
+								<li>
+									<input id="larg" type="checkbox"/>
+									<label for="larg">Larg</label>
+								</li>
+								<li>
+									<input id="xlarg" type="checkbox"/>
+									<label for="xlarg">X larg</label>
+								</li>
+							</ul>
+						</div>
+					</div> <!--end Sizes-box-->
+					<div class="block block-brands">
+						<div class="block-content">
+							<h3>Brands</h3>
+							<ul>
+								<li>
+									<input id="reebok" type="checkbox"/>
+									<label for="reebok">Reebok</label>
+								</li>
+								<li>
+									<input id="addidas" type="checkbox"/>
+									<label for="addidas">Addidas</label>
+								</li>
+								<li>
+									<input id="nike" type="checkbox"/>
+									<label for="nike">Nike</label>
+								</li>
+								<li>
+									<input id="active" type="checkbox"/>
+									<label for="active">Active</label>
+								</li>
+							</ul>
+						</div>
+					</div> <!--end Brands-box-->
+				</div> <!--end list1-->
+			</div>
+			<div class="right col-lg-8 col-xs-9">
+				<div class="list2">
+					<div class="item col-lg-4 col-xs-12">
+						<div class="item-content">
+						<p class="pic"><a href="#"><img src="images/ao_xam.png"></a></p>
+						<p><a class="name" href="#">Reebok Track Jacket</a></p>
+						<p class="item_price">100$</p>	
+						</div>
+					</div>
+					<div class="item col-lg-4 col-xs-12">
+						<div class="item-content">
+						<figure>
+							<p class="pic"><a href="#"><img src="images/ao_do.png"></a></p>
+							<p><a class="name" href="#">Reebok Track Jacket</a></p>
+							<p class="item_price">100$</p>	
+						</figure>
+						<figure class="fighover">
+							<p class="pic"><a href="#"><img src="images/ao_do_small.png"></a></p>
+							<p><a class="name" href="#">Reebok Track Jacket</a></p>
+							<p>size : s - m - l - xl</p>
+							<p class="box_color">
+								<span class="box-red"><a href="#"></a></span>
+								<span class="box-black"><a href="#"></a></span>
+								<span class="box-blue"><a href="#"></a></span>
+								<span class="box-green"><a href="#"></a></span>
+							<p>
+							<hr>
+							<ul class="box_status">
+								<li><a href="#"><img src="images/ico_share.png"></a></li>
+								<li><a href="#"><img src="images/ico_cartic.png"></a></li>
+								<li class="like"><a href="#"><img src="images/ico_like.png"></a></li>
+							</ul>
+						</figure>
+						</div>
+					</div>
+					<div class="item col-lg-4 col-xs-12">
+						<div class="item-content">
+						<p class="pic"><a href="#"><img src="images/ao_do.png"></a></p>
+						<p><a class="name" href="#">Reebok Track Jacket</a></p>
+						<p class="item_price">100$</p>	
+						</div>
+					</div>
+					<div class="item col-lg-4 col-xs-12">
+						<div class="item-content">
+						<p class="pic"><a href="#"><img src="images/ao_xam.png"></a></p>
+						<p><a class="name" href="#">Reebok Track Jacket</a></p>
+						<p class="item_price">100$</p>
+						</div>	
+					</div>
+					<div class="item col-lg-4 col-xs-12">
+						<div class="item-content">
+						<p class="pic"><a href="#"><img src="images/ao_hong.png"></a></p>
+						<p><a class="name" href="#">Reebok Track Jacket</a></p>
+						<p class="item_price">100$</p>
+						</div>
+					</div>
+					<div class="item col-lg-4 col-xs-12">
+						<div class="item-content">
+						<p class="pic"><a href="#"><img src="images/ao_do.png"></a></p>
+						<p><a class="name" href="#">Reebok Track Jacket</a></p>
+						<p class="item_price">100$</p>
+						</div>
+					</div>
+					<div class="item col-lg-4 col-xs-12">
+						<div class="item-content">
+						<p class="pic"><a href="#"><img src="images/ao_xam.png"></a></p>
+						<p><a class="name" href="#">Reebok Track Jacket</a></p>
+						<p class="item_price">100$</p>	
+						</div>
+					</div>
+					<div class="item col-lg-4 col-xs-12">
+						<div class="item-content">
+						<p class="pic"><a href="#"><img src="images/ao_hong.png"></a></p>
+						<p><a class="name" href="#">Reebok Track Jacket</a></p>
+						<p class="item_price">100$</p>
+						</div>
+					</div>
+					<div class="item col-lg-4 col-xs-12">
+						<div class="item-content">
+						<p class="pic"><a href="#"><img src="images/ao_do.png"></a></p>
+						<p><a class="name" href="#">Reebok Track Jacket</a></p>
+						<p class="item_price">100$</p>
+						</div>
+					</div>
+					<div class="ba_cham">
+						<div class="ba_cham-content">
+							<p>. . .</p>
+						</div>
+					</div>
+				</div> <!--end list2-->
+			</div>
+		</div> <!--end container_3-->
+	</section> <!--end section_3-->
+
+	<section class="section section_4">
+		<div class="container container_4">
+			<div class="section4_1">
+				<ul>
+					<li class="sec4_news">NEWS LETTER</li>
+					<li class="sec4_text1">join us now to get all news and special offers</li>
+				</ul>
+			</div>
+			<div class="section4_2">
+				<ul>
+					<li><a class="sec4_icomail" href="#"><img src="images/ico_mail.png"></a></li>
+					<li class="sec4_text2">type your email here</li>
+					<li><a class="joinus" href="#"><img src="images/ico_join.png"></a></li>
+				</ul>
+				
+			</div>
+		</div> <!--end container_4-->
+	</section> <!--end section_4-->
+
+	<section class="section section_5">
+		<div class="container container_5">
+			<div class="section5_1">
+				<ul>
+					<li><a href="#"><img src="images/ico_logo.png"></a></li>
+					<li><a href="#">shopy c 2015.your copy right here</a></li>
+				</ul>
+			</div>
+			<div class="section5_2">
+				<div class="sec5_2-div1">
+					<div class="div1-content">
+						<ul>
+							<li><a href="#">about us</a></li>
+							<li><a href="#">contact us</a></li>
+							<li><a href="#">support</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sec5_2-div2">
+					<div class="div2-content">
+						<ul>
+							<li><a href="#">our feed</a></li>
+							<li><a href="#">terms and conditions</a></li>
+							<li><a href="#">our privercy</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sec5_2-div3">
+					<div class="div3-content">
+						<ul>
+							<li><a href="#">join us</a></li>
+							<li><a href="#">live support</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="section5_3">
+				<ul>
+					<li><a class="sec5_3-text" href="#">Payment Methods</a></li>
+					<li><a href="#"><img src="images/ico_pay.png"></a></li>
+				</ul>
+			</div>
+		</div> <!--end container_5-->
+	</section> <!--end section_5-->
+
+</body>
+</html>

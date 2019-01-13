@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GRID</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/style11.css">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="col-xs-6 col-xs-offset-3">
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			  Launch demo modal
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			        ...
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="dropdown">
+				  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Dropdown trigger
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dLabel">
+				    <li>Home</li>
+				    <li>Home</li>
+				    <li>Home</li>
+				    <li>Home</li>
+				  </ul>
+				</div>
+			<div>
+
+		  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+				    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+				    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+				    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+				  </ul>
+
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="home">TAB 1</div>
+				    <div role="tabpanel" class="tab-pane" id="profile">TAB 2</div>
+				    <div role="tabpanel" class="tab-pane" id="messages">TAB 3</div>
+				    <div role="tabpanel" class="tab-pane" id="settings">TAB 4</div>
+				  </div>
+
+				</div>	
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: red"></div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: green"></div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: pink"></div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="height: 100px;background-color: yellow"></div>
+			<table class="table table-bordered table-hover table-striped" id="table_sv" >
+				<thead>
+					<th>No</th>
+					<th>Ten Sinh vien</th>
+					<th>MSSV</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>#1</td>
+						<td class="text-center">Nguyen van A</td>
+						<td>#1234</td>
+					</tr>
+					<tr>
+						<td>#1</td>
+						<td>Nguyen van A</td>
+						<td>#1234</td>
+					</tr>
+					<tr>
+						<td>#1</td>
+						<td>Nguyen van A</td>
+						<td>#1234</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="col-xs-12" id="div_tab" style="background-color: red;height: 100px;"></div>
+			<button type="button" onclick="changeX()">Change X</button>
+			<button type="button" onclick="changeY()">Change Y</button>
+			<script type="text/javascript">
+				var x = document.getElementById("table_sv");
+				//console.log(x);
+				var y = $("#table_sv"); // var y = jQuery("#table_sv");
+				//console.log(y);
+				var z = document.getElementsByClassName("table");
+				
+				//console.log(z1);
+				//var zz = document.getElementsByTagName("table");
+				//var z2=  $("table");
+				//for (var i = 0; i < z.length; i++) {
+				//	z[i].style.color = 'red';
+				//}
+				//z1.css("color","red");
+				//z1.css("font-size","50px");
+				
+				function changeX(){
+					var z1 = $("#div_tab");
+					// z1.css({
+					// 	"color": "red",
+					// 	"font-size": "30px",
+					// 	"margin": "10px 20px 30px 40px"
+					// });	
+					//z1.hide();
+					//z1.fadeOut();
+					//z1.slideUp();
+					// z1.animate({
+					// 	"width":"50%",
+					// 	"height":"200px"
+					// },500);
+					//var x = '<p>Hello World;</p>';
+					//z1.append(x);
+					z1.slideToggle(); // z1.toggle();
+					// if(z1.hasClass("xyz")){
+					// 	z1.removeClass("xyz");
+					// }else{
+					// 	z1.addClass("xyz");
+					// }
+					
+				}
+				function changeY(){
+					var z1 = $("#div_tab");
+					//z1.show();
+					//z1.fadeIn();
+					//z1.slideDown();
+					// z1.animate({
+					// 	"width":"100%",
+					// 	"height":"100px"
+					// },500);
+					z1.removeClass("xyz");
+				}
+				function formX(){
+					var x = $(".div_form input[name=email]");
+					if(x.val().length < 1){
+						x.css("border","1px solid red");
+						x.after("<p style='color:red'>Vui long nhap email</p>");
+						// before("") --> them phia truoc
+					}
+				}
+				
+			</script>
+			<div class="col-xs-6 col-xs-offset-3 hidden-xs div_form" >
+				<h1 class="text-center"><i class="glyphicon glyphicon-euro"></i></h1>
+				<h1 class="text-center"><i class="fab fa-facebook-f"></i></h1>
+				<form data-toggle="validator" role="form">
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputFile">File input</label>
+				    <input type="file" id="exampleInputFile">
+				    <p class="help-block">Example block-level help text here.</p>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox" required> Check me out
+				    </label>
+				  </div>
+				  <button type="submit" id="btn_submit2">Submit</button>
+				  <button type="button" class="btn btn-default">Submit</button>
+				  <button type="button" class="btn btn-primary">Submit</button>
+				  <button type="button" class="btn btn-warning">Submit</button>
+				  <button type="button" class="btn btn-danger">Submit</button>
+				</form>
+			</div>
+			<script type="text/javascript">
+				// $("#btn_submit").click(function(e){
+				// 	alert("aaa");
+				// });
+				$(".menu").bind('click',function(){
+				})
+				$("#btn_submit").bind("click",function(){
+					$(this).addClass("aaaaa");
+					console.log($(this));
+					$('.div_form input').each(function(){
+						if($(this).val().length < 1){
+							$(this).css("border","1px solid red");
+							$(this).after("<p style='color:red'>Vui long nhap email</p>");
+						}
+					});
+				});
+				var i = 1;
+				$('.div_form button').each(function(){
+					if(i%2 == 1){
+						$(this).addClass("no_1");
+					}else{
+						$(this).addClass("no_2");
+					}
+					i++;
+				});
+			
+			</script>
+		</div>
+	</div>
+	<div class="left">
+		<div class="block">
+			<h3>Categories</h3>
+			<ul>
+				<li>Man</li>
+				<li>Woman</li>
+				<li>Children</li>
+			</ul>
+		</div>
+		<div class="block">
+			<h3>Categories</h3>
+			<ul>
+				<li>Man</li>
+				<li>Woman</li>
+				<li>Children</li>
+			</ul>
+		</div>
+		<div class="block">
+			<h3>Categories</h3>
+			<ul>
+				<li>Man</li>
+				<li>Woman</li>
+				<li>Children</li>
+			</ul>
+		</div>
+	</div>
+	<div class="right">
+		<div class="list" id="list_product">
+			
+		</div>
+		<div class="ba_cham">
+			<img id="loading-img" style="display: none;" src="images/Ajax-Loading-Overlay.jpg"/>
+			<span onclick="themsanpham()">...</span>
+		</div>
+	</div>
+	<div class="box-x">
+		<div class="box-p"></div>
+	</div>
+	<style type="text/css">
+	.box-x{
+		position: relative;
+		float: left;
+		width: 100%;
+		background-color: green;
+		height: 100px;
+	}
+	.box-p{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: absolute;
+		top:100px;
+		left: 50px;
+		transition: all 3000ms;
+	}
+	.box-x:hover .box-p{
+		left: 400px;
+	}	
+	</style>
+	<script type="text/javascript">
+		//var url = 'http://localhost:3004/list_products';
+		$.ajax({
+			url: 'http://localhost:3004/list_products',
+			method: 'GET',
+			success: function(result){
+				console.log(result);
+				var products = result.data;
+				var content_html = ''
+				for (var i = 0; i < products.length; i++) {
+					content_html += '<div class="item">';
+					content_html += '	<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+					content_html += '	<p><a href="#">'+products[i].name+'</a></p>';
+					content_html += '	<p><span>'+products[i].price+'</span></p>';
+					content_html += '</div>';
+				}
+			document.getElementById("list_product").innerHTML =  content_html;
+			}
+		});
+		
+		function themsanpham() {
+			var img = document.getElementById("loading-img");
+			img.style.display = 'block';
+			var products = data.data;
+			var content_html = document.getElementById("list_product").innerHTML;
+			for (var i = 0; i < products.length; i++) {
+				content_html += '<div class="item">';
+				content_html += '	<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+				content_html += '	<p><a href="#">'+products[i].name+'</a></p>';
+				content_html += '	<p><span>'+products[i].price+'</span></p>';
+				content_html += '</div>';
+			}
+			setTimeout(function(){
+				img.style.display = 'none';
+				document.getElementById("list_product").innerHTML =  content_html;
+			},2000);
+			
+		}
+	</script>
+</body>
+</html>
