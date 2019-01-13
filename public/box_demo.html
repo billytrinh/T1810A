@@ -285,7 +285,7 @@
 			url: 'http://localhost:3004/list_products',
 			method: 'GET',
 			success: function(result){
-				console.log(result);
+				//console.log(result);
 				var products = result.data;
 				var content_html = ''
 				for (var i = 0; i < products.length; i++) {
@@ -302,9 +302,13 @@
 		function themsanpham() {
 			var img = document.getElementById("loading-img");
 			img.style.display = 'block';
-			var products = data.data;
-			var content_html = document.getElementById("list_product").innerHTML;
-			for (var i = 0; i < products.length; i++) {
+			$.ajax({
+				url: 'http://localhost:3004/list_products',
+				method: 'GET',
+				success: function(result){
+					var products = result.data;
+				var content_html = document.getElementById("list_product").innerHTML;
+				for (var i = 0; i < products.length; i++) {
 				content_html += '<div class="item">';
 				content_html += '	<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
 				content_html += '	<p><a href="#">'+products[i].name+'</a></p>';
@@ -315,6 +319,9 @@
 				img.style.display = 'none';
 				document.getElementById("list_product").innerHTML =  content_html;
 			},2000);
+				}
+			});
+			
 			
 		}
 	</script>
