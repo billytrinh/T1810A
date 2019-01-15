@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GTD</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/validator.js"></script>
+	
+</head>
+<body>
+	
+	<table class="table table-bordered table-hover table-striped">
+		<thead>
+			<th>No</th>
+			<th>Ten Sinh Vien</th>
+			<th>MSSV</th>
+		</thead>
+		<tbody id="product">
+		</tbody>
+		</table>
+			
+	<script type="text/javascript">
+		$.ajax({
+			url: 'http://localhost:3003/list_sv',
+			method: 'GET',
+			success: function(result){
+				var products = result.data;
+				var content_html = '';
+				for (var i = 0; i < products.length; i++) {
+				content_html += '<tr>';
+					content_html += '	<td>'+products[i].no+'</td>';
+					content_html += '	<td>'+products[i].name+'</td>';
+					content_html += '	<td>'+products[i].mssv+'</td>';
+				content_html +='</tr>';
+				}
+			document.getElementById("product").innerHTML =  content_html;
+			}
+		});
+		
+	</script>
+
+
+</body>
+</html>
