@@ -38,52 +38,52 @@ app.get("/list_sv",function(req,res){
 			data: [
 			{
 				no: '#1',
-				name: 'Nguyen Van A',
+				name: 'Nguyen Van An',
 				mssv: '1001'
 			},
 			{
 				no: '#2',
-				name: 'Nguyen Van B',
+				name: 'Nguyen Van ve',
 				mssv: '1002'
 			},
 			{
 				no: '#3',
-				name: 'Nguyen Van C',
+				name: 'Nguyen Van cong',
 				mssv: '1003'
 			},
 			{
 				no: '#4',
-				name: 'Nguyen Van D',
+				name: 'Nguyen Van Duy',
 				mssv: '1004'
 			},
 			{
 				no: '#5',
-				name: 'Nguyen Anh H',
+				name: 'Nguyen huong',
 				mssv: '1005'
 			},
 			{
 				no: '#6',
-				name: 'Nguyen Le G',
+				name: 'Nguyen quang hai',
 				mssv: '1006'
 			},
 			{
 				no: '#7',
-				name: 'Nguyen Duy F',
+				name: 'Nguyen cong phuong',
 				mssv: '1007'
 			},
 			{
 				no: '#8',
-				name: 'Tran Van A',
+				name: 'truong Van siu',
 				mssv: '1008'
 			},
 			{
 				no: '#9',
-				name: 'Tran Van V',
+				name: 'dang van lam',
 				mssv: '1009'
 			},
 			{
 				no: '#10',
-				name: 'Nguyen Van K',
+				name: 'tran dinh trong',
 				mssv: '1010'
 			}
 			]
