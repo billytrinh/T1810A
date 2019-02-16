@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x=10;
+		console.log(x);
+		var y ='hello world';
+		y = parseInt(y);//parsefloat
+		console.log(isNaN(y));
+		var z=x+y;
+		console.log(z);
+
+		//var arr=[];
+		//arr[0]=12;
+		//arr[1]='welcome';
+		//arr[2]="hi","yes";
+		//console.log(arr);
+		//document.write(x);
+
+		//alert('xin chao!');
+
+		//tra ve true - false
+		//do{
+			//var z =confirm('are u sure?');
+		//}
+		//while(!z);
+
+		//if(z){
+			//alert('welcome');}
+		//else{
+			//alert('rollback');
+		//}
+		//do{
+			//var k=prompt("nhap tuoi cua ban");
+		//}
+		//while(k !='toi 18 tuoi')
+
+		//var k=prompt("nhap tuoi cua ban");
+		//console.log(k);
+		
+		//setTimeout(function(){
+			//alert("hello");//thời gian đelay
+			//confirm("abc?")
+
+		//},3000)
+
+		//setTimeout(function(){
+			//var x= Math.random()*100
+			//alert(parseInt());//thời gian đelay
+			//confirm("abc?")
+
+		//},3000)
+		// setInterval(function(){
+
+		 	//alert("hello")
+		 //},3000)//cứ 3 giây lai hiện lên một lần
+
+		//var mang =3;
+		//var it=setInterval(function(){
+			//mang--;
+		 	//var x = Math.random()*100;
+		 	//x= parseInt(x);
+		 	//console.log(x);
+		 	//var k=prompt("nhap so may man:");
+		 	//if(k == x){
+		 	//	alert("chuc mung");
+		 	//	clearInterval(it);
+		 	//}
+		 	//if(mang <=0 && k !=x){
+		 	//	alert("het so luot du doan");
+		 	//	clearInterval(it);
+		 	//}
+		 	//},2000);//chay ko bao giờ dưng
+
+		// var it=setInterval(function(){
+		 	//var y=prompt("nhap so bat ky");
+		 	//var x=Math.random()*100;
+		 	//	x=parseInt(y);
+		 	//if(x==100){
+		 	//	clearInterval(it);
+		 	//}
+		 //},5000)
+		 var so_luot = 3;
+		 var phan_thuong =[
+		 	" 1 iphone",
+		 	"1 xe oto",
+		 	"1 nhà",
+		 	"1 the cao",
+		 	"fgfgf",
+		 ];
+		 for(var i=5;i<1000; i++){
+		 	phan_thuong[i] = phan_thuong[4];
+		 }
+		 var vqmm = setInterval(function(){
+		 	so_luot--;
+		 	var x=Math.random()*4;
+		 	x=parseInt(x);
+		 	if (x<=3) {
+		 		x+=4;
+		 	}
+		 	var k = confirm("ban co muon nhan giai thuong");
+		 	if (k) {
+		 		alert("ban da trung thuong"+phan_thuong[x]);
+		 	}
+		 	if(so_luot <=0){
+		 		alert("het luot");
+		 		clearInterval(vqmm);
+		 	}
+		 },3000);
+
+	</script>
+
+</body>
+</html>

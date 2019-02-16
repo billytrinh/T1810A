@@ -1,0 +1,50 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	color: #333;
+	font-size: 12px;
+	font-weight: 400;
+	font-family:  Helvetica;
+}
+li{
+	list-style: none;
+
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+h2{
+	text-align: center;
+	color: red;
+}
+.sec-1-1{
+	background-color: white;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+.sec-2{
+	width: 100%;
+	float: left;
+	background-color: red; 
+}
+.sec-2-1{
+	width: calc(100%/3);
+	float: left;
+
+}
+.sec-2-2{
+	width: calc(100%/3);
+	float: left;
+}
+.sec-2-3{
+	width: calc(100%/3);
+	float: left;
+}
+.NORTH-2{
+	float: left;
+	width: calc(100%/2);
+}

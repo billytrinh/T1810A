@@ -1,0 +1,171 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	color: #333;
+	font-size: 12px;
+	font-weight: 400;
+	font-family:  Helvetica;
+}
+li{
+	list-style: none;
+}
+.container{
+	width: 690px;
+	margin: 0 auto;
+	padding-left: 40px;
+
+}
+h4{
+	background-color: #333;
+	color: white;
+	font-size: 15px;
+	border-right: 80px solid white;
+	text-align: center;
+
+}
+h2{
+	padding-top: 180px;
+	padding-bottom: 25px;
+	text-align: center;
+	color: #333;
+	font-size: 25px;
+	padding-right: 75px;
+}
+a{
+	text-decoration:none;
+	color: #333;
+}
+.sec-1{
+	background-color: white;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+.sec-2{
+	width: 100%;
+	float: left;
+	background-color: white; 
+	
+}
+.sec-2-1{
+	width: calc(100%/3);
+	float: left;
+	
+}
+.eteam{
+	line-height: 25px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+	.no1{
+		float: left;
+	
+	
+		}
+		.no1-1{
+			border-right: 1px solid #333;
+			padding-right: 5px;
+		}
+.sec-2-2{
+	width: calc(100%/3);
+	float: left;
+	
+}
+	.eu-1{
+		float: left;
+
+	}
+		.eu-1-1{
+			border-right: 1px solid #333;
+			padding-right: 5px;
+		}
+		.eu-1-2{
+			border-right: 1px solid #333;
+			padding-right: 5px;
+		}
+	.eu-2{
+		float: left;
+	}
+	.eu-3{
+		float: left;
+	}
+		.eu-3-1{
+			border-right: 1px solid #333;
+			padding-right: 5px;
+		}
+		.eu-3-2{
+			padding-right: 5px;
+			
+		}
+	.eu-4{
+		float: left;
+	}
+		.eu-4-1{
+			border-right: 1px solid #333;
+			padding-right: 5px;
+		}
+	.eu-5{
+		float: left;
+	}
+	.eu-6{
+		float: left;
+	}
+	.eu-6-1{
+			border-right: 1px solid #333;
+			padding-right: 5px;
+		}
+	.eu-7{
+		float: left;
+	}
+	.
+	.eu-8{
+		float: left;
+	}
+	
+	.eu-9{
+		float: left;
+	}
+		.eu-9-1{
+				border-right: 1px solid #333;
+				padding-right: 5px;
+			}
+	.eu-10{
+		float: left;
+	}
+		.eu-10-1{
+				border-right: 1px solid #333;
+				padding-right: 5px;
+			}
+	.eu-11{
+		float: left;
+	}
+		.eu-11-1{
+			border-right: 1px solid #333;
+			padding-right: 5px;
+		}
+	.eu-12{
+		float: left;
+	}
+		.eu-12-1{
+			border-right: 1px solid #333;
+			padding-right: 5px;
+		}
+	.eu-13{
+		float: left;
+	}
+
+
+
+
+
+.sec-2-3{
+	width: calc(100%/3);
+	float: left;
+	
+}
+	.as-1{
+		border-right: 1px solid #333;
+			padding-right: 5px;
+	}

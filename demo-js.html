@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js DOM demo</title>
+	<script type="text/javascript" src="vender/jquery/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="box-box" id="box_1" style="font-size: 14px;">
+		Theo quy định của Bộ luật Lao động năm 2012, người lao động được nghỉ làm việc, hưởng nguyên lương trong những ngày lễ, Tết sau đây:
+
+Tết Dương lịch 1 ngày (ngày 1/1 dương lịch); Tết Âm lịch 5 ngày; Ngày Chiến thắng 1 ngày (ngày 30/4 dương lịch); Ngày Quốc tế lao động 1 ngày (ngày 1/5 dương lịch); Ngày Quốc khánh 1 ngày (ngày 2/9 dương lịch); Ngày Giỗ Tổ Hùng Vương 1 ngày (ngày 10/3 âm lịch).
+
+Nếu người sử dụng lao động buộc người lao động đi làm vào các ngày lễ trên mà không có sự đồng ý của người lao động thì sẽ bị xử phạt về xử phạt vi phạm hành chính quy định khoản 2, Điều 14 Nghị định 95/2013/NĐ-CP.
+
+Cụ thể, phạt từ 500.000 đồng đến 1.000.000 đồng với vi phạm từ 1 người đến 10 người lao động; Từ 1.000.000 đồng đến 3.000.000 đồng với vi phạm từ 11 người đến 50 người lao động; Từ 3.000.000 đồng đến 7.000.000 đồng với vi phạm từ 51 người đến 100 người lao động; Từ 7.000.000 đồng đến 10.000.000 đồng với vi phạm từ 101 người đến 300 người lao động; Từ 10.000.000 đồng đến 15.000.000 đồng với vi phạm từ 301 người lao động trở lên.
+
+Ngoài ra, tại khoản 3 Điều 14 cũng quy định phạt tiền từ 20.000.000 đồng đến 25.000.000 đồng đối với người sử dụng lao động có một trong các hành vi: Thực hiện thời giờ làm việc bình thường quá số giờ làm việc theo quy định tại Điều 104 của Bộ luật lao động; Huy động người lao động làm thêm giờ mà không được sự đồng ý của người lao động, trừ trường hợp theo quy định tại Điều 107 của Bộ luật lao động.
+	</div>
+	<button type="button" onclick="changeHtml()">Change HTML</button>
+	<button type="button" onclick="maudo()">do</button>
+	<button type="button" onclick="maudo2()" id="maudo2">do2</button>
+	<button type="button" onclick="mauxanh()">xanh</button>
+	<button type="button" onclick="tangsize()">tang font Size</button>
+	<button type="button" onclick="giamsize()">Giam font Size</button>
+	<button type="button" onclick="mautrang()">trang</button>
+	<input type="text" name="text_field" class="aaa" id="input_text">
+	<button type="button" onclick="changeColor()">Change Color</button>
+<input type="text" name="text_field" class="aaa" id="input_text2">
+	<button type="button" onclick="changeColor2()">Change Color</button>
+
+	<style type="text/css">
+		.box-box{width:500px;border:1px solid #000;}
+	</style>
+	<script type="text/javascript">
+		function changeColor2(){
+			var input_text_array =document.getElementBytagBame("aaa");
+			//var input_text_array= document.getElementsByClassName("aaa");
+			for (var i = input_text_array.length  i++) {
+				var input_text= input_text_array[i];
+				var color=input_text.value;
+				if (color.length < 1) {
+				//alert('chua nhap gi');
+				//input_text.style.border='1px solid red';
+				//them class
+				input_text.classList.add('abcxyz');
+				//xoa class
+				//input_text.classList.remove("aaa");
+
+				var outer= input_text.outerHTML;
+				outer += '<p> vui long nhap thong tin</p>';
+				input_text.outerHTML=outer;
+			}else{
+				input_text.style.border='1px solid white';
+				var box= document.getElementById("box_1");
+				box.style.color=color;
+
+			}
+			function changeColor(){
+			var input_text=document.getElementById("input_text");
+			var color= input_text.value;
+			if (color.length < 1) {
+				//alert('chua nhap gi');
+				//input_text.style.border='1px solid red';
+				//them class
+				input_text.classList.add('abcxyz');
+				//xoa class
+				input_text.classList.remove("aaa");
+
+				var outer= input_text.outerHTML;
+				outer += '<p> vui long nhap thong tin</p>';
+				input_text.outerHTML=outer;
+			}else{
+				input_text.style.border='1px solid white';
+				var box= document.getElementById("box_1");
+				box.style.color=color;
+
+			}
+			//nhập giá trị đổi màu chữ bằng value
+		}
+		function giamsize(){
+			var box=document.getElementById("box_1");
+			var y= box.style.fontSize;
+			y=parseInt(y);
+			y -=4;
+			y=y+'px';
+			box.style.fontSize=y;
+		}
+
+		function tangsize(){
+			var box=document.getElementById("box_1");	
+			var x = box.style.fontSize;
+			x=parseInt(x);
+			x += 5;
+			x = x+'px';
+			box.style.fontSize = x;
+		}
+		
+		function mautrang(){
+			var box = document.getElementById("box_1");
+			box.style.backgroundColor='white';
+		}
+		function mauxanh(){
+			var box = document.getElementById("box_1");
+			box.style.backgroundColor='green';
+		}
+		function maudo(){
+			var box = document.getElementById("box_1");
+			box.style.backgroundColor = 'red';
+		}
+		function changeHtml() {
+			var box = document.getElementById("box_1");
+			//var xyz = box.innerHTML;
+			//xyz += '<p>hello</p>';
+			//box.innerHTML = xyz;
+			//box.innerText = 'Good morning';
+			// box.style.backgroundColor = 'green';
+			// box.style.color = 'red';
+			// box.style.fontSize = '100px';
+			if(box.style.display == 'none'){
+				box.style.display = 'block';
+			}else{
+				box.style.display = 'none';
+			}
+		}
+		
+		var xyz={
+			name: "nguyen van a",
+			ngay_sinh:'12/12/1999'
+		};
+		var arr= [
+		{
+			name: "nguyen van a",
+			ngay_sinh:'12/12/1999'
+		}
+		{
+			name: "nguyen van b",
+			ngay_sinh:'12/12/2000'
+		}
+		];
+		function maudo2(){
+			var x= document.getElementsByClassName("maudo2");
+			var x1= $(".maudo2");
+			x1.css({
+				"color":"red",
+				"font-size":"40px;"
+			});
+		}
+	</script>
+	<script type="text/javascript">
+		function maudo2(){
+			var x= document.getElementsByClassName("maudo2");
+			var x1= $(".maudo2");
+			x1.css({
+				"color":"red",
+				"font-size":"40px;"
+			});
+		}
+	</script>
+	
+</body>
+</html>

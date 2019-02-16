@@ -1,18 +1,353 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Layout Demo</title>
+	<link rel="stylesheet" type="text/css" href="vender/boostrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="vender/fontAwesome/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+	<script type="text/javascript" src="vender/jquery/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="vender/boostrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="vender/boostrap/js/validator.js"></script>
 	<link rel="stylesheet" href="css/style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<form data-toggle="validator" role="form">
+  <div class="form-group">
+    <label for="inputName" class="control-label">Name</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+  </div>
+  <div class="form-group has-feedback">
+    <label for="inputTwitter" class="control-label">Twitter</label>
+    <div class="input-group">
+      <span class="input-group-addon">@</span>
+      <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>
+    </div>
+    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+    <div class="help-block with-errors">Hey look, this one has feedback icons!</div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="control-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+    <div class="help-block with-errors"></div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="control-label">Password</label>
+    <div class="form-inline row">
+      <div class="form-group col-sm-6">
+        <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+        <div class="help-block">Minimum of 6 characters</div>
+      </div>
+      <div class="form-group col-sm-6">
+        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="underwear" required>
+        Boxers
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="underwear" required>
+        Briefs
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+        Check yourself
+      </label>
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
 	<section class="section section_1">
 		<div class="container">
-			<div class="section_1_1">
+			<h3 class="text-center"><i class="fab fa-facebook-square " style="color: black; font-size: 45px; "></i></h3>
+			<button type="button" onclick="maudo()">do</button>
+			<button type="button" onclick="xanh()">xanh</button>
+			<button type="button" onclick="tim()">tim</button>
+			<button type="button" onclick="changeColor()">Change Color</button>
+<input type="text" name="text_field" class="aaa" id="input_text">
+			<button type="button" onclick="fontSize()">font-size</button>
+			<button type="button" onclick="giamsize()">giamsize</button>
+			<button type="button" onclick="tangsize()">tangsize</button>
+			<button type="button" onclick="changeY()">change y</button>
+			<button type="button" onclick="changeX()">change x</button>
+			<table class="table table-bordered table-hover table-striped" id="table_sv" >
+				<thead>
+					<th>No</th>
+					<th>Ten Sinh Vien</th>
+					<th>MSSV</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>nguyen van a</td>
+						<td>5555</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>nguyen van a</td>
+						<td>5555</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>nguyen van a</td>
+						<td>5555</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>nguyen van a</td>
+						<td>5555</td>
+					</tr>
+				</tbody>
+			</table>
+			<script type="text/javascript">
+				
+				var x= document.getElementById("table_sv");
+				//console.log(x);
+				var y = $("table_sv"); // var y = jQuery("#table_sv");
+				//console.log(y);
+				var z= document.getElementsByClassName("table");
+				var z1= $(".table");
+				//console.log(z1);
+				//var zz= document.getElementsByTagName("table");
+				//var z2= $("table");
+				//z1.css("color","red");
+				//z1.css("font-size","50px")
+				function changeX(){
+					var z= document.getElementsByClassName("table");
+					var z1= $(".table");
+				z1.css({
+					"color":"red",
+					"font-size":"30px",
+					"margin":"10px 20px 30px 40px"
+				});
+				//z1.hide();//ẩn
+				//z1.fadeOut();//hiện xong ẩn
+
+				//z1.animate({
+				//	"width":"50px",
+				//	"height":"200px",
+				//},500);//hiện khối theo kich co
+
+				//var x= '<p>hello world</p>';
+				//z1.append(x);//them thẻ
+
+				//z1.sLideToggle();//thu gọn
+
+				if(z1.hasClass("xyz")){
+				z1.addClass('"xyz');//thêm vao class
+			}else{
+				z1.addClass("xyz");
+			}
+				}
+				function changeY(){
+					var z1= $(".table");
+				//z1.show();//hiện
+				//z1.fadeIn();//hiện từ trên xuống
+				//z1.sLideDown();
+
+				z1.remodeClass("xyz");//xóa claas đi 
+
+				}
+				function maudo(){
+					var x= document.getElementsByClassName("table");
+					var x1= $(".table");
+				x1.css({
+					"color":"red"
+				});
+			};
+				function xanh(){
+					var x= document.getElementsByClassName("table");
+					var x1= $(".table");
+				x1.css({
+					"color":"green",
+
+				})
+			};
+				function tim(){
+					var x= document.getElementsByClassName("table");
+					var x1= $(".table");
+				x1.css({
+					"color":"purple"
+				})
+				};
+				function fontSize(){
+					var x= document.getElementsByClassName("table");
+					var x1= $(".table");
+				x1.css({
+					"font-size":"30px",
+				})
+				};
+				function giamsize(){
+					var x=document.getElementsByClassName("table");
+					var y= $(".x")
+					y=parseInt(y);
+					y -=4;
+					y=y+'px';
+					x.style.fontSize=y;
+				}
+				function tangsize(){
+					var y=document.getElementsByClassName("table");	
+					var x = $(".y")
+					x=parseInt(x);
+					x += 5;
+					x = x+'px';
+					y.style.fontSize = x;
+				}
+				function fromX(){
+					var x=$(".div_from input[name=email]") ;
+					if(x.val().length < 1){
+						x.css("border","1px solid red");
+						x.after("<p style='color:red'>vui long nhap thong tin</p>");
+					}
+				}
+
+			</script>
+			<!-- Button trigger modal -->
+				<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			  Launch demo modal
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			        ...
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="dropdown">
+				  <a id="dLabel" data-target="#" href="http://example.com/" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				    Dropdown trigger
+				    <span class="caret"></span>
+				  </a>
+
+				  <ul class="dropdown-menu" aria-labelledby="dLabel">
+				    <li>home</li>
+				    <li>home</li>
+				    <li>home</li>
+				    <li>home</li>
+				  </ul>
+			</div>
+			<div class="dropdown">
+				  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Dropdown trigger
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dLabel">
+				    <li>home</li>
+				    <li>home</li>
+				    <li>home</li>
+				    <li>home</li>
+				  </ul>
+			</div>
+			<div>
+
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+		    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+		    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+		    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane active" id="home">1</div>
+		    <div role="tabpanel" class="tab-pane" id="profile">2</div>
+		    <div role="tabpanel" class="tab-pane" id="messages">3</div>
+		    <div role="tabpanel" class="tab-pane" id="settings">4</div>
+		  </div>
+
+		</div>
+			<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  			Link with href
+			</a>
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			  Button with data-target
+			</button>
+			<div class="collapse" id="collapseExample">
+			  <div class="well">
+			    ...
+			  </div>
+			</div>
+			<div class="col-lg-6 div_from">
+				<form>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputFile">File input</label>
+				    <input type="file" id="exampleInputFile">
+				    <p class="help-block">Example block-level help text here.</p>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+				  </div>
+				  <button type="button" id="btn_submit" >Submit</button>
+				  <button type="button" class="btn btn-default">submit</button>
+				  <button type="button" class="btn btn-default">submit</button>
+				  <button type="button" class="btn btn-default">submit</button>
+				  <button type="button" class="btn btn-default">submit</button>
+				</form>
+			</div>
+			<script type="text/javascript">
+				//$("#btn_submit").click(function(e){
+				//	alter("aaa");
+				//});
+				//$("#btn_submit").bind("click",function(){
+				//	fromX();
+				//});
+				$("#btn_submit").bind("click",function(){
+					$(this).addClass("aaaaa");
+					console.log($(this));
+					$('.div_form input').each(function(){
+							if($(this).val().length < 1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>Vui long nhap email</p>");
+							}
+						});
+				});
+				//phan tach tung submit
+			</script>
+			<div class="col-lg-6">
 				<a href="#"><img src="image/logo-mall.png">info@shoppy.com</a>
 				<a class="logo-phone" href="#"><img src="image/logo-phone.png"> 453-5553-99</a>
 			</div>
-			<div class="section_1_2">
+			<div class="col-lg-6" style="float: right; text-align: right;">
 				<a href="#"><img src="image/logo-facebook.png"></a>
 				
 			</div>
@@ -20,18 +355,18 @@
 	</section>
 	<section class="section section_2">
 		<div class="container">
-			<div class="section_2_1"><img src="image/hinh-anh-ex5.png"></div>
-			<div class="section_2_2">Home</div>	
-			<div class="section_2_3">Products</div>
-			<div class="section_2_4">Hot Deals</div>
-			<div class="section_2_5">About</div>
-			<div class="section_2_6">Contact</div>
-			<div class="section_2_7"><img src="image/hinh-anh-ex5-2.png"></div>	
+			<div class="col-lg-3"><img src="image/hinh-anh-ex5.png"></div>
+			<div class="col-lg-1">Home</div>	
+			<div class="col-lg-1">Products</div>
+			<div class="col-lg-1">Hot Deals</div>
+			<div class="col-lg-1">About</div>
+			<div class="col-lg-1">Contact</div>
+			<div class="col-lg-3"style="float: right; text-align: right;"><img src="image/hinh-anh-ex5-2.png"></div>	
 		</div>
 	</section>
 	<section class="section section_3">
 		<div class="container">
-			<div class="left">
+			<div class="col-lg-4">
 				<div class="block">
 					<div class="block block-size">
 						<h3>Categories</h3>
@@ -92,94 +427,18 @@
 					</div>
 				</div>
 			</div>
-			<div class="right">
-				<div class="list">
-					<div class="item">
-						<div class="item-content">
-							<figure>
-								<p><a href="#"><img src="image/Chưa-đặt-tên-3.png"/></a></p>
-								<p><a href="#">Reebok Track Jacket</a></p>
-								<p><span>100$</span></p>
-							</figure>
-							<figure class="fighover">
-								<p><a href="#"><img src="image/ao-do-be.png"/></a></p>
-								<p><a href="#">Reebok Track Jacket</a></p>
-								<p><span>100$</span></p>
-							</figure>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-							<figure>
-								<p><a href="#"><img src="image/photoshop1.png"/></a></p>
-								<p><a href="#">Reebok Track Jacket</a></p>
-								<p><span>100$</span></p>
-							</figure >
-							<figure class="fighover">
-								<a href="##"><img src="image/anh-nho-1.png"></a>
-							</figure>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-							<p><a href="#"><img src="image/photoshop1.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-							<p><a href="#"><img src="image/Chưa-đặt-tên-3.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-							<p><a href="#"><img src="image/Chưa-đặt-tên-2.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-							<p><a href="#"><img src="image/photoshop1.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-							<p><a href="#"><img src="image/Chưa-đặt-tên-3.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-							<p><a href="#"><img src="image/Chưa-đặt-tên-2.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-							<p><a href="#"><img src="image/photoshop1.png"/></a></p>
-							<p><a href="#">Reebok Track Jacket</a></p>
-							<p><span>100$</span></p>
-						</div>
-					</div>
-				
-					<article>
-						<a href="##"><span class="ba-cham">...</span></a>
-					</article>
+			<div class="col-lg-8">
+				<div class="list" id="list_product">
+					
+					
 				</div>
+				<div class="ba-cham" onclick="themsanpham()"><img class="loading-img" style="height:40px;" src="css/avatar-black.gif"></div>
 			</div>
 		</div>
 	</section>
 	<section class="section section_4">
 		<div class="container">
-			<div class="menu">
+			<div class="col-lg-12">
 				<div class="list_1">
 					<div class="list_1_2"><a>NEWSLETTER</a></div>
 					<div class="list_1_3"><a href="#">join us now to get all newand special ofers</a></div>
@@ -193,29 +452,115 @@
 	</section>
 	<section class="section section_5">
 		<div class="container">
-			<div class="finish_1"><img src="image/logo1.png"></div>
-			<div class="finish_2">
-				<ul>
-					<li class="ul-1">about us</li>
-					<li class="ul-1">contact us</li>
-					<li class="ul-1">support</li>
-				</ul>
+			<div class="col-lg-12">
+				<div class="col-lg-3"><img src="image/logo1.png"></div>
+				<div class="col-lg-2">
+					<ul>
+						<li class="sbli">about us</li>
+						<li class="sbli">contact us</li>
+						<li class="sbli">support</li>
+					</ul>
+				</div>
+				<div class="col-lg-2">
+					<ul style="list-style-type:circle; ">
+						<li class="ul-1">our feed</li>
+						<li class="ul-1">terms and conditions</li>
+						<li class="ul-1">our privacy</li>
+					</ul>
+				</div>
+				<div class="col-lg-2">
+					<ul style="list-style-type:circle; ">
+						<li class="ul-1">join us</li>
+						<li class="ul-1">live support</li>
+					</ul>
+				</div>
+				<div class="col-lg-2"><img src="image/logo2.png">
+				</div>
 			</div>
-			<div class="finish_3">
-				<ul style="list-style-type:circle; ">
-					<li class="ul-1">our feed</li>
-					<li class="ul-1">terms and conditions</li>
-					<li class="ul-1">our privacy</li>
-				</ul>
-			</div>
-			<div class="finish_4">
-				<ul style="list-style-type:circle; ">
-					<li class="ul-1">join us</li>
-					<li class="ul-1">live support</li>
-				</ul>
-			</div>
-			<div class="finish_5"><img src="image/logo2.png"></div>
 		</div>
 	</section>
+	<script type="text/javascript">
+		var url='http://127.0.0.1:4444/list_products'; //method: get
+		$.ajax({
+			url:'http://127.0.0.1:4444/list_products',
+			method:"GET",
+			success: function(result);
+			console.log(result);
+		})
+		
+		var data={
+			status: 1,//buoc nay chua do
+			massage:'success',
+			data: [
+		{
+			image:'image/Chưa-đặt-tên-3.png',
+			name:'Reebok Track Jacket',
+			gia:'100$'
+		},
+		{
+			image:'image/Chưa-đặt-tên-3.png',
+			name:'Reebok Track Jacket',
+			gia:'100$'
+		},
+		{
+			image:'image/Chưa-đặt-tên-2.png',
+			name:'Reebok Track Jacket',
+			gia:'100$'
+		},
+		]
+	};
+		var products = data.data
+		var content_html = ''
+		for (var i = 0; i < products.length; i++) {
+			content_html +=			'<div class="item">';
+			content_html +=			'<div class="item-content">';
+			content_html +=			'	<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+			content_html +=			'	<p><a href="#">'+products[i].name+'</a></p>';
+			content_html +=			'	<p><span>'+products[i].gia+'</span></p>';
+			content_html +=			'</div>';
+			content_html +=			'</div>';
+			
+		}
+		document.getElementById("list_product").innerHTML =  content_html;
+		function themsanpham(){
+			//var img = document.getElementById("loading-img");
+			//img.style.display='block';
+			var products = data.data;
+		var content_html = document.getElementById("list_product").innerHTML;
+		for (var i = 0; i < products.length; i++) {
+			content_html +=			'<div class="item">';
+			content_html +=			'<div class="item-content">';
+			content_html +=			'	<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+			content_html +=			'	<p><a href="#">'+products[i].name+'</a></p>';
+			content_html +=			'	<p><span>'+products[i].gia+'</span></p>';
+			content_html +=			'</div>';
+			content_html +=			'</div>';
+			
+		}
+		//setTimeout(function(){ }2000)
+		document.getElementById("list_product").innerHTML =  content_html;
+		}
+		
+	</script>
+	<div class="container">
+		<div class="btn-group">
+			<div class="nhoniphone btn btn-group">
+				<a href=""class="btn btn-info">Iphone</a>
+					<div class="cacdongiphone dropdown-menu">
+						<a href="" class="btn btn-outline-secondary dropdown-item">iphone 5</a>
+						<a href="" class=" dropdown-item">iphone 6</a>
+						<a href="" class=" dropdown-item">iphone 7</a>
+					</div>
+			</div>
+
+			<a href=""class="btn btn-info">SamSung</a>
+			<a href=""class="btn btn-info">Nokia</a>
+		</div>
+		<div class="btn-group">
+			<a href="" class="btn btn-danger">xiaomi</a>
+			<a href="" class="btn btn-danger">huawei</a>
+			<a href="" class="btn btn-danger">hk phone</a>
+		</div>
+	</div>
 </body>
 </html>

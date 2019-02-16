@@ -1,0 +1,134 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 16px;
+	color: #333;
+	background-color: #cccccc;
+	font-family: Arial;
+	font-weight: 400;
+	line-height: 1.5;
+}
+li{
+	list-style: none;
+
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.sec-1{
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+}
+	.sec-1-1{
+		float: left;
+		width: 50%;
+	}
+	.sec-1-2{
+		width: 50%;
+		float: right;
+		text-align: right;
+	}
+.sec-2{
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+	border-top: 1px solid #cccccc;
+	padding-top: 15px;
+}
+	.menu-1{
+		float: left;
+		width: 15%;
+	}
+	.menu-2{
+		float: left;
+		width: 40%;
+	}
+	.menu-2 li{
+		float: left;
+		padding-right: 25px;
+	}
+	.menu-3{
+		float: right;
+		width: 15%;
+		text-align: right;
+	}
+
+.sec-3{
+	background-color: #ffffff;
+}
+	.anh-sp-1{
+		float: left;
+		width: 30%;
+		text-align:center;
+		background-color: #ffffff;
+		height: 322px;
+		padding-top:45px; 
+	}
+		.anh2{
+			background-color: #cccccc;
+			float: left;
+			width:100%;
+			
+
+		}
+		.anh2 li{
+			
+			float: left;
+			
+			border:22px solid white;
+			padding: 20px;
+		}
+		
+	.thong-tin-sp-1{
+		float: left;
+		width: 70%;
+		padding-top:45px; 
+		background-color: #ffffff;
+	}
+		.GT{
+			width: 100%;
+			float: left;
+			padding-bottom: 43px;
+
+		}
+		.GT h3{
+			font-size: 45px;
+			color: #ff6600;
+			padding-bottom: 43px;
+
+		}
+		.TT-1{
+			float: left;
+			width:100%;
+			padding-bottom: 15px;
+			padding-top: 15px;
+			border-top: 1px solid #cccccc;
+			border-bottom: 1px solid #cccccc;
+		}
+			.TT-1 li{
+				float: left;
+				width:calc(100%/2); 
+			}
+		.TT-2 {
+			float: left;
+			width: 100%;
+			padding-top: 60px;
+		}
+		.TT-2-1{
+			font-weight: bold;
+			font-size: 20px;
+			float: left;
+			width: calc(100%/2);
+		}
+		.TT-2-2 {
+			float: left;
+			width: calc(100%/2);
+		}
+			.TT-2-2 li{
+				float: left;
+				padding-right: 10px;
+			}

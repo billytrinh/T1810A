@@ -34,8 +34,16 @@
 	
 	<a href="https://www.google.com/">link to the google(ghep duong dan)</a><br>
 
-	<a> cách viết style color frontsize(kích cỡ chữ) front-family(front chữ), font-weight(kích cỡ chữ) font-style(kiểu chữ) line-height(chiều cao chữ khoảng cách trên dưới) text-decoration(gạch chân) text-align( căn lề) text-indent(viết lùi bao nhiêu) text-transform(viết hoa hay viết thường) cho html:
-		chọn đối tượng sau đó cho các thuộc tính vào<br>
+	<a> cách viết style color frontsize(kích cỡ chữ)<br>
+	 front-family(front chữ),<br>
+	 font-weight(kích cỡ chữ)
+	 font-style(kiểu chữ) 
+	 line-height(chiều cao chữ khoảng cách trên dưới)
+	 text-decoration(gạch chân)
+	 text-align( căn lề)
+	 text-indent(viết lùi bao nhiêu)
+	 text-transform(viết hoa hay viết thường) cho html:
+     chọn đối tượng sau đó cho các thuộc tính vào<br>
 		c1: viết thẳng vào nó style=color:blue<br>
 		c2:dùng id: đặt id cho thẻ đó viết một lần duy nhất<br>
 		c3:class: đặt tên class cho thẻ đó<br>
@@ -72,8 +80,11 @@
 		margin:10px;
 		float:right;
 	}
+	
+
 
 </style>
+<p> có thể tao css riêng và tạo liên kết trong bai tap 1<link rel="stylesheet" href="css/style.css"/></p>
 
 <a> dcachs dùng div
 	nhập kích cỡ width và height
@@ -83,9 +94,131 @@
 	margin lề (lua chọn chiều,hoặc ko để lấy tổng thể )tạo khoảng cách giữa các khối .tạo khoảng cách bên ngoài
 	padding (như margin nhưng khác chức năng) khoảng cách từ trong ra
 	float dồn khối
+	transfrom :dịch chuyển theo mặt hình ảnh kiểu nghiêng kiểu xoay.
+	position: dich theo tọa độ 3 thuộc tính absolute,relative(đè lên phần khác),static ko dịch tọa độ ko theo cai gi cả,fixed(cuộn trang thi đi theo đấy theo windows) muốn dùng nó để dè lên vùng kia
 </a>
+<p>tao ky tu dsach thu tụ có thể dùng ul hoac ol deu dc sau do tao style de lam</p>
+<ul>
+	<h2 class="as">asasasa</h2><br>
+	<li>Category</li>
+	<li>Man</li>
+	<li>Wonman</li>
+	<li>Children</li>
+</ul>
+<ol>
+	<li>Category</li>
+	<li>Man</li>
+	<li>Wonman</li>
+	<li>Children</li>
+</ol>
 
-
-
+<p> cách chia nhóm để làm thường sẽ  lấy dựa trên tổng thể những thú cùng kích thước khoảng cách tương đồng về dữ liệu lấy thành một khối dung<div></div>. đe chia</p>
 </body>
 </html>
+<p> chia trang ra lam section(theo chiều ngang của màn hình là một lát cắt)
+@font-face
+google font cung cấp miễn phí khi thêm viết lên head sau goi gọi từ css la dc</p>
+<h3>các trạng thái hiệu ứng</h3>
+<p>hover : bắt dc sự kiện người dùng tác động vào</p>
+<p>display là hiển thị như thế nào </p>
+
+
+<div>
+	<h3>thẻ table </h3>
+	<h2>phần mới ít sử dụng trong html</h2>
+	<table border="1">
+		<thead>
+			<th>no</th>
+			<th>ten sinh viên</th>
+			<th>mã so sv</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>#1</td>
+				<td colspan="">Nguyen văn an</td>
+				<td>01</td>
+			</tr>
+			<tr>
+				<td>#2</td>
+				<td>Nguyen văn an</td>
+				<td>02</td>
+			</tr>
+			<tr>
+				<td>#3</td>
+				<td>Nguyen văn an</td>
+				<td>03</td>
+			</tr>
+		</tbody>
+	</table>
+	<div>
+		<p>cơ chế web : form get gửi dữ liệu 
+						post nhận lai dữ liệu
+						action la lơi nhận thông tin(https:..)
+						entype dạng dữ liệu gửi lên(nhiều loaijvd from-data
+						để nhập dữ liệu ng ta phải dùng thẻ <input type="" name="">
+						các dạng thẻ input:-text viết gi cũng dc
+										-email
+										-number
+										-password
+										-file
+										-color
+										-date
+										-checkbox(chọn thoải mái so  với radio)
+										-radio(có thể chon nhiều nhưng phaair cùng name)
+									</p>
+		<h2></h2>
+		<form method="GET -- POST" action="##" entype="multipart/from-data" name="from-data">
+			<input type="text" name="text_input" class="name" placeholder="nhap cai cai gi do">
+			<input type="email" name="user-email" placeholder="email">
+			<input type="number" name="number" placeholder="number input...">
+			<input type="password" name="password-">
+			<input type="file" name="user-file">
+			<input type="color" name="user-color" placeholder="color here">
+			<input type="date" name="user-dob" placeholder="date-time">
+			<input type="checkbox" id="check1" name="user-checkbox" placeholder="checkbox"><label for="check1">checkbox here</label>
+			<label><input type="checkbox" id="check2" name="user-checkbox" placeholder="checkbox">check 2 here</label>
+			<label><input type="radio" name="user-radio" placeholder="radio">check</label>
+			<label><input type="radio" name="user-radio" placeholder="radio">check 2</label>
+			<br>
+			<select name="urse_select">
+				<option value="Nam">Nam</option>
+				<option value="Nữ">Nữ</option>
+				<option value="Unisex">Unisex</option>
+			</select><br>
+			<select multiple="multiple" name="urse_select">
+				<option value="Nam">Nam</option>
+				<option value="Nữ">Nữ</option>
+				<option value="Unisex">Unisex</option>
+			</select><br>
+			<textarea name="ấ" rows="20" color="100" name="text_input" class="name" placeholder="nhap cai cai gi do">
+				
+			</textarea><br>
+			<button type="submit">dang thong tin</button>
+			
+	</div>
+</div>
+<h3>javascript</h3>
+<div>
+	các biến:var,number,string,arnag,object.
+	console.log(x):để in giá trị
+	alert ham thông báo lên trinh duyệt
+	confirm('are u sure?'): có giá trị  chả về đúng hoặc sai(var z =confirm('are u sure?');
+		console.log(z);
+)
+	prompt(""):dùng để hỏi cái gì đấy.
+
+</div>
+<p>jsom object laf phan quan trong chỉ mang các thông tin từ các dự liệu về sử dụng</p>
+<div>
+	<p>các cỡ màn hình destop:1200px; smartphone table 992px-768px;</p>
+<p>style  the @media screen and (điều kiện vd max-with:992px){} </p>
+<p>Hidden ẩn khối khi o màn hinh mô bai</p>
+<p>2</p>
+</div>
+function dangky(){
+			var x=$(".div_from input[name=user-name]");
+			if(x.val().length < 1){
+				x.css("boder","1px solid red");
+				x.after("<p style='color:red'>vui long nhap thong tin</p>");
+			}
+		}

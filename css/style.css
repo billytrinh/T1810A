@@ -14,7 +14,7 @@ a{
 	text-decoration: none;
 }
 a:hover{
-	color: red;
+	
 
 }
 h3{
@@ -55,15 +55,14 @@ span{
 	float:left;
 	width: 50%;
 }
-.section_1_2{
+
 	float:right;
-	width: 50%;
 	text-align: right;
 }
 
 .section_2{
 	border-bottom: 1px solid #f4f6f8;
-	background-color: #fff;
+	background-color: white;
 	margin: 15px;
 	padding: 25px 0px 25px 0px;
 	font-size: 15px;
@@ -252,9 +251,11 @@ h3{
 }
 .section_5{
 	background-color:#fff;
-	
 	line-height: 30px; 
 	padding:84px 0px 84px 0px; 
+}
+.section_5_1{
+	background-color: #fff;
 }
 .finish_1{
 	float: left;
@@ -284,4 +285,19 @@ h3{
 }
 .ul-1{
 	list-style-type:disc;
+}
+@media screen and(max-width: 768px){
+	body{
+		width: 100%;
+	}
+	.left{
+		width: 100%;
+		float:left;
+	}
+	.right{
+		width: 100%;
+		float: left;
+	}
+
+
 }

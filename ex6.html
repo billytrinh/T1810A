@@ -35,15 +35,18 @@
 			<div>
 				<div class="logo-login">
 				<a href="##"><img src="image/logo-login.png"></a></div>
-				<form>
+				<form data-toggle="validator" role="form">
 					<div class="section_3_1">
-						<p>Email</p><br>
-						<input class="space" rows="20" type="email" name="user-email">
-                        <br>
+						<div class="form-group">
+    <label for="inputName" class="control-label">Name</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+  </div>
 					
-						<p>Họ và Tên</p><br>
 						<input class="space" type="text" name="user-name">
-                        <br>
+                        <label>Họ và tên</label>
+
+                        <input class="space" rows="20" type="email" name="user-email">
+                        <label>Email</label>
 		
 						<p>Số Điện Thoại</p><br>
 						<input class="space" width="800" height="270" type="number" name="uer-number">
@@ -51,15 +54,16 @@
 					
 						<p>Mật Khẩu</p><br>
 						<input class="space" type="password" name="user-password">
+						
                         <br>
 
 						<p>Nhập Lại Mật Khẩu</p><br>
-						<input class="space" type="password" name="user-password-1">
+						<input class="space" type="password" name="user-password-1" >
 					    
                         <br>
 
 						<p>Mã Giới Thiệu</p><br>
-						<input class="space" type="text" name="mã-user">
+						<input class="space" type="text" name="mã-user" id="input_text">
                         
                         <br>
 					</div>
@@ -68,7 +72,7 @@
 					</div>
 					<div class="section_3_3">
 						
-							<button  type="submit">Đăng ký</button>
+							<button  type="button" onclick="dangky()">Đăng ký</button>
 						
 					</div>
 					<div class="section_3_4">
@@ -105,6 +109,95 @@
 			<div class="finish_5"><img src="image/logo2.png"></div>
 		</div>
 	</section>
-
+		<script type="text/javascript">
+			function dangky(){
+					var input_text=document.getElementById("input_text");
+					var color= input_text.value;
+					if (color.length < 1) {
+						//alert('chua nhap gi');
+						input_text.style.border='1px solid red';
+						var outer = input_text.outerHTML;
+						outer += '<p>Vui long nhap thong tin</p>';
+						input_text.ou
+					}else{
+						input_text.style.border='1px solid white';
+						var box= document.getElementById("box_1");
+						box.style.color=color;
+					}
+		</script>
 </body>
 </html>
+<div class="item-content">
+							<figure>
+								<p><a href="#"><img src="image/Chưa-đặt-tên-3.png"/></a></p>
+								<p><a href="#">Reebok Track Jacket</a></p>
+								<p><span>100$</span></p>
+							</figure>
+							<figure class="fighover">
+								<p><a href="#"><img src="image/ao-do-be.png"/></a></p>
+								<p><a href="#">Reebok Track Jacket</a></p>
+								<p><span>100$</span></p>
+							</figure>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-content">
+							<figure>
+								<p><a href="#"><img src="image/photoshop1.png"/></a></p>
+								<p><a href="#">Reebok Track Jacket</a></p>
+								<p><span>100$</span></p>
+							</figure >
+							<figure class="fighover">
+								<a href="##"><img src="image/anh-nho-1.png"></a>
+							</figure>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-content">
+							<p><a href="#"><img src="image/photoshop1.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-content">
+							<p><a href="#"><img src="image/Chưa-đặt-tên-3.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-content">
+							<p><a href="#"><img src="image/Chưa-đặt-tên-2.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-content">
+							<p><a href="#"><img src="image/photoshop1.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-content">
+							<p><a href="#"><img src="image/Chưa-đặt-tên-3.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-content">
+							<p><a href="#"><img src="image/Chưa-đặt-tên-2.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item-content">
+							<p><a href="#"><img src="image/photoshop1.png"/></a></p>
+							<p><a href="#">Reebok Track Jacket</a></p>
+							<p><span>100$</span></p>
+						</div>
+					</div>

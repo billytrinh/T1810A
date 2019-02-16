@@ -5,8 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="css/ex-6-ll.css">
 	<link rel="stylesheet" type="text/css" href="vender/boostrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="vender/fontAwesome/css/all.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="vender/jquery/jquery-3.3.1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="vender/boostrap/js/boostrap.js"></script>
+	<script type="text/javascript" src="vender/boostrap/js/validator.js"></script>
 </head>
 <body>
 	<section class="section section-1" style="padding-top: 15px;padding-bottom: 15px;">
@@ -37,41 +39,49 @@
 				<div class="col-lg-6 col-lg-offset-5"style="padding-bottom: 40px; padding-top: 40px;">
 				<i class="far fa-user-circle color-xam" style="color:black;font-size: 120px;"></i></a>
 			</div>
-			<form>
+			<form data-toggle="validator" role="form">
 					<div class="col-lg-6 col-lg-offset-3 div_from " >
-						
-							<label for="exampleInputHovaten" >Họ và tên</label><br>
-							<input class="space" type="text" name="user-name">
-	                   
-	                    
+						<div class="form-group div_from4">
+							<label for="inputHovaten"  >Họ và tên</label><br>
+							<input class="form-control" type="text" id="inputHovaten" name="user-name"required>
+							
+	                    </div>
+	                    <div class="form-group div_form">
 	                    	<label for="exampleInputEmail">Email</label><br>
-	                        <input class="space text-center" rows="20" type="email" name="user-email">
-	                   
+	                        <input class="form-control" id="exampleInputEmail" rows="20" type="email" name="user-email"required>
+	                    
+	                   </div>
+	                   <div class="form-group div_form1">
 							<label for="exampleInputSodienthoai">Số Điện Thoại</label><br>
-							<input class="space" type="number" name="uer-number">
-	                   
-						
+							<input class="form-control" id="exampleInputSodienthoai" type="number" name="uer-number"required>
+	                   </div>
+						<div class="form-group div_form2" >
 							<label class="exampleInputMatkhau">Mật Khẩu</label><br>
-							<input class="space" type="password" name="user-password">
+							<input data-minlength="6" class="form-control" id="exampleInputMatkhau" type="password" name="user-password"required>
+        					
+        				</div>
 						
+						<div class="form-group div_form3">
 							<label class="exampleInputNhaplaimatkhau">Nhập Lại Mật Khẩu</label><br>
-							<input class="space" type="password" name="user-password-1" >
-
+							<input class="form-control" id="exampleInputNhaplaimatkhau" type="password" name="user-password-1" required >
+						</div>
+						<div class="form-group div_from5">
 							<label class="exampleInputMagioithieu">Mã Giới Thiệu</label><br>
-							<input class="space" type="text" name="mã-user" id="input_text">
-	            
+							<input class="form-control" id="exampleInputMagioithieu" type="text" name="mã-user" id="input_text" required>
+	            		</div>
 
 							<div class="col-lg-offset-3">
 								<label><input type="checkbox" name="user-check">Đồng ý về chính sách bảo mật<br> và điều khoản sử dụng</label>
 							</div>
-							<div class="col-lg-offset-4">
+							<div class="col-lg-offset-4 form-group">
 								
-									<button  type="button" class="btn btn-default dang-ky" id="btn_submit">Đăng ký</button>
+									<button  type="submit" class="btn btn-primary" id="btn_submit">Đăng ký</button>
 								
 							</div>
-							<div class="col-lg-offset-4">
+							<div class="col-lg-offset-4" style="padding-bottom: 30px;">
 								<a href="##" >Trở lại đăng nhập</a>
 							</div>
+							
 					</div>
 				</form>
 		</div>
@@ -83,34 +93,29 @@
 			</div>
 			<div class="col-lg-6">
 				<ul class="col-lg-4">
-					<li class="ul-1" style="color: #ff6600">about us</li>
+					<li class="ul-1" style="color: #ff6600; ">about us</li>
 					<li class="ul-1">contact us</li>
 					<li class="ul-1">support</li>
 				</ul>
-				<ul class="col-lg-4" style="list-style-type:circle; ">
+				<ul class="col-lg-4" >
 					<li class="ul-1">our feed</li>
 					<li class="ul-1">terms and conditions</li>
 					<li class="ul-1">our privacy</li>
 				</ul>
-				<ul class="col-lg-4" style="list-style-type:circle; ">
+				<ul class="col-lg-4">
 					<li class="ul-1">join us</li>
 					<li class="ul-1">live support</li>
 				</ul>
 			</div>
 			<div class="col-lg-3">
-				<h3>Payment Methods</h3>
-				
+				<img src="image/logo2.png">
 			</div>
 		</div>
 	</section>
 	<script type="text/javascript">
-		$(".menu").bind('click',function(){
-
-		})
 		$("#btn_submit").bild("click",function(){
-			$(this).addclass("aaaaa");
-			console.log($(this));
-			$('.div_from input').each(function(){
+			
+			$('.div_from4 input').each(function(){
 				if($(this).val().length<1){
 					$(this).css("border","1px solid red");
 					$(this).after("<p style='color:red'>vui long nhap thong tin</p>");
@@ -118,5 +123,89 @@
 			});
 		});
 	</script>
+	
+	<script type="text/javascript">
+		$("#btn_submit").bind("click",function(){
+						//$(this).addClass("aaaaa");
+						$('.div_from4 input').each(function(){
+							if($(this).val().length<1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>vui long nhap thong tin</p>");
+							}
+						});
+						$('.div_form input').each(function(){
+							if($(this).val().length < 1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>Vui long nhap email</p>");
+							}
+						});
+						$('.div_form1 input').each(function(){
+							if($(this).val().length < 1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>Vui long nhap password</p>");
+							}
+						});
+						$('.div_form2 input').each(function(){
+							if($(this).val().length < 1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>Vui long nhap password</p>");
+							}
+						});
+						$('.div_form3 input').each(function(){
+							if($(this).val().length < 1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>Vui long nhap Số điện thoại</p>");
+							}
+						});
+						$('.div_from5 input').each(function(){
+							if($(this).val().length <1){
+								$(this).css("border","1px solid red");
+								$(this).after("<p style='color:red'>vui long nhap ma gio thieu</p>");	
+							}
+						})
+					});
+				</script>
+<!--
+	<script type="text/javascript">
+		$("#btn_submit").bind("click",function(){
+			$('.div_form input').each(function(){
+				console.log($(this));
+				var ms;
+				if($(this).is("#exampleInputEmail1")){
+					ms = ' <span style="color:red"> Email</span>';
+				}
+				if($(this).is("#exampleInputName1")){
+					ms = ' <span style="color:red"> Ho va ten</span>';
+				}
+				if($(this).is("#exampleInputPhonenumber1")){
+					ms = ' <span style="color:red"> So dien thoai</span>';
+				}
+				if($(this).is("#exampleInputPassword1")){
+					ms = ' <span style="color:red"> Mat khau</span>';
+				}
+				if($(this).is("#exampleInputPassword2")){
+					ms = ' <span style="color:red"> lai Mat khau</span>';
+				}
+				if($(this).is("#exampleInputCode1")){
+					ms = ' <span style="color:red"> Ma gioi thieu</span>';
+				}
+				if($(this).val().length < 1){
+					$(this).css("border","1px solid red");
+					$(this).after("<span style='color:red'>Vui long nhap</span>" + ms);
+						}
+				/*
+				if($(this).val().length < 1){
+					var mss;
+					if($(this).attr("name")==('email')){
+						mss =' <span style="color:red"> Email</span>';
+					}
+					$(this).css("border","1px solid red");
+					$(this).after("<span style='color:red'> Vui long nhap</span>"+mss);
+				}*/
+
+					});
+
+				});
+	</script>-->
 </body>
 </html>

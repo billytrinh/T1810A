@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x=prompt("nhapten cua ban");
+		var y=prompt("hello")
+		setTimeout(function(){
+			alter(y);
+		},3000)
+	</script>
+</body>
+</html>
