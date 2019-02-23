@@ -14,7 +14,7 @@ app.get("/list_products",function(req,res){
 			data: [
 				{
 					image: 'images/ao_do.png',
-					name: 'Reebok Track Jacket 22222',
+					name: 'Reebok Track J',
 					price: '1000$'
 				},
 				{
