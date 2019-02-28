@@ -1,0 +1,49 @@
+		p{
+			text-align: center;
+		}
+		a{	
+			font-family: Arial;
+			color:#34404b;
+			font-size: 18px;
+			text-decoration: none;
+			line-height: 2.0;
+		}
+		span{
+			line-height: 1.5;
+			font-family: Arial;
+			color:#ff5912;
+			font-size: 18px;
+		}
+		body{
+			background-color: #f4f6f8;
+		}
+		.list{
+			width: 1000px;
+			margin-left: 500px;
+			padding:250px;
+		}
+		.item{
+			width: 270px;
+			height: 367px;
+			text-align: center;
+			background-color: white;
+			margin: 23px 15px;
+			float:left;
+			margin-top: 10px;
+		}
+		li{
+			list-style-type: none;
+			background-color: white;
+			border: 1px solid white;
+		}
+		.Category{
+			color: red;
+			font-size: 20px;
+		}
+		.table{
+			font-family: Arial;
+			width: 270px;
+			padding: 30px;
+			margin: 50px;
+		
+		}

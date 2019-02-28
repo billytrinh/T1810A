@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap1.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<section class="sec sec_1">
+		<div class="container container_1">
+			<div class="col-lg-6 left">
+				<ul class="list-inline">
+					<li><a class ="sec1a" href="#"><i class="far fa-envelope"></i></a></li>
+					<li><a class ="sec1a" href="#">info@shopy.com</a></li>
+					<li><a class ="sec1a" href="#"><i class="fas fa-phone"></i></a></li>
+					<li><a class ="sec1a" href="#">453 - 5553 - 966</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-6 right text-right">
+				<ul class="list-inline">
+					<li><a class="sec1a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a class="sec1a" href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a class ="sec1a" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+					<li><a clas="sec1a" href="#"><i class="fab fa-instagram"></i></a></li><br><br>
+			</div>
+
+		</div>
+	</section>
+	<section class="sec sec_2">
+		<div class="container container_2">
+			<div class="col-lg-2">
+				<a href="#"><img src="images/logoshope.png">  </a>
+			</div>
+			<div class="col-lg-5">
+				<ul class="list-inline text-center">
+					<li><a class="sec2a" href="#">Home</a></li>
+					<li><a class="sec2a" href="#">Products</a></li>
+					<li><a class="sec2a" href="#">Hot Deals</a></li>
+					<li><a class="sec2a" href="#">About</a></li>
+					<li><a class="sec2a" href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-5">
+				<ul class="list-inline text-right">
+					<li><a class="sec2b" href="#"><i class="fas fa-search"></i></a></li>
+					<li><a class="sec2b" href="#"><i class="far fa-user"></i></a></li>
+					<li><a class="sec2b href="#"><i class="fas fa-shopping-cart"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="sec sec_3">
+		<div class="container container_3">
+			<div class="user_avatar text-center">
+				<h1><i class="far fa-user-circle"></i></h1>
+			</div>
+			<div class="infor col-lg-6 col-lg-offset-3 div_form">
+				<form role="form" >
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email</label>
+						<input type="email" name="email" class="form-control">
+ 					</div>
+  					<div class="form-group">
+   						<label for="exampleInputName1">Họ và tên</label>
+    					<input type="text" name="user_name" class="form-control">
+    				</div>
+    				<div class="form-group">
+   						<label for="exampleInputPhonenumber1">Số điện thoại</label>
+    					<input type="number" name="number" class="form-control">
+    				</div>
+    				<div class="form-group">
+   						<label for="exampleInputPassword1">Mật khẩu</label>
+    					<input type="password" name="password" class="form-control">
+  					</div>
+  					<div class="form-group">
+   						<label for="exampleInputPassword2">Nhập lại mật khẩu</label>
+    					<input type="password" name="password2" class="form-control">
+  					</div>
+  					<div class="form-group">
+   						<label for="exampleInputCode1">Mã giới thiệu</label>
+    					<input type="text" name="introduce" class="form-control">
+    				</div>
+ 					<div class="sec3a text-center">
+						<label><input type="radio" name="user_radio">Đồng ý về chính sách bảo mật và điều khoản sử dụng</label><br>
+					</div>
+					<div class="text-center">
+						<button class="sec3b btn btn-primary btn-lg" onclick="formX()" type="button" id="btn_submit">Đăng ký</button><br>
+					</div>
+					<div class="sec3c text-center">
+						<p href="#">Trở lại đăng nhâp</p>
+					</div>
+  					
+				</form>
+				
+			</div>
+		</div>
+	</section>
+	<section class="sec sec_4">
+		<div class="container container_4">
+			<div class="col-lg-4 text-left">        
+            	<a href="#"> <img src="images/logoshope.png"></a>
+				<br>
+        		<a>shopy c 2015.your copy right here</a>
+        	</div>
+        	<div class="col-lg-6">
+        		<ul class="list-inline text-left">
+        			<li><a>about us</a></li><br>
+        			<li><a>contact us</a></li><br>
+        			<li><a>support</a></li><br>
+        		</ul>
+        		<ul class="list-inline text-center">
+        			<li><a>our feed</a></li> <br>
+        			<li><a>terms and conditions</a></li><br>
+        			<li><a>our privacy</a></li><br>
+        		</ul>
+        		<ul class="list-inline text-right">
+        			<li><a>join us</a></li><br>	
+        			<li><a>live support</a></li><br>
+        		</ul>
+       		</div>
+       		<div class="col-lg-2">
+       			<strong><a class="q">Payment Methods</a></strong><br>
+       			<a href="#"> <img src="images/paymentimages.png"></a>
+       		</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function formX(){
+			var z1 = $(" input[name=email]");
+			if(z1.val().length < 1 ){
+				z1.css("border","1px solid red");
+				z1.after("<p style='color:red'>Vui long nhap email</p>");
+			}
+		}
+		//var i=1;
+		//$('.div_form button').each(function(){
+		//	if(i%2 == 1){
+		//		$(this).addClass("no_1");
+		//	}else{
+		//		$(this).addClass("no_2");
+		//	}
+		//	i++;
+		//});
+		//, 'number', 'password','password2', 'introduce'
+		$("#btn_submit").bind("click",function(){
+			$('.div_form input').each(function(){
+				if($(this).val().length < 1){
+					var mss= 'Vui long nhap ';
+					if($(this).attr("name") == 'user_name'){
+						mss = 'Vui long nhap Ten'
+					}
+					if($(this).attr("name") == 'number'){
+						mss = 'Vui long nhap SDT'
+					}
+					if($(this).attr("name") == 'password'){
+						mss = 'Vui long nhap Mat Khau'
+					}
+					if($(this).attr("name") == 'password2'){
+						mss = 'Vui long nhap Mat Khau'
+					}
+					if($(this).attr("name") == 'introduce'){
+						mss = 'Vui long nhap Ma gioi thieu'
+					}
+					$(this).css("border","1px solid red");
+					$(this).after("<p style='color:red'>" +mss+ "</p>");
+				}
+				});
+			});
+	</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f4f6f8;
+	color:#28313b;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.5;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+            width: 1170px;
+            margin: 0 auto;
+}
+.sec{
+            float: left;
+            width: 100%;
+}
+        
+.sec1{
+            background-color: #ffffff;
+            border-bottom: 1px solid #f4f6f8;
+            padding-top: 20px;
+            padding-bottom: 20px;
+}
+.sec1_1{
+            float: left;
+            width: 50%;
+}
+.sec1_2{
+            float: right;
+            width: 50%;
+            text-align: right;
+}
+
+.fbsec1{
+          margin-left: 15px;
+          font-weight: 600;
+}
+.sec2{
+            background-color: #ffffff;
+            border-bottom: 120px solid #f4f6f8;
+            padding-top: 40px;
+            padding-bottom: 40px;
+}
+.sec2_1{
+            float: left;
+            width: 18%;
+            padding-left: 200px;
+}
+.sec2_2{
+            float: left;
+            width: 72%;
+}
+.sec2a{
+          margin-left: 40px;
+          font-weight: 600;
+          font-size: 17px;
+}
+.sec2_3{
+            float: right;
+            width: 25%;
+            text-align: right;
+}
+.sec3{
+	margin: 0;
+	font-size: 50px;
+	
+}
+.sec3_1{
+	float: left;
+	text-align: center;
+	padding: 50px 280px;
+}
+.sec3a{
+	font-size: 31px;
+	color:#8c8c8c;
+}
+
+.sec4{
+        background-color: #ffffff;
+        border-top: 120px solid #f4f6f8;
+        line-height: 2;
+        width: 100%;
+}
+
+.sec4_1{
+        width: 35%;
+        padding: 100px 0px;
+        float: left
+}
+
+.sec4_2{
+        width: 15%;
+        padding: 100px 0px;
+        float: left;
+}
+
+.sec4_3{
+        width: 15%;
+        padding: 100px 0px;
+        float: left;
+}
+      
+.sec4_4{
+        width: 15%;
+        padding: 100px 0px;
+        float: left;
+}
+
+.sec4_5{
+        width: 20%;
+        padding: 100px 0px;
+        float: right;
+}
+.sizeofform{
+	width:800px;
+	height:99px;
+}
+.q{	
+	color: #ff5912;
+	font-weight: 700;
+}
+.information{
+	float: left;
+	padding: 0px 200px;
+
+}
+
+.form label{
+	font-size: 25px;
+	float: left;
+	
+}
+.sec3b{
+	font-size: 25px;
+	float: left;
+	color:#8c8c8c;
+	text-align: center;
+	padding: 50px 280px;
+}
+.sec3c{
+	width: 370px;
+	height: 107px;
+	border-radius: 15px;
+	background-image: linear-gradient(to right, #4147a7 , #64aad7);
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	margin:50px 0px 30px 0px;
+}
+.sec3d{
+	float:left;
+	color:#334b91;
+	font-size:31px;
+	width: 100%;
+	text-align: center;
+}

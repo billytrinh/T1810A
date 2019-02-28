@@ -1,0 +1,79 @@
+p{
+	text-align: center;
+}
+a{	
+	font-family: Arial;
+	color:#34404b;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 2.0;
+}
+span{
+	line-height: 1.5;
+	font-family: Arial;
+	color:#ff5912;
+	font-size: 18px;
+}
+.list{
+	width: 1000px;
+	background-color: #f4f6f8;
+	float: left;
+}
+.item{
+	width: 250px;
+	height: 347px;
+	border: 1px solid white;
+	background-color: white;
+	margin: 15px;
+	padding:10px;
+	float:left;
+}
+.categories{
+	color: red;
+}
+ul{
+	margin: 0px;
+	line-height: 50px;
+	font-weight: 900;
+}
+li {
+	list-style-type: none;
+}
+.left{
+	float: left;
+	width: 300px;
+	background-color: #f4f6f8;
+}
+.right{
+	float: left;
+	width: 900px;
+}
+.block{
+	float:left;
+	width: 270px;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	height: 304px;
+    background-color: #ffffff;
+}
+.ba_cham{
+	font-weight: 900;
+    text-align: center;
+    color: red;
+	background-color: white;
+    margin-top: 30px;
+    width: 875px;
+    height: 60px;
+    float: left;
+    font-size: 40px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.divtong{
+	width: 1200px;
+}
+body{
+	background-color: #f4f6f8;
+}

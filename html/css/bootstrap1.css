@@ -1,0 +1,19 @@
+*{
+	text-decoration: none;
+	color:;
+}
+li{
+	list-style-type: : none;
+}
+.section{
+	width: 100%;
+}
+.sec_3{
+	background-color: #f4f6f8;
+}
+.sec3b{
+	background-image: linear-gradient(to right, #4147a7 , #64aad7);
+}
+.sec3c{
+	color:#334b91;
+}
