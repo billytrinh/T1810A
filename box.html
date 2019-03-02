@@ -286,38 +286,26 @@
 	}	
 	</style>
 	<script type="text/javascript">
-		var data = {
-			status: 1,
-			message: 'success',
-			data: [
-				{
-					image: 'images/ao-do.png',
-					name: 'Reebok Track Jacket 22222',
-					price: '1000$'
-				},
-				{
-					image: 'images/ao-do.png',
-					name: 'Reebok Track Jacket',
-					price: '100$'
-				},
-				{
-					image: 'images/ao-do.png',
-					name: 'Reebok Track Jacket',
-					price: '100$'
+	//	var url = 'http://10.22.185.13:1111/list_products' ; // method : get
+		$.ajax({
+			url: 'http://10.22.185.13:1111/list_products',
+			method: "GET",
+			success: function(result){
+			//	console.log(result);
+				var products = result.data;
+				var content_html = '';
+				for (var i = 0; i < products.length; i++) {
+					content_html += '<div class="item">';
+					content_html += '	<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
+					content_html += '	<p><a href="#">'+products[i].name+'</a></p>';
+					content_html += '	<p><span>'+products[i].price+'</span></p>';
+					content_html += '</div>';
 				}
-				
-			]
-		}
-		var products = data.data;
-		var content_html = ''
-		for (var i = 0; i < products.length; i++) {
-			content_html += '<div class="item">';
-			content_html += '	<p><a href="#"><img src="'+products[i].image+'"/></a></p>';
-			content_html += '	<p><a href="#">'+products[i].name+'</a></p>';
-			content_html += '	<p><span>'+products[i].price+'</span></p>';
-			content_html += '</div>';
-		}
-		document.getElementById("list_product").innerHTML =  content_html;
+				document.getElementById("list_product").innerHTML =  content_html;
+			}
+		});
+
+		
 
 		function themsanpham() {
 			var img = document.getElementById("loading-img");
