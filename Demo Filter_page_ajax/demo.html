@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Demo</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script type="text/javascript" src="/vendor/jquery/jquery-3.3.1.js"></script>
+	</head>
+	<body>
+		<h1 style="color:green">Day la the heading 1</h1>
+		<h2 id="heading_2">Day la the heading 2</h2>
+		<h3 id="heading3">Day la the heading 3</h3>
+		<h4 class="abc">Day la the heading 4</h4>
+		<h5>Day la the heading 5</h5>
+		<h6>Day la the heading 6</h6>
+		
+		<p id="lorem" class="lorem_a lorem_b lorem_c">Lorem Ipsum <span>Span text</span> is simply dummy text of the printing and typesetting industry.</p>
+		<p><b>Bold text</b>	
+		<i>Italic text</i>
+		<u>Underline text</u>
+		<small>Small text</small>
+		<strong>Strong text</strong></p>
+		<p class="lorem_a"><b>Text <i>a<u><small>b</small></u>c</i> xyz</b></p>
+		<p>Hello world</p>
+		<p><i>Italic text</i>
+		<u>Underline text</u>
+		<small>Small text</small></p>
+
+		<a style="color:red" href="#">Link to google</a><br/>
+		<br/>
+		<br/>
+		<br/>
+
+
+<form method="GET -- POST" action="#" enctype="multipart/form-data" name="form_data">
+	<input type="text" name="text_input" class="text-input" placeholder="Nhap cai gi do" />	
+	<input type="email" name="user_email" placeholder="email"/>
+	<input type="number" name="input_number" placeholder="number input...">
+	<input type="password" name="user_pass" placeholder="Nhap password">
+	<input type="file" name="user_file">
+	<input type="color" name="user_color" placeholder="color here...">
+	<input type="date" name="user_dob" placeholder="date time..."><br/>
+	<input type="checkbox" id="check1" name="user_checkbox"><label for="check1">Checkbox here...</label>
+	<label><input type="checkbox" name="user_checkbox">Check 2 here...</label><br/>
+
+	<label><input type="radio" name="user_radio" value="radio1"> Radio 1</label>
+	<label><input type="radio" name="user_radio" value="radio2"> Radio 2</label>
+	<label><input type="radio" name="user_radio" value="radio3"> Radio 3</label>
+	<br/>
+	<select name="user_select">
+		<option value="Nam">Nam</option>
+		<option value="Nu">Nu</option>
+		<option value="Unisex">Unisex</option>
+	</select>
+
+	<select multiple name="user_select">
+		<option value="Nam">Nam</option>
+		<option value="Nu">Nu</option>
+		<option value="Unisex">Unisex</option>
+	</select>
+
+	<textarea name="user_blog" rows="10" cols="100" placeholder="write text here..."></textarea><br/>
+
+	<button type="submit">Dang thong tin</button>
+
+</form>
+
+
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<img width="500px" height="auto" src="images/nature-3048299__340.jpg"/>
+		<ul>
+			<li>Category</li>
+			<li>Man</li>
+			<li>Woman</li>
+			<li>Children</li>
+		</ul>
+		<ol>
+			<li>Category</li>
+			<li>Man</li>
+			<li>Woman</li>
+			<li>Children</li>
+		</ol>	
+
+		<table border="1">
+			<thead>
+				<th>No</th>
+				<th>Ten sinh vien</th>
+				<th>MSSV</th>
+				<th>Ngay sinh</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>#1</td>
+					<td colspan="2">Nguyen van A</td>
+					<td>12/12/09</td>
+				</tr>
+				<tr>
+					<td>#1</td>
+					<td>Nguyen van B</td>
+					<td>ms01</td>
+					<td rowspan="2">12/12/09</td>
+				</tr>
+				<tr>
+					<td>#1</td>
+					<td>Nguyen van C</td>
+					<td>ms01</td>
+					
+				</tr>
+				<tr>
+					<td>#1</td>
+					<td>Nguyen van D</td>
+					<td>ms01</td>
+					<td>12/12/09</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+		<style type="text/css">
+			h2{
+				color:#34404b;
+				font-size: 50px;
+				font-family: Arial;
+				font-weight: 400;/* 100(thin) 300(light) 400(normal) 500 600(semi-bold) 700(bold) 800 900(extra-bold);*/
+				font-style: italic;
+				line-height: 1.5;
+				text-decoration: underline overline line-through;	/* none */
+				text-align:  left; /* left right center justify */
+				text-indent: 20px;
+				text-transform: capitalize; /* lowercase uppercase capitalize none ;*/
+			}
+			#heading_2{
+				color:#ff5912; 
+			}
+			.abc{
+				color:yellow;
+			}
+			.lorem_a{
+				color:pink;
+			}
+		</style>
+
+
+
+
+	<script type="text/javascript">
+		var urlParams = new URLSearchParams(window.location.search);
+		var id = urlParams.get("id");
+		jQuery.ajax({
+			url: "/chi-tiet?id="+id,
+			success: function(result){
+				console.log(result);
+			}
+		});
+	</script>
+
+
+	</body>
+</html>
