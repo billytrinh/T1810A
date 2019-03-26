@@ -495,3 +495,9 @@ h3{
 	padding-right: 46px;
 	font-weight: 600;
 }
+
+@media screen and (max-width: 992px) {
+	.item {
+		display: none;
+	}	
+}

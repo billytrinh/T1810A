@@ -1,12 +1,9 @@
 
 		.all{
-			width: 900px;
+			width: 1300px;
 			height: auto;
 			background-color: #f4f6f8;
-			padding-top: 32px;
-			padding-right: 80px;
-			padding-bottom: 48px;
-			padding-left: 76px;
+			
 		}
 
 
@@ -28,13 +25,64 @@
 			text-align: center;
 			color: #ff5912;
 			font-size: 18px;
+			
 		}
-		div {
+		
+		#list1 {
 			width: 270px;
 			height: 367px;
 			border: 1px solid while; /* dashes */ /*dotted*/
-			background: #ffffff;
+			background-color: #ffffff;
 			float: left;
 			margin: 15px;
 		}
-	</style>
+
+		#right {
+			width: 1000px;
+			float: left;
+			background-color: #f4f6f8;
+		}
+
+
+		.left {
+			width: 296px;
+			margin: 0px;
+			background: #f4f6f8;
+			float: left;
+		} 
+
+
+		.list{
+			width: 266px;
+			height: 305px;
+			margin: 15px;
+			background-color: #ffffff;
+			float: left;
+		} 
+		#namelist {
+			color: #ff5912;
+			text-align: center;
+			font-size: 18px;
+			line-height: 2.0;
+			font-weight: 700;
+			font-family: Arial;
+		} 
+
+		#nameli {
+			color: #34404b;
+			font-size: 16px;
+			list-style-type: none;
+			line-height: 2.0;
+			font-family: arial;
+			font-weight: 600;
+		}
+		
+		.footer {
+			background-color: #ffffff;
+			text-align: center;
+		}
+
+		.cham {
+			
+		}
+
